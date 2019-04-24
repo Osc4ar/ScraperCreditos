@@ -1,0 +1,11 @@
+Banco,URL,Procesar,Pasos para llegar a informacion,Numero de Pasos,Suma Complejidad,,,Metodo,Complejidad
+Citibanamex,https://www.banamex.com/es/personas/creditos/credito-hipotecario.html,false,Selenium,1,3,,,Scrapy,1
+BanRegio,https://www.banregio.com/creditos_hipoteca.php,true,"Scrapy, Selenium",2,4,,,Selenium,3
+Inbursa,https://www.inbursa.com/portal/?page=Document/doc_view_section.asp&id_document=878&id_category=36,false,"Scrapy, Selenium",2,4,,,Excel,4
+Bancomer,https://www.bancomer.com/personas/productos/creditos.html,true,"Scrapy, Scrapy, Selenium",3,5,,,PDF,8
+Vepormas,https://www.vepormas.com/fwpf/portal/documents/productos-creditos,false,"Scrapy, Scrapy, Excel",3,6,,,Imagenes,10
+BanBajio,https://www.bb.com.mx/webcenter/portal/BanBajio/personas/p-creditos/p-credito-hipotecario,false,"Selenium, Scrapy, Selenium",3,7,,,,
+HSBC,https://www.hsbc.com.mx/hipotecario/,true,"Scrapy, Scrapy, Scrapy, Excel",4,7,,,,
+Banorte,https://www.banorte.com/wps/portal/banorte/Home/creditos/credito-hipotecario,false,"Scrapy, Scrapy, Selenium, Selenium",4,8,,,,
+Santander,https://www.santander.com.mx/hipotecario/inicio.html,false,"Scrapy, Scrapy, Selenium, Selenium",4,8,,,,
+ScotiaBank,https://www.scotiabank.com.mx/es-mx/personas/creditos/hipotecarios/default.aspx,false,"Scrapy, Scrapy, Selenium, Excel",4,9,,,,
