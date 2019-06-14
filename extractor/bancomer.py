@@ -1,11 +1,8 @@
-from ..bank import Bank
+from selenium_automaton import bancomer_automaton
 
-class Bancomer(Bank):
+class Bancomer:
     def __init__(self):
-        super().__init__()
+        self.automaton = bancomer_automaton.BancomerAutomaton()
 
-    def set_selectors(self):
-        self.creditos_selector = '//*[@class="card__link"]'
-        self.url_container = '@href'
-        self.url_target = '/personas/productos/creditos/credito-hipotecario/'
-        self.exceptions = ['programas-de-apoyo-al-credito.html']
+if __name__ == "__main__":
+    extractor = Bancomer()
