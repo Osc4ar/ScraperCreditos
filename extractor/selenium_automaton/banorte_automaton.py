@@ -8,6 +8,7 @@ import csv
 
 class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
     def __init__(self):
+        self.plazos_por_tipo_tasa = [2, 4]
         self.set_control_data()
         self.connect(60)
         self.get_data()
@@ -32,17 +33,36 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
         self.aforo_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[8]/span'
         self.contenedor_plazos_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[3]/div/div[3]'
         self.actualizar_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[11]/div/button'
-        self.tipo_tasas_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[2]/div/div[3]'
+        self.contenedor_tipo_tasas_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[2]/div/div[3]'
 
     def get_data(self):
         self.get_controls_start()
         self.move_to_simulador()
-        for i in range(4, 16):
-            self.update_value(i)
-            self.get_detalle()
+        self.data_dictionary = []
+        self.subproducto_id = 1
+        for destino in range(7):
+            for tipo_tasa in range(2):
+                rango_plazo = 2 if tipo_tasa == 0 else 4
+                for plazo in range(rango_plazo): #rango plazo
+                    rango_valor = range(4, 16)
+                    if destino == 3 or destino == 4:
+                        rango_valor = range(5, 17)
+                    elif destino == 5:
+                        rango_valor = range(8, 20)
+                    for valor in rango_valor: #4, 6
+                        self.update_value(valor, plazo, tipo_tasa, destino)
+                        self.get_detalle()
+                        self.subproducto_id += 1
+                        if self.subproducto_id % 5 == 0:
+                            self.driver.get(self.url)
+                            time.sleep(2)
+                            self.get_controls_start()
+                            self.move_to_simulador()
+
         """for i in range(20, 165, 5):
             self.update_value(i)
             self.get_detalle()"""
+        self.export_csv('banorte.csv')
 
     def get_controls_start(self):
         self.start_vvivienda = WebDriverWait(self.driver, 20).until(
@@ -72,6 +92,19 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
                 self.cat = self.get_data_by_xpath(self.cat_xpath)
                 self.tasa_interes = self.get_data_by_xpath(self.tasa_interes_xpath)
                 print(f'Pago: {self.pago_mensual.text}\tCAT: {self.cat.text}\tInteres: {self.tasa_interes.text}\tIngresos: {ingresos_min_val}')
+                self.data_dictionary.append({
+                    'Subproducto': self.subproducto_id,
+                    'Producto': self.producto,
+                    'Valor Vivienda': self.valor_vivienda_value,
+                    'AFORO': self.aforo_value,
+                    'Plazo': self.plazo_value,
+                    'Ingresos Requeridos': ingresos_min_val,
+                    'Tasa de Interes': self.tasa_interes.text.replace('*', ''),
+                    'Tipo de Tasa': self.tipo_tasa,
+                    'CAT sin IVA': self.cat.text,
+                    'Pago': self.pago_mensual.text.split('\n')[0],
+                    'Frecuencia de Pago': 'Mensual'
+                })
                 self.cerrar_detalle = self.get_button_by_xpath(self.cerrar_detalle_xpath)
                 time.sleep(1)
                 self.cerrar_detalle.click()
@@ -82,23 +115,39 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
                 wait = True
                 time.sleep(5)
 
-    def update_value(self, num):
+    def update_value(self, valor, plazo, tipo_tasa, destino):
+        print(f'valor: {valor}\tplazo: {plazo}\ttipo_tasa: {tipo_tasa}\tdestino: {destino}')
+        time.sleep(1)
         self.editar = self.get_button_by_xpath(self.editar_xpath)
         self.editar.click()
         time.sleep(3)
+        self.contenedor_tipo_tasas_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[2]/div/div[3]'
+        self.contenedor_tipo_tasas = self.driver.find_element_by_xpath(self.contenedor_tipo_tasas_xpath)
+        self.tipo_tasas = self.contenedor_tipo_tasas.find_elements_by_tag_name('label')
+        self.tipo_tasas[tipo_tasa].click()
+        self.tipo_tasa = 'Fija' if tipo_tasa == 1 else 'Variable'
+        time.sleep(1)
         self.contenedor_plazos_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[3]/div/div[3]'
         self.contenedor_plazos = self.driver.find_element_by_xpath(self.contenedor_plazos_xpath)
         self.plazos = self.contenedor_plazos.find_elements_by_tag_name('label')
-        self.plazos[0].click()
-        self.valor_vivienda_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[6]/input'
+        self.plazos[plazo].click()
+        self.plazo_value = self.plazos[plazo].text
+        time.sleep(1)
+        self.valor_vivienda_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[{5+tipo_tasa}]/input'
         self.valor_vivienda = self.driver.find_element_by_xpath(self.valor_vivienda_xpath)
         self.valor_vivienda.clear()
-        self.valor_vivienda.send_keys(str(num)+'0'*7)
+        self.valor_vivienda.send_keys(str(valor)+'0'*7)
+        self.valor_vivienda_value = '$' + str(valor)+'0'*7
+        time.sleep(1)
         self.destinos_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[1]/select'
         self.destinos = Select(self.driver.find_element_by_xpath(self.destinos_xpath))
-        self.destinos.options[0].click()
+        self.destinos.options[destino].click()
+        self.producto = self.tipo_tasas[tipo_tasa].text + ' - ' + self.destinos.options[destino].text
         time.sleep(1)
-        self.actualizar_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[11]/div/button'
+        self.aforo_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[{7+tipo_tasa}]/span'
+        self.aforo_element = self.driver.find_element_by_xpath(self.aforo_xpath)
+        self.aforo_value = self.aforo_element.text
+        self.actualizar_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[{10+tipo_tasa if destino != 1 else 12+tipo_tasa}]/div/button'
         self.actualizar = self.driver.find_element_by_xpath(self.actualizar_xpath)
         self.actualizar.click()
         self.dialog_count += 1

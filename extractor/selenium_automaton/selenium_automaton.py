@@ -10,6 +10,7 @@ import csv
 class SeleniumAutomaton:
     def __init__(self):
         self.url = ''
+        self.data_dictionary = []
 
     def connect(self, wait):
         self.driver = webdriver.Chrome()

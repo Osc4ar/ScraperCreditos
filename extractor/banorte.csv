@@ -1,0 +1,37 @@
+Subproducto,Producto,Valor Vivienda,AFORO,Plazo,Ingresos Requeridos,Tasa de Interes,Tipo de Tasa,CAT sin IVA,Pago,Frecuencia de Pago
+1,Más por Menos - Remodelar,$50000000,30%,15 años,"$4,111.64",11.30%,Variable,17.5%,"$2,055.82",Mensual
+2,Más por Menos - Remodelar,$60000000,30%,15 años,"$4,814.38",11.30%,Variable,16.9%,"$2,407.19",Mensual
+3,Más por Menos - Remodelar,$50000000,30%,20 años,"$3,793.50",11.30%,Variable,17%,"$1,896.75",Mensual
+4,Más por Menos - Remodelar,$60000000,30%,20 años,"$4,432.60",11.30%,Variable,16.5%,"$2,216.30",Mensual
+5,Hipoteca Fuerte - Remodelar,$50000000,30%,5 años,"$7,368.60",9.90%,Fija,18.9%,"$3,718.20",Mensual
+6,Hipoteca Fuerte - Remodelar,$60000000,30%,5 años,"$8,702.72",9.90%,Fija,18%,"$4,392.05",Mensual
+7,Hipoteca Fuerte - Remodelar,$50000000,30%,10 años,"$4,927.14",9.90%,Fija,17.4%,"$2,501.66",Mensual
+8,Hipoteca Fuerte - Remodelar,$60000000,30%,10 años,"$5,772.98",9.90%,Fija,16.7%,"$2,932.19",Mensual
+9,Hipoteca Fuerte - Remodelar,$50000000,30%,15 años,"$4,171.70",9.90%,Fija,16.6%,"$2,127.88",Mensual
+10,Hipoteca Fuerte - Remodelar,$60000000,30%,15 años,"$4,866.44",9.90%,Fija,16%,"$2,483.66",Mensual
+11,Hipoteca Fuerte - Remodelar,$50000000,30%,20 años,"$3,833.20",9.90%,Fija,16.1%,"$1,962.11",Mensual
+12,Hipoteca Fuerte - Remodelar,$60000000,30%,20 años,"$4,460.24",9.90%,Fija,15.5%,"$2,284.74",Mensual
+13,Más por Menos - Terreno más construcción,$80000000,85%,15 años,"$20,658.13",11.30%,Variable,15.1%,"$8,263.25",Mensual
+14,Más por Menos - Terreno más construcción,$90000000,85%,15 años,"$23,146.93",11.30%,Variable,15%,"$9,258.77",Mensual
+15,Más por Menos - Terreno más construcción,$80000000,85%,20 años,"$18,855.28",11.30%,Variable,14.9%,"$7,542.11",Mensual
+16,Más por Menos - Terreno más construcción,$90000000,85%,20 años,"$21,118.73",11.30%,Variable,14.8%,"$8,447.49",Mensual
+17,Hipoteca Fuerte - Terreno más construcción,$80000000,85%,5 años,"$38,672.58",9.90%,Fija,14.8%,"$15,622.72",Mensual
+18,Hipoteca Fuerte - Terreno más construcción,$90000000,85%,5 años,"$43,397.58",9.90%,Fija,14.7%,"$17,531.93",Mensual
+19,Hipoteca Fuerte - Terreno más construcción,$80000000,85%,10 años,"$24,837.65",9.90%,Fija,14.1%,"$10,107.72",Mensual
+20,Hipoteca Fuerte - Terreno más construcción,$90000000,85%,10 años,"$27,833.28",9.90%,Fija,13.9%,"$11,327.55",Mensual
+21,Hipoteca Fuerte - Terreno más construcción,$80000000,85%,15 años,"$20,556.73",9.90%,Fija,13.6%,"$8,413.27",Mensual
+22,Hipoteca Fuerte - Terreno más construcción,$90000000,85%,15 años,"$23,017.25",9.90%,Fija,13.5%,"$9,421.30",Mensual
+23,Hipoteca Fuerte - Terreno más construcción,$80000000,85%,20 años,"$18,638.58",9.90%,Fija,13.4%,"$7,661.77",Mensual
+24,Hipoteca Fuerte - Terreno más construcción,$90000000,85%,20 años,"$20,859.33",9.90%,Fija,13.3%,"$8,575.86",Mensual
+25,Más por Menos - Compraventa con terminación de obra,$40000000,90%,15 años,"$9,030.72",11.30%,Variable,15.7%,"$4,515.36",Mensual
+26,Más por Menos - Compraventa con terminación de obra,$50000000,90%,15 años,"$11,138.90",11.30%,Variable,15.4%,"$5,569.45",Mensual
+27,Más por Menos - Compraventa con terminación de obra,$40000000,90%,20 años,"$8,267.16",11.30%,Variable,15.4%,"$4,133.58",Mensual
+28,Más por Menos - Compraventa con terminación de obra,$50000000,90%,20 años,"$10,184.46",11.30%,Variable,15.1%,"$5,092.23",Mensual
+29,Hipoteca Fuerte - Compraventa con terminación de obra,$40000000,90%,5 años,"$16,707.44",9.90%,Fija,15.5%,"$8,435.08",Mensual
+30,Hipoteca Fuerte - Compraventa con terminación de obra,$50000000,90%,5 años,"$20,709.80",9.90%,Fija,15.1%,"$10,456.60",Mensual
+31,Hipoteca Fuerte - Compraventa con terminación de obra,$40000000,90%,10 años,"$10,847.94",9.90%,Fija,14.8%,"$5,515.38",Mensual
+32,Hipoteca Fuerte - Compraventa con terminación de obra,$50000000,90%,10 años,"$13,385.42",9.90%,Fija,14.4%,"$6,806.97",Mensual
+33,Hipoteca Fuerte - Compraventa con terminación de obra,$40000000,90%,15 años,"$9,034.84",9.90%,Fija,14.3%,"$4,618.32",Mensual
+34,Hipoteca Fuerte - Compraventa con terminación de obra,$50000000,90%,15 años,,9.90%,Fija,14%,"$5,685.64",Mensual
+35,Hipoteca Fuerte - Compraventa con terminación de obra,$40000000,90%,20 años,"$8,222.44",9.90%,Fija,14%,"$4,220.46",Mensual
+36,Hipoteca Fuerte - Compraventa con terminación de obra,$50000000,90%,20 años,"$10,103.56",9.90%,Fija,13.7%,"$5,188.32",Mensual
