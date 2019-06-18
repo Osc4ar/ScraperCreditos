@@ -1,11 +1,8 @@
-from ..bank import Bank
+from selenium_automaton import banregio_automaton
 
-class Banregio(Bank):
+class Banregio:
     def __init__(self):
-        super().__init__()
+        self.automaton = banregio_automaton.BanregioAutomaton()
 
-    def set_selectors(self):
-        self.creditos_selector = '//*[@class="cta small m10"]'
-        self.url_container = '@href'
-        self.url_target = ''
-        self.exceptions = []
+if __name__ == "__main__":
+    extractor = Banregio()

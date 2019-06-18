@@ -1,0 +1,505 @@
+Subproducto,Producto,Valor Vivienda,AFORO,Plazo,Ingresos Requeridos,Tasa de Interes,Tipo de Tasa,CAT sin IVA,Pago,Frecuencia de Pago
+1,Más por Menos - Adquirir una casa,$40000000,90%,15 años,"$9,030.72",11.30%,Variable,15.4%,"$4,515.36",Mensual
+2,Más por Menos - Adquirir una casa,$50000000,90%,15 años,"$11,138.90",11.30%,Variable,15.2%,"$5,569.45",Mensual
+3,Más por Menos - Adquirir una casa,$60000000,90%,15 años,"$13,247.10",11.30%,Variable,15%,"$6,623.55",Mensual
+4,Más por Menos - Adquirir una casa,$70000000,90%,15 años,"$15,355.28",11.30%,Variable,14.8%,"$7,677.64",Mensual
+5,Más por Menos - Adquirir una casa,$80000000,90%,15 años,"$17,463.44",11.30%,Variable,14.7%,"$8,731.72",Mensual
+6,Más por Menos - Adquirir una casa,$90000000,90%,15 años,"$19,571.62",11.30%,Variable,14.7%,"$9,785.81",Mensual
+7,Más por Menos - Adquirir una casa,$100000000,90%,15 años,"$21,679.82",11.30%,Variable,14.6%,"$10,839.91",Mensual
+8,Más por Menos - Adquirir una casa,$110000000,90%,15 años,"$23,788.00",11.30%,Variable,14.5%,"$11,894.00",Mensual
+9,Más por Menos - Adquirir una casa,$120000000,90%,15 años,"$25,896.20",11.30%,Variable,14.5%,"$12,948.10",Mensual
+10,Más por Menos - Adquirir una casa,$130000000,90%,15 años,"$28,004.34",11.30%,Variable,14.5%,"$14,002.17",Mensual
+11,Más por Menos - Adquirir una casa,$140000000,90%,15 años,"$30,112.54",11.30%,Variable,14.4%,"$15,056.27",Mensual
+12,Más por Menos - Adquirir una casa,$150000000,90%,15 años,"$32,220.72",11.30%,Variable,14.4%,"$16,110.36",Mensual
+13,Más por Menos - Adquirir una casa,$40000000,90%,20 años,"$8,267.16",11.30%,Variable,15.2%,"$4,133.58",Mensual
+14,Más por Menos - Adquirir una casa,$50000000,90%,20 años,"$10,184.46",11.30%,Variable,14.9%,"$5,092.23",Mensual
+15,Más por Menos - Adquirir una casa,$60000000,90%,20 años,"$12,101.76",11.30%,Variable,14.8%,"$6,050.88",Mensual
+16,Más por Menos - Adquirir una casa,$70000000,90%,20 años,"$14,019.04",11.30%,Variable,14.6%,"$7,009.52",Mensual
+17,Más por Menos - Adquirir una casa,$80000000,90%,20 años,"$15,936.32",11.30%,Variable,14.6%,"$7,968.16",Mensual
+18,Más por Menos - Adquirir una casa,$90000000,90%,20 años,"$15,936.32",11.30%,Variable,14.6%,"$7,968.16",Mensual
+19,Más por Menos - Adquirir una casa,$100000000,90%,20 años,"$19,770.92",11.30%,Variable,14.4%,"$9,885.46",Mensual
+20,Más por Menos - Adquirir una casa,$110000000,90%,20 años,"$21,688.20",11.30%,Variable,14.4%,"$10,844.10",Mensual
+21,Más por Menos - Adquirir una casa,$120000000,90%,20 años,"$23,605.52",11.30%,Variable,14.3%,"$11,802.76",Mensual
+22,Más por Menos - Adquirir una casa,$130000000,90%,20 años,"$25,522.78",11.30%,Variable,14.3%,"$12,761.39",Mensual
+23,Más por Menos - Adquirir una casa,$140000000,90%,20 años,"$25,522.78",11.30%,Variable,14.3%,"$12,761.39",Mensual
+24,Más por Menos - Adquirir una casa,$150000000,90%,20 años,"$29,357.38",11.30%,Variable,14.3%,"$14,678.69",Mensual
+25,Hipoteca Fuerte - Adquirir una casa,$40000000,90%,5 años,"$16,707.44",9.90%,Fija,15.4%,"$8,435.08",Mensual
+26,Hipoteca Fuerte - Adquirir una casa,$50000000,90%,5 años,"$20,709.80",9.90%,Fija,15%,"$10,456.60",Mensual
+27,Hipoteca Fuerte - Adquirir una casa,$60000000,90%,5 años,"$24,712.16",9.90%,Fija,14.7%,"$12,478.13",Mensual
+28,Hipoteca Fuerte - Adquirir una casa,$70000000,90%,5 años,"$28,714.52",9.90%,Fija,14.5%,"$14,499.65",Mensual
+29,Hipoteca Fuerte - Adquirir una casa,$80000000,90%,5 años,"$32,716.88",9.90%,Fija,14.3%,"$16,521.16",Mensual
+30,Hipoteca Fuerte - Adquirir una casa,$90000000,90%,5 años,"$36,719.22",9.90%,Fija,14.2%,"$18,542.68",Mensual
+31,Hipoteca Fuerte - Adquirir una casa,$100000000,90%,5 años,"$40,721.60",9.90%,Fija,14.1%,"$20,564.21",Mensual
+32,Hipoteca Fuerte - Adquirir una casa,$110000000,90%,5 años,"$44,723.96",9.90%,Fija,14%,"$22,585.73",Mensual
+33,Hipoteca Fuerte - Adquirir una casa,$120000000,90%,5 años,"$48,726.32",9.90%,Fija,13.9%,"$24,607.26",Mensual
+34,Hipoteca Fuerte - Adquirir una casa,$130000000,90%,5 años,"$52,728.66",9.90%,Fija,13.8%,"$26,628.76",Mensual
+35,Hipoteca Fuerte - Adquirir una casa,$140000000,90%,5 años,,9.90%,Fija,13.8%,"$28,650.29",Mensual
+36,Hipoteca Fuerte - Adquirir una casa,$150000000,90%,5 años,"$60,733.40",9.90%,Fija,13.8%,"$30,671.81",Mensual
+37,Hipoteca Fuerte - Adquirir una casa,$40000000,90%,10 años,"$10,847.94",9.90%,Fija,14.6%,"$5,515.38",Mensual
+38,Hipoteca Fuerte - Adquirir una casa,$50000000,90%,10 años,"$13,385.42",9.90%,Fija,14.2%,"$6,806.97",Mensual
+39,Hipoteca Fuerte - Adquirir una casa,$60000000,90%,10 años,"$15,922.92",9.90%,Fija,13.9%,"$8,098.57",Mensual
+40,Hipoteca Fuerte - Adquirir una casa,$70000000,90%,10 años,"$18,460.40",9.90%,Fija,13.8%,"$9,390.16",Mensual
+41,Hipoteca Fuerte - Adquirir una casa,$80000000,90%,10 años,"$20,997.88",9.90%,Fija,13.6%,"$10,681.75",Mensual
+42,Hipoteca Fuerte - Adquirir una casa,$90000000,90%,10 años,"$23,535.36",9.90%,Fija,13.5%,"$11,973.34",Mensual
+43,Hipoteca Fuerte - Adquirir una casa,$100000000,90%,10 años,"$26,072.84",9.90%,Fija,13.4%,"$13,264.95",Mensual
+44,Hipoteca Fuerte - Adquirir una casa,$110000000,90%,10 años,"$8,222.44",9.45%,Fija,13.3%,"$4,111.22",Mensual
+45,Hipoteca Fuerte - Adquirir una casa,$120000000,90%,10 años,"$31,147.82",9.45%,Fija,12.8%,"$15,573.91",Mensual
+46,Hipoteca Fuerte - Adquirir una casa,$130000000,90%,10 años,,9.45%,Fija,12.7%,"$16,842.64",Mensual
+47,Hipoteca Fuerte - Adquirir una casa,$140000000,90%,10 años,"$36,222.78",9.45%,Fija,12.7%,"$18,111.39",Mensual
+48,Hipoteca Fuerte - Adquirir una casa,$150000000,90%,10 años,"$38,760.26",9.45%,Fija,12.7%,"$19,380.13",Mensual
+49,Hipoteca Fuerte - Adquirir una casa,$40000000,90%,15 años,,9.45%,Fija,13.6%,"$4,517.42",Mensual
+50,Hipoteca Fuerte - Adquirir una casa,$50000000,90%,15 años,,9.45%,Fija,13.3%,"$5,559.53",Mensual
+51,Hipoteca Fuerte - Adquirir una casa,$60000000,90%,15 años,"$13,203.28",9.45%,Fija,13.1%,"$6,601.64",Mensual
+52,Hipoteca Fuerte - Adquirir una casa,$70000000,90%,15 años,"$15,287.48",9.45%,Fija,12.9%,"$7,643.74",Mensual
+53,Hipoteca Fuerte - Adquirir una casa,$80000000,90%,15 años,"$15,287.48",9.45%,Fija,12.9%,"$7,643.74",Mensual
+54,Hipoteca Fuerte - Adquirir una casa,$90000000,90%,15 años,"$19,455.90",9.45%,Fija,12.7%,"$9,727.95",Mensual
+55,Hipoteca Fuerte - Adquirir una casa,$100000000,90%,15 años,,9.45%,Fija,12.6%,"$10,770.06",Mensual
+56,Hipoteca Fuerte - Adquirir una casa,$110000000,90%,15 años,"$23,624.34",9.45%,Fija,12.5%,"$11,812.17",Mensual
+57,Hipoteca Fuerte - Adquirir una casa,$120000000,90%,15 años,"$25,708.56",9.45%,Fija,12.5%,"$12,854.28",Mensual
+58,Hipoteca Fuerte - Adquirir una casa,$130000000,90%,15 años,"$27,792.74",9.45%,Fija,12.4%,"$13,896.37",Mensual
+59,Hipoteca Fuerte - Adquirir una casa,$140000000,90%,15 años,"$29,876.98",9.45%,Fija,12.4%,"$14,938.49",Mensual
+60,Hipoteca Fuerte - Adquirir una casa,$150000000,90%,15 años,"$31,961.18",9.45%,Fija,12.4%,"$15,980.59",Mensual
+61,Hipoteca Fuerte - Adquirir una casa,$40000000,90%,20 años,"$8,222.44",9.45%,Fija,13.3%,"$4,111.22",Mensual
+62,Hipoteca Fuerte - Adquirir una casa,$50000000,90%,20 años,"$10,103.56",9.45%,Fija,13%,"$5,051.78",Mensual
+63,Hipoteca Fuerte - Adquirir una casa,$60000000,90%,20 años,"$11,984.68",9.45%,Fija,12.8%,"$5,992.34",Mensual
+64,Hipoteca Fuerte - Adquirir una casa,$70000000,90%,20 años,"$13,865.80",9.45%,Fija,12.6%,"$6,932.90",Mensual
+65,Hipoteca Fuerte - Adquirir una casa,$80000000,90%,20 años,"$15,746.90",9.45%,Fija,12.5%,"$7,873.45",Mensual
+66,Hipoteca Fuerte - Adquirir una casa,$90000000,90%,20 años,"$17,628.00",9.45%,Fija,12.4%,"$8,814.00",Mensual
+67,Hipoteca Fuerte - Adquirir una casa,$100000000,90%,20 años,"$19,509.14",9.45%,Fija,12.4%,"$9,754.57",Mensual
+68,Hipoteca Fuerte - Adquirir una casa,$110000000,90%,20 años,"$21,390.24",9.45%,Fija,12.3%,"$10,695.12",Mensual
+69,Hipoteca Fuerte - Adquirir una casa,$120000000,90%,20 años,"$23,271.36",9.45%,Fija,12.3%,"$11,635.68",Mensual
+70,Hipoteca Fuerte - Adquirir una casa,$130000000,90%,20 años,"$25,152.46",9.45%,Fija,12.2%,"$12,576.23",Mensual
+71,Hipoteca Fuerte - Adquirir una casa,$140000000,90%,20 años,"$27,033.58",9.45%,Fija,12.2%,"$13,516.79",Mensual
+72,Hipoteca Fuerte - Adquirir una casa,$150000000,90%,20 años,"$28,914.68",9.45%,Fija,12.2%,"$14,457.34",Mensual
+73,Más por Menos - Mejorar mi hipoteca,$40000000,85%,15 años,"$9,262.03",11.30%,Variable,15.3%,"$4,631.01",Mensual
+74,Más por Menos - Mejorar mi hipoteca,$50000000,85%,15 años,"$11,428.05",11.30%,Variable,15%,"$5,714.02",Mensual
+75,Más por Menos - Mejorar mi hipoteca,$60000000,85%,15 años,"$13,594.05",11.30%,Variable,14.8%,"$6,797.02",Mensual
+76,Más por Menos - Mejorar mi hipoteca,$70000000,85%,15 años,"$15,760.07",11.30%,Variable,14.7%,"$7,880.03",Mensual
+77,Más por Menos - Mejorar mi hipoteca,$80000000,85%,15 años,"$17,926.07",11.30%,Variable,14.6%,"$8,963.04",Mensual
+78,Más por Menos - Mejorar mi hipoteca,$90000000,85%,15 años,"$20,092.07",11.30%,Variable,14.5%,"$10,046.04",Mensual
+79,Más por Menos - Mejorar mi hipoteca,$100000000,85%,15 años,"$22,258.09",11.30%,Variable,14.4%,"$11,129.05",Mensual
+80,Más por Menos - Mejorar mi hipoteca,$110000000,85%,15 años,"$24,424.09",11.30%,Variable,14.4%,"$12,212.05",Mensual
+81,Más por Menos - Mejorar mi hipoteca,$120000000,85%,15 años,"$26,590.10",11.30%,Variable,14.3%,"$13,295.05",Mensual
+82,Más por Menos - Mejorar mi hipoteca,$130000000,85%,15 años,"$28,756.12",11.30%,Variable,14.3%,"$14,378.06",Mensual
+83,Más por Menos - Mejorar mi hipoteca,$140000000,85%,15 años,"$30,922.12",11.30%,Variable,14.3%,"$15,461.06",Mensual
+84,Más por Menos - Mejorar mi hipoteca,$150000000,85%,15 años,"$33,088.12",11.30%,Variable,14.2%,"$16,544.06",Mensual
+85,Más por Menos - Mejorar mi hipoteca,$40000000,85%,20 años,"$8,548.03",11.30%,Variable,15.1%,"$4,274.01",Mensual
+86,Más por Menos - Mejorar mi hipoteca,$50000000,85%,20 años,"$10,535.55",11.30%,Variable,14.8%,"$5,267.77",Mensual
+87,Más por Menos - Mejorar mi hipoteca,$60000000,85%,20 años,"$12,523.05",11.30%,Variable,14.6%,"$6,261.52",Mensual
+88,Más por Menos - Mejorar mi hipoteca,$70000000,85%,20 años,"$14,510.57",11.30%,Variable,14.5%,"$7,255.28",Mensual
+89,Más por Menos - Mejorar mi hipoteca,$80000000,85%,20 años,"$16,498.07",11.30%,Variable,14.4%,"$8,249.04",Mensual
+90,Más por Menos - Mejorar mi hipoteca,$90000000,85%,20 años,"$18,485.57",11.30%,Variable,14.3%,"$9,242.79",Mensual
+91,Más por Menos - Mejorar mi hipoteca,$100000000,85%,20 años,"$18,485.57",11.30%,Variable,14.4%,"$9,242.79",Mensual
+92,Más por Menos - Mejorar mi hipoteca,$110000000,85%,20 años,"$22,460.59",11.30%,Variable,14.2%,"$11,230.30",Mensual
+93,Más por Menos - Mejorar mi hipoteca,$120000000,85%,20 años,"$22,460.59",11.30%,Variable,14.2%,"$11,230.30",Mensual
+94,Más por Menos - Mejorar mi hipoteca,$130000000,85%,20 años,"$26,435.62",11.30%,Variable,14.2%,"$13,217.81",Mensual
+95,Más por Menos - Mejorar mi hipoteca,$140000000,85%,20 años,"$28,423.12",11.30%,Variable,14.1%,"$14,211.56",Mensual
+96,Más por Menos - Mejorar mi hipoteca,$150000000,85%,20 años,"$30,410.62",11.30%,Variable,14.1%,"$15,205.31",Mensual
+97,Hipoteca Fuerte - Mejorar mi hipoteca,$40000000,85%,5 años,"$16,048.17",9.65%,Fija,14.8%,"$8,200.38",Mensual
+98,Hipoteca Fuerte - Mejorar mi hipoteca,$50000000,85%,5 años,"$16,048.17",9.65%,Fija,14.8%,"$8,200.38",Mensual
+99,Hipoteca Fuerte - Mejorar mi hipoteca,$60000000,85%,5 años,"$23,723.25",9.65%,Fija,14%,"$12,126.08",Mensual
+100,Hipoteca Fuerte - Mejorar mi hipoteca,$70000000,85%,5 años,"$27,560.81",9.65%,Fija,13.8%,"$14,088.94",Mensual
+101,Hipoteca Fuerte - Mejorar mi hipoteca,$80000000,85%,5 años,"$31,398.34",9.65%,Fija,13.6%,"$16,051.79",Mensual
+102,Hipoteca Fuerte - Mejorar mi hipoteca,$90000000,85%,5 años,"$35,235.88",9.65%,Fija,13.5%,"$18,014.63",Mensual
+103,Hipoteca Fuerte - Mejorar mi hipoteca,$100000000,85%,5 años,"$39,073.44",9.65%,Fija,13.4%,"$19,977.49",Mensual
+104,Hipoteca Fuerte - Mejorar mi hipoteca,$110000000,85%,5 años,"$42,910.96",9.65%,Fija,13.3%,"$21,940.33",Mensual
+105,Hipoteca Fuerte - Mejorar mi hipoteca,$120000000,85%,5 años,"$46,748.50",9.65%,Fija,13.2%,"$23,903.17",Mensual
+106,Hipoteca Fuerte - Mejorar mi hipoteca,$130000000,85%,5 años,"$50,586.07",9.65%,Fija,13.1%,"$25,866.03",Mensual
+107,Hipoteca Fuerte - Mejorar mi hipoteca,$140000000,85%,5 años,"$54,423.61",9.65%,Fija,13.1%,"$27,828.87",Mensual
+108,Hipoteca Fuerte - Mejorar mi hipoteca,$150000000,85%,5 años,"$58,261.13",9.65%,Fija,13%,"$29,791.72",Mensual
+109,Hipoteca Fuerte - Mejorar mi hipoteca,$40000000,85%,10 años,"$10,568.99",9.65%,Fija,14.2%,"$5,464.92",Mensual
+110,Hipoteca Fuerte - Mejorar mi hipoteca,$50000000,85%,10 años,"$13,036.75",9.65%,Fija,13.7%,"$6,743.91",Mensual
+111,Hipoteca Fuerte - Mejorar mi hipoteca,$60000000,85%,10 años,"$15,504.49",9.65%,Fija,13.5%,"$8,022.89",Mensual
+112,Hipoteca Fuerte - Mejorar mi hipoteca,$70000000,85%,10 años,"$17,972.23",9.65%,Fija,13.3%,"$9,301.87",Mensual
+113,Hipoteca Fuerte - Mejorar mi hipoteca,$80000000,85%,10 años,"$20,439.98",9.65%,Fija,13.1%,"$10,580.85",Mensual
+114,Hipoteca Fuerte - Mejorar mi hipoteca,$90000000,85%,10 años,"$22,907.72",9.65%,Fija,13%,"$11,859.83",Mensual
+115,Hipoteca Fuerte - Mejorar mi hipoteca,$100000000,85%,10 años,"$25,375.48",9.65%,Fija,12.9%,"$13,138.82",Mensual
+116,Hipoteca Fuerte - Mejorar mi hipoteca,$110000000,85%,10 años,"$27,843.22",9.65%,Fija,12.8%,"$14,417.80",Mensual
+117,Hipoteca Fuerte - Mejorar mi hipoteca,$120000000,85%,10 años,"$30,310.96",9.65%,Fija,12.8%,"$15,696.77",Mensual
+118,Hipoteca Fuerte - Mejorar mi hipoteca,$130000000,85%,10 años,"$32,778.73",9.65%,Fija,12.7%,"$16,975.76",Mensual
+119,Hipoteca Fuerte - Mejorar mi hipoteca,$140000000,85%,10 años,"$35,246.47",9.65%,Fija,12.7%,"$18,254.74",Mensual
+120,Hipoteca Fuerte - Mejorar mi hipoteca,$150000000,85%,10 años,,9.65%,Fija,12.6%,"$19,533.72",Mensual
+121,Hipoteca Fuerte - Mejorar mi hipoteca,$40000000,85%,15 años,"$8,873.57",9.65%,Fija,13.7%,"$4,621.12",Mensual
+122,Hipoteca Fuerte - Mejorar mi hipoteca,$50000000,85%,15 años,"$10,917.49",9.65%,Fija,13.4%,"$5,689.16",Mensual
+123,Hipoteca Fuerte - Mejorar mi hipoteca,$60000000,85%,15 años,"$12,961.37",9.65%,Fija,13.1%,"$6,757.19",Mensual
+124,Hipoteca Fuerte - Mejorar mi hipoteca,$70000000,85%,15 años,"$15,005.27",9.65%,Fija,13%,"$7,825.23",Mensual
+125,Hipoteca Fuerte - Mejorar mi hipoteca,$80000000,85%,15 años,"$17,049.18",9.65%,Fija,12.8%,"$8,893.26",Mensual
+126,Hipoteca Fuerte - Mejorar mi hipoteca,$90000000,85%,15 años,"$19,093.06",9.65%,Fija,12.7%,"$9,961.28",Mensual
+127,Hipoteca Fuerte - Mejorar mi hipoteca,$100000000,85%,15 años,"$21,136.96",9.65%,Fija,12.7%,"$11,029.32",Mensual
+128,Hipoteca Fuerte - Mejorar mi hipoteca,$110000000,85%,15 años,"$23,180.86",9.65%,Fija,12.6%,"$12,097.35",Mensual
+129,Hipoteca Fuerte - Mejorar mi hipoteca,$120000000,85%,15 años,"$25,224.74",9.65%,Fija,12.5%,"$13,165.37",Mensual
+130,Hipoteca Fuerte - Mejorar mi hipoteca,$130000000,85%,15 años,"$27,268.65",9.65%,Fija,12.5%,"$14,233.41",Mensual
+131,Hipoteca Fuerte - Mejorar mi hipoteca,$140000000,85%,15 años,"$29,312.53",9.65%,Fija,12.4%,"$15,301.44",Mensual
+132,Hipoteca Fuerte - Mejorar mi hipoteca,$150000000,85%,15 años,"$8,222.44",9.45%,Fija,13.3%,"$4,111.22",Mensual
+133,Hipoteca Fuerte - Mejorar mi hipoteca,$40000000,85%,20 años,"$8,113.91",9.45%,Fija,13.3%,"$4,192.61",Mensual
+134,Hipoteca Fuerte - Mejorar mi hipoteca,$50000000,85%,20 años,"$9,967.89",9.45%,Fija,12.9%,"$5,153.52",Mensual
+135,Hipoteca Fuerte - Mejorar mi hipoteca,$60000000,85%,20 años,"$11,821.87",9.45%,Fija,12.7%,"$6,114.43",Mensual
+136,Hipoteca Fuerte - Mejorar mi hipoteca,$70000000,85%,20 años,"$13,675.85",9.45%,Fija,12.5%,"$7,075.33",Mensual
+137,Hipoteca Fuerte - Mejorar mi hipoteca,$80000000,85%,20 años,,9.45%,Fija,12.4%,"$8,036.24",Mensual
+138,Hipoteca Fuerte - Mejorar mi hipoteca,$90000000,85%,20 años,,9.45%,Fija,12.3%,"$8,997.13",Mensual
+139,Hipoteca Fuerte - Mejorar mi hipoteca,$100000000,85%,20 años,"$19,237.80",9.45%,Fija,12.2%,"$9,958.05",Mensual
+140,Hipoteca Fuerte - Mejorar mi hipoteca,$110000000,85%,20 años,,9.45%,Fija,12.2%,"$10,918.95",Mensual
+141,Hipoteca Fuerte - Mejorar mi hipoteca,$120000000,85%,20 años,,9.45%,Fija,12.1%,"$11,879.85",Mensual
+142,Hipoteca Fuerte - Mejorar mi hipoteca,$130000000,85%,20 años,"$24,799.73",9.45%,Fija,12.1%,"$12,840.76",Mensual
+143,Hipoteca Fuerte - Mejorar mi hipoteca,$140000000,85%,20 años,,9.45%,Fija,12%,"$13,801.66",Mensual
+144,Hipoteca Fuerte - Mejorar mi hipoteca,$150000000,85%,20 años,"$28,507.67",9.45%,Fija,12%,"$14,762.56",Mensual
+145,Más por Menos - Mejorar mi hipoteca con Remodelación,$40000000,70%,15 años,"$7,091.84",11.30%,Variable,15.6%,"$3,545.92",Mensual
+146,Más por Menos - Mejorar mi hipoteca con Remodelación,$50000000,70%,15 años,"$8,715.32",11.30%,Variable,15.3%,"$4,357.66",Mensual
+147,Más por Menos - Mejorar mi hipoteca con Remodelación,$60000000,70%,15 años,"$10,338.78",11.30%,Variable,15%,"$5,169.39",Mensual
+148,Más por Menos - Mejorar mi hipoteca con Remodelación,$70000000,70%,15 años,"$11,962.24",11.30%,Variable,14.9%,"$5,981.12",Mensual
+149,Más por Menos - Mejorar mi hipoteca con Remodelación,$80000000,70%,15 años,"$13,585.70",11.30%,Variable,14.8%,"$6,792.85",Mensual
+150,Más por Menos - Mejorar mi hipoteca con Remodelación,$90000000,70%,15 años,"$15,209.16",11.30%,Variable,14.7%,"$7,604.58",Mensual
+151,Más por Menos - Mejorar mi hipoteca con Remodelación,$100000000,70%,15 años,"$16,832.62",11.30%,Variable,14.6%,"$8,416.31",Mensual
+152,Más por Menos - Mejorar mi hipoteca con Remodelación,$110000000,70%,15 años,"$18,456.08",11.30%,Variable,14.5%,"$9,228.04",Mensual
+153,Más por Menos - Mejorar mi hipoteca con Remodelación,$120000000,70%,15 años,"$20,079.54",11.30%,Variable,14.5%,"$10,039.77",Mensual
+154,Más por Menos - Mejorar mi hipoteca con Remodelación,$130000000,70%,15 años,"$21,703.02",11.30%,Variable,14.4%,"$10,851.51",Mensual
+155,Más por Menos - Mejorar mi hipoteca con Remodelación,$140000000,70%,15 años,"$23,326.48",11.30%,Variable,14.4%,"$11,663.24",Mensual
+156,Más por Menos - Mejorar mi hipoteca con Remodelación,$150000000,70%,15 años,"$24,949.94",11.30%,Variable,14.3%,"$12,474.97",Mensual
+157,Más por Menos - Mejorar mi hipoteca con Remodelación,$40000000,70%,20 años,"$6,503.84",11.30%,Variable,15.4%,"$3,251.92",Mensual
+158,Más por Menos - Mejorar mi hipoteca con Remodelación,$50000000,70%,20 años,"$7,980.32",11.30%,Variable,15.1%,"$3,990.16",Mensual
+159,Más por Menos - Mejorar mi hipoteca con Remodelación,$60000000,70%,20 años,"$9,456.78",11.30%,Variable,14.8%,"$4,728.39",Mensual
+160,Más por Menos - Mejorar mi hipoteca con Remodelación,$70000000,70%,20 años,"$9,456.78",11.30%,Variable,14.9%,"$4,728.39",Mensual
+161,Más por Menos - Mejorar mi hipoteca con Remodelación,$80000000,70%,20 años,"$12,409.70",11.30%,Variable,14.6%,"$6,204.85",Mensual
+162,Más por Menos - Mejorar mi hipoteca con Remodelación,$90000000,70%,20 años,"$13,886.16",11.30%,Variable,14.5%,"$6,943.08",Mensual
+163,Más por Menos - Mejorar mi hipoteca con Remodelación,$100000000,70%,20 años,"$15,362.62",11.30%,Variable,14.4%,"$7,681.31",Mensual
+164,Más por Menos - Mejorar mi hipoteca con Remodelación,$110000000,70%,20 años,"$16,839.08",11.30%,Variable,14.3%,"$8,419.54",Mensual
+165,Más por Menos - Mejorar mi hipoteca con Remodelación,$120000000,70%,20 años,"$18,315.54",11.30%,Variable,14.3%,"$9,157.77",Mensual
+166,Más por Menos - Mejorar mi hipoteca con Remodelación,$130000000,70%,20 años,"$18,315.54",11.30%,Variable,14.3%,"$9,157.77",Mensual
+167,Más por Menos - Mejorar mi hipoteca con Remodelación,$140000000,70%,20 años,"$21,268.48",11.30%,Variable,14.2%,"$10,634.24",Mensual
+168,Más por Menos - Mejorar mi hipoteca con Remodelación,$150000000,70%,20 años,"$22,744.94",11.30%,Variable,14.2%,"$11,372.47",Mensual
+169,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$40000000,70%,5 años,"$13,026.50",9.65%,Fija,15.3%,"$6,541.05",Mensual
+170,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$50000000,70%,5 años,"$16,108.64",9.65%,Fija,14.8%,"$8,089.07",Mensual
+171,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$60000000,70%,5 años,"$19,190.76",9.65%,Fija,14.4%,"$9,637.08",Mensual
+172,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$70000000,70%,5 años,"$19,190.76",9.65%,Fija,14.4%,"$9,637.08",Mensual
+173,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$80000000,70%,5 años,"$19,190.76",9.65%,Fija,14.5%,"$9,637.08",Mensual
+174,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$90000000,70%,5 años,"$28,437.12",9.65%,Fija,13.7%,"$14,281.11",Mensual
+175,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$100000000,70%,5 años,"$31,519.24",9.65%,Fija,13.6%,"$15,829.12",Mensual
+176,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$110000000,70%,5 años,"$34,601.38",9.65%,Fija,13.5%,"$17,377.13",Mensual
+177,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$120000000,70%,5 años,"$37,683.50",9.65%,Fija,13.4%,"$18,925.15",Mensual
+178,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$130000000,70%,5 años,"$40,765.64",9.65%,Fija,13.3%,"$20,473.17",Mensual
+179,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$140000000,70%,5 años,"$43,847.76",9.65%,Fija,13.3%,"$22,021.18",Mensual
+180,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$150000000,70%,5 años,"$46,929.88",9.65%,Fija,13.2%,"$23,569.19",Mensual
+181,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$40000000,70%,10 años,"$8,514.22",9.65%,Fija,14.6%,"$4,288.31",Mensual
+182,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$50000000,70%,10 años,"$10,468.30",9.65%,Fija,14.1%,"$5,273.15",Mensual
+183,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$60000000,70%,10 años,"$12,422.36",9.65%,Fija,13.8%,"$6,257.97",Mensual
+184,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$70000000,70%,10 años,"$12,422.36",9.65%,Fija,13.8%,"$6,257.97",Mensual
+185,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$80000000,70%,10 años,"$16,330.48",9.65%,Fija,13.4%,"$8,227.63",Mensual
+186,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$90000000,70%,10 años,"$18,284.52",9.65%,Fija,13.2%,"$9,212.45",Mensual
+187,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$100000000,70%,10 años,"$20,238.58",9.65%,Fija,13.1%,"$10,197.28",Mensual
+188,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$110000000,70%,10 años,"$22,192.64",9.65%,Fija,13%,"$11,182.11",Mensual
+189,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$120000000,70%,10 años,"$24,146.70",9.65%,Fija,12.9%,"$12,166.93",Mensual
+190,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$130000000,70%,10 años,"$24,146.70",9.65%,Fija,13%,"$12,166.93",Mensual
+191,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$140000000,70%,10 años,"$28,054.82",9.65%,Fija,12.8%,"$14,136.60",Mensual
+192,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$150000000,70%,10 años,"$30,008.88",9.65%,Fija,12.8%,"$15,121.43",Mensual
+193,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$40000000,70%,15 años,"$7,118.00",9.65%,Fija,14.2%,"$3,593.41",Mensual
+194,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$50000000,70%,15 años,"$8,723.02",9.65%,Fija,13.7%,"$4,404.53",Mensual
+195,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$60000000,70%,15 años,"$10,328.04",9.65%,Fija,13.4%,"$5,215.63",Mensual
+196,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$70000000,70%,15 años,"$10,328.04",9.65%,Fija,13.4%,"$5,215.63",Mensual
+197,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$80000000,70%,15 años,"$13,538.04",9.65%,Fija,13%,"$6,837.84",Mensual
+198,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$90000000,70%,15 años,"$15,143.04",9.65%,Fija,12.9%,"$7,648.94",Mensual
+199,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$100000000,70%,15 años,"$15,143.04",9.65%,Fija,12.9%,"$7,648.94",Mensual
+200,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$110000000,70%,15 años,"$18,353.04",9.65%,Fija,12.7%,"$9,271.15",Mensual
+201,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$120000000,70%,15 años,"$19,958.04",9.65%,Fija,12.7%,"$10,082.25",Mensual
+202,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$130000000,70%,15 años,"$21,563.06",9.65%,Fija,12.6%,"$10,893.37",Mensual
+203,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$140000000,70%,15 años,,9.65%,Fija,12.6%,"$11,704.47",Mensual
+204,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$150000000,70%,15 años,"$24,773.06",9.65%,Fija,12.5%,"$12,515.57",Mensual
+205,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$40000000,70%,20 años,"$6,492.40",9.65%,Fija,13.8%,"$3,283.45",Mensual
+206,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$50000000,70%,20 años,"$7,941.02",9.65%,Fija,13.4%,"$4,017.07",Mensual
+207,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$60000000,70%,20 años,"$9,389.62",9.65%,Fija,13.2%,"$4,750.68",Mensual
+208,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$70000000,70%,20 años,"$10,838.22",9.65%,Fija,13%,"$5,484.30",Mensual
+209,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$80000000,70%,20 años,"$12,286.82",9.65%,Fija,12.8%,"$6,217.91",Mensual
+210,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$90000000,70%,20 años,"$13,735.42",9.65%,Fija,12.7%,"$6,951.52",Mensual
+211,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$100000000,70%,20 años,,9.65%,Fija,12.6%,"$7,685.13",Mensual
+212,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$110000000,70%,20 años,"$16,632.62",9.65%,Fija,12.5%,"$8,418.75",Mensual
+213,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$120000000,70%,20 años,"$18,081.22",9.65%,Fija,12.5%,"$9,152.36",Mensual
+214,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$130000000,70%,20 años,"$19,529.84",9.65%,Fija,12.4%,"$9,885.98",Mensual
+215,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$140000000,70%,20 años,,9.65%,Fija,12.4%,"$10,619.59",Mensual
+216,Hipoteca Fuerte - Mejorar mi hipoteca con Remodelación,$150000000,70%,20 años,"$22,427.04",9.65%,Fija,12.3%,"$11,353.21",Mensual
+217,Más por Menos - Construir,$50000000,50%,15 años,"$8,796.48",11.30%,Variable,15.9%,"$4,398.24",Mensual
+218,Más por Menos - Construir,$60000000,50%,15 años,"$7,625.28",11.30%,Variable,16.2%,"$3,812.64",Mensual
+219,Más por Menos - Construir,$70000000,50%,15 años,"$8,796.48",11.30%,Variable,15.9%,"$4,398.24",Mensual
+220,Más por Menos - Construir,$80000000,50%,15 años,"$9,967.70",11.30%,Variable,15.7%,"$4,983.85",Mensual
+221,Más por Menos - Construir,$90000000,50%,15 años,"$11,138.90",11.30%,Variable,15.6%,"$5,569.45",Mensual
+222,Más por Menos - Construir,$100000000,50%,15 años,"$12,310.12",11.30%,Variable,15.5%,"$6,155.06",Mensual
+223,Más por Menos - Construir,$110000000,50%,15 años,"$13,481.34",11.30%,Variable,15.3%,"$6,740.67",Mensual
+224,Más por Menos - Construir,$120000000,50%,15 años,"$14,652.54",11.30%,Variable,15.3%,"$7,326.27",Mensual
+225,Más por Menos - Construir,$130000000,50%,15 años,"$14,652.54",11.30%,Variable,15.3%,"$7,326.27",Mensual
+226,Más por Menos - Construir,$140000000,50%,15 años,"$14,652.54",11.30%,Variable,15.3%,"$7,326.27",Mensual
+227,Más por Menos - Construir,$150000000,50%,15 años,"$18,166.18",11.30%,Variable,15.1%,"$9,083.09",Mensual
+228,Más por Menos - Construir,$160000000,50%,15 años,"$18,166.18",11.30%,Variable,15.1%,"$9,083.09",Mensual
+229,Más por Menos - Construir,$50000000,50%,20 años,"$16,575.44",11.30%,Variable,14.8%,"$8,287.72",Mensual
+230,Más por Menos - Construir,$60000000,50%,20 años,"$16,575.44",11.30%,Variable,14.8%,"$8,287.72",Mensual
+231,Más por Menos - Construir,$70000000,50%,20 años,"$8,054.14",11.30%,Variable,15.6%,"$4,027.07",Mensual
+232,Más por Menos - Construir,$80000000,50%,20 años,"$8,054.14",11.30%,Variable,15.6%,"$4,027.07",Mensual
+233,Más por Menos - Construir,$90000000,50%,20 años,"$10,184.46",11.30%,Variable,15.3%,"$5,092.23",Mensual
+234,Más por Menos - Construir,$100000000,50%,20 años,"$11,249.62",11.30%,Variable,15.2%,"$5,624.81",Mensual
+235,Más por Menos - Construir,$110000000,50%,20 años,"$12,314.80",11.30%,Variable,15.1%,"$6,157.40",Mensual
+236,Más por Menos - Construir,$120000000,50%,20 años,"$13,379.94",11.30%,Variable,15%,"$6,689.97",Mensual
+237,Más por Menos - Construir,$130000000,50%,20 años,"$14,445.12",11.30%,Variable,15%,"$7,222.56",Mensual
+238,Más por Menos - Construir,$140000000,50%,20 años,"$14,445.12",11.30%,Variable,15%,"$7,222.56",Mensual
+239,Más por Menos - Construir,$150000000,50%,20 años,"$16,575.44",11.30%,Variable,14.9%,"$8,287.72",Mensual
+240,Más por Menos - Construir,$160000000,50%,20 años,"$17,640.60",11.30%,Variable,14.8%,"$8,820.30",Mensual
+241,Hipoteca Fuerte - Construir,$50000000,70%,5 años,"$16,262.72",9.90%,Fija,16.1%,"$8,210.47",Mensual
+242,Hipoteca Fuerte - Construir,$60000000,70%,5 años,"$19,375.66",9.90%,Fija,15.7%,"$9,782.76",Mensual
+243,Hipoteca Fuerte - Construir,$70000000,70%,5 años,"$22,488.62",9.90%,Fija,15.4%,"$11,355.06",Mensual
+244,Hipoteca Fuerte - Construir,$80000000,70%,5 años,"$25,601.56",9.90%,Fija,15.2%,"$12,927.35",Mensual
+245,Hipoteca Fuerte - Construir,$90000000,70%,5 años,"$28,714.52",9.90%,Fija,15%,"$14,499.65",Mensual
+246,Hipoteca Fuerte - Construir,$100000000,70%,5 años,"$31,827.48",9.90%,Fija,14.9%,"$16,071.94",Mensual
+247,Hipoteca Fuerte - Construir,$110000000,70%,5 años,"$34,940.42",9.90%,Fija,14.8%,"$17,644.23",Mensual
+248,Hipoteca Fuerte - Construir,$120000000,70%,5 años,"$38,053.38",9.90%,Fija,14.7%,"$19,216.53",Mensual
+249,Hipoteca Fuerte - Construir,$130000000,70%,5 años,"$41,166.30",9.90%,Fija,14.6%,"$20,788.82",Mensual
+250,Hipoteca Fuerte - Construir,$140000000,70%,5 años,"$44,279.26",9.90%,Fija,14.5%,"$22,361.12",Mensual
+251,Hipoteca Fuerte - Construir,$150000000,70%,5 años,"$47,392.20",9.90%,Fija,14.5%,"$23,933.41",Mensual
+252,Hipoteca Fuerte - Construir,$160000000,70%,5 años,"$50,505.14",9.90%,Fija,14.4%,"$25,505.70",Mensual
+253,Hipoteca Fuerte - Construir,$50000000,70%,10 años,"$10,566.00",9.90%,Fija,15.1%,"$5,371.86",Mensual
+254,Hipoteca Fuerte - Construir,$60000000,70%,10 años,"$12,539.58",9.90%,Fija,14.8%,"$6,376.43",Mensual
+255,Hipoteca Fuerte - Construir,$70000000,70%,10 años,"$14,513.20",9.90%,Fija,14.5%,"$7,381.01",Mensual
+256,Hipoteca Fuerte - Construir,$80000000,70%,10 años,"$16,486.78",9.90%,Fija,14.3%,"$8,385.58",Mensual
+257,Hipoteca Fuerte - Construir,$90000000,70%,10 años,,9.90%,Fija,14.2%,"$9,390.16",Mensual
+258,Hipoteca Fuerte - Construir,$100000000,70%,10 años,"$20,434.00",9.90%,Fija,14.1%,"$10,394.74",Mensual
+259,Hipoteca Fuerte - Construir,$110000000,70%,10 años,"$20,434.00",9.90%,Fija,14.1%,"$10,394.74",Mensual
+260,Hipoteca Fuerte - Construir,$120000000,70%,10 años,"$24,381.20",9.90%,Fija,13.9%,"$12,403.89",Mensual
+261,Hipoteca Fuerte - Construir,$130000000,70%,10 años,"$26,354.80",9.90%,Fija,13.8%,"$13,408.46",Mensual
+262,Hipoteca Fuerte - Construir,$140000000,70%,10 años,"$26,354.80",9.90%,Fija,13.8%,"$13,408.46",Mensual
+263,Hipoteca Fuerte - Construir,$150000000,70%,10 años,"$30,302.00",9.90%,Fija,13.7%,"$15,417.60",Mensual
+264,Hipoteca Fuerte - Construir,$160000000,70%,10 años,"$32,275.58",9.90%,Fija,13.7%,"$16,422.17",Mensual
+265,Hipoteca Fuerte - Construir,$50000000,70%,15 años,"$8,803.26",9.90%,Fija,14.6%,"$4,499.72",Mensual
+266,Hipoteca Fuerte - Construir,$60000000,70%,15 años,"$10,424.32",9.90%,Fija,14.3%,"$5,329.86",Mensual
+267,Hipoteca Fuerte - Construir,$70000000,70%,15 años,"$12,045.38",9.90%,Fija,14%,"$6,160.01",Mensual
+268,Hipoteca Fuerte - Construir,$80000000,70%,15 años,"$13,666.42",9.90%,Fija,13.9%,"$6,990.15",Mensual
+269,Hipoteca Fuerte - Construir,$90000000,70%,15 años,,9.90%,Fija,13.7%,"$7,820.30",Mensual
+270,Hipoteca Fuerte - Construir,$100000000,70%,15 años,"$16,908.56",9.90%,Fija,13.6%,"$8,650.45",Mensual
+271,Hipoteca Fuerte - Construir,$110000000,70%,15 años,,9.90%,Fija,13.5%,"$9,480.60",Mensual
+272,Hipoteca Fuerte - Construir,$120000000,70%,15 años,"$20,150.66",9.90%,Fija,13.5%,"$10,310.75",Mensual
+273,Hipoteca Fuerte - Construir,$130000000,70%,15 años,"$21,771.70",9.90%,Fija,13.4%,"$11,140.89",Mensual
+274,Hipoteca Fuerte - Construir,$140000000,70%,15 años,"$21,771.70",9.90%,Fija,13.4%,"$11,140.89",Mensual
+275,Hipoteca Fuerte - Construir,$150000000,70%,15 años,"$25,013.82",9.90%,Fija,13.3%,"$12,801.18",Mensual
+276,Hipoteca Fuerte - Construir,$160000000,70%,15 años,"$26,634.86",9.90%,Fija,13.3%,"$13,631.32",Mensual
+277,Hipoteca Fuerte - Construir,$50000000,70%,20 años,,9.90%,Fija,14.2%,"$4,112.92",Mensual
+278,Hipoteca Fuerte - Construir,$60000000,70%,20 años,"$9,476.52",9.90%,Fija,14%,"$4,865.70",Mensual
+279,Hipoteca Fuerte - Construir,$70000000,70%,20 años,"$8,222.44",9.45%,Fija,13.3%,"$4,111.22",Mensual
+280,Hipoteca Fuerte - Construir,$80000000,90%,20 años,"$15,746.90",9.45%,Fija,12.8%,"$7,873.45",Mensual
+281,Hipoteca Fuerte - Construir,$90000000,70%,20 años,"$13,865.80",9.45%,Fija,13%,"$6,932.90",Mensual
+282,Hipoteca Fuerte - Construir,$100000000,70%,20 años,"$15,328.88",9.45%,Fija,12.9%,"$7,664.44",Mensual
+283,Hipoteca Fuerte - Construir,$110000000,70%,20 años,"$16,791.96",9.45%,Fija,12.8%,"$8,395.98",Mensual
+284,Hipoteca Fuerte - Construir,$120000000,70%,20 años,"$18,255.06",9.45%,Fija,12.7%,"$9,127.53",Mensual
+285,Hipoteca Fuerte - Construir,$130000000,70%,20 años,"$8,222.44",9.45%,Fija,13.3%,"$4,111.22",Mensual
+286,Hipoteca Fuerte - Construir,$140000000,70%,20 años,"$21,181.24",9.45%,Fija,12.6%,"$10,590.62",Mensual
+287,Hipoteca Fuerte - Construir,$150000000,70%,20 años,"$22,644.32",9.45%,Fija,12.6%,"$11,322.16",Mensual
+288,Hipoteca Fuerte - Construir,$160000000,70%,20 años,,9.45%,Fija,12.5%,"$12,053.70",Mensual
+289,Más por Menos - Remodelar,$50000000,30%,15 años,"$8,222.44",9.45%,Variable,13.3%,"$4,111.22",Mensual
+290,Más por Menos - Remodelar,$60000000,30%,15 años,"$4,814.38",11.30%,Variable,16.9%,"$2,407.19",Mensual
+291,Más por Menos - Remodelar,$70000000,30%,15 años,"$5,517.08",11.30%,Variable,16.5%,"$2,758.54",Mensual
+292,Más por Menos - Remodelar,$80000000,30%,15 años,"$6,219.82",11.30%,Variable,16.3%,"$3,109.91",Mensual
+293,Más por Menos - Remodelar,$90000000,30%,15 años,"$6,922.52",11.30%,Variable,16%,"$3,461.26",Mensual
+294,Más por Menos - Remodelar,$100000000,30%,15 años,"$7,625.28",11.30%,Variable,15.8%,"$3,812.64",Mensual
+295,Más por Menos - Remodelar,$110000000,30%,15 años,"$8,328.02",11.30%,Variable,15.7%,"$4,164.01",Mensual
+296,Más por Menos - Remodelar,$120000000,30%,15 años,"$8,222.44",9.45%,Variable,13.3%,"$4,111.22",Mensual
+297,Más por Menos - Remodelar,$130000000,90%,15 años,"$28,004.34",11.30%,Variable,14.5%,"$14,002.17",Mensual
+298,Más por Menos - Remodelar,$140000000,30%,15 años,"$10,436.16",11.30%,Variable,15.3%,"$5,218.08",Mensual
+299,Más por Menos - Remodelar,$150000000,30%,15 años,"$11,138.90",11.30%,Variable,15.3%,"$5,569.45",Mensual
+300,Más por Menos - Remodelar,$160000000,30%,15 años,"$11,841.66",11.30%,Variable,15.2%,"$5,920.83",Mensual
+301,Más por Menos - Remodelar,$50000000,30%,20 años,"$3,793.50",11.30%,Variable,17%,"$1,896.75",Mensual
+302,Más por Menos - Remodelar,$60000000,30%,20 años,"$4,432.60",11.30%,Variable,16.5%,"$2,216.30",Mensual
+303,Más por Menos - Remodelar,$70000000,30%,20 años,"$5,071.68",11.30%,Variable,16.2%,"$2,535.84",Mensual
+304,Más por Menos - Remodelar,$80000000,30%,20 años,"$5,710.78",11.30%,Variable,15.9%,"$2,855.39",Mensual
+305,Más por Menos - Remodelar,$90000000,30%,20 años,"$5,710.78",11.30%,Variable,15.9%,"$2,855.39",Mensual
+306,Más por Menos - Remodelar,$100000000,30%,20 años,"$6,988.98",11.30%,Variable,15.5%,"$3,494.49",Mensual
+307,Más por Menos - Remodelar,$110000000,30%,20 años,"$7,628.08",11.30%,Variable,15.4%,"$3,814.04",Mensual
+308,Más por Menos - Remodelar,$120000000,30%,20 años,"$8,267.16",11.30%,Variable,15.3%,"$4,133.58",Mensual
+309,Más por Menos - Remodelar,$130000000,30%,20 años,"$8,906.26",11.30%,Variable,15.2%,"$4,453.13",Mensual
+310,Más por Menos - Remodelar,$140000000,30%,20 años,"$9,545.34",11.30%,Variable,15.1%,"$4,772.67",Mensual
+311,Más por Menos - Remodelar,$150000000,30%,20 años,"$10,184.46",11.30%,Variable,15%,"$5,092.23",Mensual
+312,Más por Menos - Remodelar,$160000000,30%,20 años,"$10,823.58",11.30%,Variable,15%,"$5,411.79",Mensual
+313,Hipoteca Fuerte - Remodelar,$50000000,30%,5 años,"$22,043.94",9.90%,Fija,14.8%,"$11,130.45",Mensual
+314,Hipoteca Fuerte - Remodelar,$60000000,30%,5 años,"$8,702.72",9.90%,Fija,18%,"$4,392.05",Mensual
+315,Hipoteca Fuerte - Remodelar,$70000000,30%,5 años,"$10,036.84",9.90%,Fija,17.4%,"$5,065.88",Mensual
+316,Hipoteca Fuerte - Remodelar,$80000000,30%,5 años,"$11,370.96",9.90%,Fija,16.9%,"$5,739.72",Mensual
+317,Hipoteca Fuerte - Remodelar,$90000000,30%,5 años,"$12,705.06",9.90%,Fija,16.5%,"$6,413.55",Mensual
+318,Hipoteca Fuerte - Remodelar,$100000000,30%,5 años,"$14,039.20",9.90%,Fija,16.2%,"$7,087.41",Mensual
+319,Hipoteca Fuerte - Remodelar,$110000000,30%,5 años,"$15,373.34",9.90%,Fija,15.9%,"$7,761.25",Mensual
+320,Hipoteca Fuerte - Remodelar,$120000000,30%,5 años,"$16,707.44",9.90%,Fija,15.7%,"$8,435.08",Mensual
+321,Hipoteca Fuerte - Remodelar,$130000000,30%,5 años,"$18,041.56",9.90%,Fija,15.5%,"$9,108.92",Mensual
+322,Hipoteca Fuerte - Remodelar,$140000000,30%,5 años,"$19,375.66",9.90%,Fija,15.4%,"$9,782.76",Mensual
+323,Hipoteca Fuerte - Remodelar,$150000000,30%,5 años,"$20,709.80",9.90%,Fija,15.2%,"$10,456.60",Mensual
+324,Hipoteca Fuerte - Remodelar,$160000000,30%,5 años,"$22,043.94",9.90%,Fija,15.1%,"$11,130.45",Mensual
+325,Hipoteca Fuerte - Remodelar,$50000000,30%,10 años,,9.90%,Fija,17.4%,"$2,501.66",Mensual
+326,Hipoteca Fuerte - Remodelar,$60000000,30%,10 años,"$5,772.98",9.90%,Fija,16.7%,"$2,932.19",Mensual
+327,Hipoteca Fuerte - Remodelar,$70000000,30%,10 años,"$6,618.80",9.90%,Fija,16.1%,"$3,362.72",Mensual
+328,Hipoteca Fuerte - Remodelar,$80000000,30%,10 años,"$7,464.62",9.90%,Fija,15.7%,"$3,793.25",Mensual
+329,Hipoteca Fuerte - Remodelar,$90000000,30%,10 años,"$8,310.44",9.90%,Fija,15.4%,"$4,223.77",Mensual
+330,Hipoteca Fuerte - Remodelar,$100000000,30%,10 años,"$8,310.44",9.90%,Fija,15.4%,"$4,223.77",Mensual
+331,Hipoteca Fuerte - Remodelar,$110000000,30%,10 años,"$10,002.12",9.90%,Fija,14.9%,"$5,084.85",Mensual
+332,Hipoteca Fuerte - Remodelar,$120000000,30%,10 años,"$10,847.94",9.90%,Fija,14.7%,"$5,515.38",Mensual
+333,Hipoteca Fuerte - Remodelar,$130000000,30%,10 años,"$11,693.76",9.90%,Fija,14.6%,"$5,945.91",Mensual
+334,Hipoteca Fuerte - Remodelar,$140000000,30%,10 años,"$12,539.58",9.90%,Fija,14.4%,"$6,376.43",Mensual
+335,Hipoteca Fuerte - Remodelar,$150000000,30%,10 años,"$12,539.58",9.90%,Fija,14.5%,"$6,376.43",Mensual
+336,Hipoteca Fuerte - Remodelar,$160000000,30%,10 años,,9.90%,Fija,14.2%,"$7,237.51",Mensual
+337,Hipoteca Fuerte - Remodelar,$50000000,30%,15 años,"$4,171.70",9.90%,Fija,16.6%,"$2,127.88",Mensual
+338,Hipoteca Fuerte - Remodelar,$60000000,30%,15 años,"$4,866.44",9.90%,Fija,16%,"$2,483.66",Mensual
+339,Hipoteca Fuerte - Remodelar,$70000000,30%,15 años,"$5,561.16",9.90%,Fija,15.5%,"$2,839.43",Mensual
+340,Hipoteca Fuerte - Remodelar,$80000000,30%,15 años,"$6,255.90",9.90%,Fija,15.1%,"$3,195.21",Mensual
+341,Hipoteca Fuerte - Remodelar,$90000000,30%,15 años,"$6,950.62",9.90%,Fija,14.8%,"$3,550.98",Mensual
+342,Hipoteca Fuerte - Remodelar,$100000000,30%,15 años,"$7,645.38",9.90%,Fija,14.6%,"$3,906.77",Mensual
+343,Hipoteca Fuerte - Remodelar,$110000000,30%,15 años,"$8,340.12",9.90%,Fija,14.4%,"$4,262.55",Mensual
+344,Hipoteca Fuerte - Remodelar,$120000000,30%,15 años,"$8,340.12",9.90%,Fija,14.4%,"$4,262.55",Mensual
+345,Hipoteca Fuerte - Remodelar,$130000000,30%,15 años,"$9,729.58",9.90%,Fija,14.1%,"$4,974.09",Mensual
+346,Hipoteca Fuerte - Remodelar,$140000000,30%,15 años,"$10,424.32",9.90%,Fija,14%,"$5,329.86",Mensual
+347,Hipoteca Fuerte - Remodelar,$150000000,30%,15 años,"$11,119.06",9.90%,Fija,13.9%,"$5,685.64",Mensual
+348,Hipoteca Fuerte - Remodelar,$160000000,30%,15 años,"$11,119.06",9.90%,Fija,13.9%,"$5,685.64",Mensual
+349,Hipoteca Fuerte - Remodelar,$50000000,30%,20 años,"$10,103.56",9.90%,Fija,13.5%,"$5,188.32",Mensual
+350,Hipoteca Fuerte - Remodelar,$60000000,30%,20 años,"$4,460.24",9.90%,Fija,15.5%,"$2,284.74",Mensual
+351,Hipoteca Fuerte - Remodelar,$70000000,30%,20 años,"$5,087.26",9.90%,Fija,15.1%,"$2,607.35",Mensual
+352,Hipoteca Fuerte - Remodelar,$80000000,30%,20 años,"$5,714.30",9.90%,Fija,14.7%,"$2,929.97",Mensual
+353,Hipoteca Fuerte - Remodelar,$90000000,30%,20 años,"$6,341.32",9.90%,Fija,14.5%,"$3,252.59",Mensual
+354,Hipoteca Fuerte - Remodelar,$100000000,30%,20 años,"$6,341.32",9.90%,Fija,14.5%,"$3,252.59",Mensual
+355,Hipoteca Fuerte - Remodelar,$110000000,30%,20 años,"$7,595.42",9.90%,Fija,14%,"$3,897.85",Mensual
+356,Hipoteca Fuerte - Remodelar,$120000000,30%,20 años,"$8,222.44",9.90%,Fija,13.9%,"$4,220.46",Mensual
+357,Hipoteca Fuerte - Remodelar,$130000000,30%,20 años,"$8,849.50",9.90%,Fija,13.8%,"$4,543.09",Mensual
+358,Hipoteca Fuerte - Remodelar,$140000000,30%,20 años,"$9,476.52",9.90%,Fija,13.7%,"$4,865.70",Mensual
+359,Hipoteca Fuerte - Remodelar,$150000000,30%,20 años,"$10,103.56",9.90%,Fija,13.6%,"$5,188.32",Mensual
+360,Hipoteca Fuerte - Remodelar,$160000000,30%,20 años,"$10,730.62",9.90%,Fija,13.5%,"$5,510.96",Mensual
+361,Más por Menos - Terreno más construcción,$80000000,85%,15 años,"$20,658.13",11.30%,Variable,15.1%,"$8,263.25",Mensual
+362,Más por Menos - Terreno más construcción,$90000000,85%,15 años,"$23,146.93",11.30%,Variable,15%,"$9,258.77",Mensual
+363,Más por Menos - Terreno más construcción,$100000000,85%,15 años,"$25,635.75",11.30%,Variable,15%,"$10,254.30",Mensual
+364,Más por Menos - Terreno más construcción,$110000000,85%,15 años,"$28,124.58",11.30%,Variable,14.9%,"$11,249.83",Mensual
+365,Más por Menos - Terreno más construcción,$120000000,85%,15 años,"$30,613.40",11.30%,Variable,14.8%,"$12,245.36",Mensual
+366,Más por Menos - Terreno más construcción,$130000000,85%,15 años,"$33,102.25",11.30%,Variable,14.8%,"$13,240.90",Mensual
+367,Más por Menos - Terreno más construcción,$140000000,85%,15 años,"$35,591.08",11.30%,Variable,14.8%,"$14,236.43",Mensual
+368,Más por Menos - Terreno más construcción,$150000000,85%,15 años,"$38,079.90",11.30%,Variable,14.7%,"$15,231.96",Mensual
+369,Más por Menos - Terreno más construcción,$160000000,85%,15 años,"$40,568.70",11.30%,Variable,14.7%,"$16,227.48",Mensual
+370,Más por Menos - Terreno más construcción,$170000000,85%,15 años,"$43,057.53",11.30%,Variable,14.7%,"$17,223.01",Mensual
+371,Más por Menos - Terreno más construcción,$180000000,85%,15 años,"$45,546.38",11.30%,Variable,14.7%,"$18,218.55",Mensual
+372,Más por Menos - Terreno más construcción,$190000000,85%,15 años,"$45,546.38",11.30%,Variable,14.7%,"$18,218.55",Mensual
+373,Más por Menos - Terreno más construcción,$80000000,85%,20 años,"$18,855.28",11.30%,Variable,14.9%,"$7,542.11",Mensual
+374,Más por Menos - Terreno más construcción,$90000000,85%,20 años,"$21,118.73",11.30%,Variable,14.8%,"$8,447.49",Mensual
+375,Más por Menos - Terreno más construcción,$100000000,85%,20 años,"$23,382.20",11.30%,Variable,14.7%,"$9,352.88",Mensual
+376,Más por Menos - Terreno más construcción,$110000000,85%,20 años,"$25,645.65",11.30%,Variable,14.7%,"$10,258.26",Mensual
+377,Más por Menos - Terreno más construcción,$120000000,85%,20 años,"$27,909.13",11.30%,Variable,14.6%,"$11,163.65",Mensual
+378,Más por Menos - Terreno más construcción,$130000000,85%,20 años,"$30,172.63",11.30%,Variable,14.6%,"$12,069.05",Mensual
+379,Más por Menos - Terreno más construcción,$140000000,85%,20 años,"$32,436.08",11.30%,Variable,14.6%,"$12,974.43",Mensual
+380,Más por Menos - Terreno más construcción,$150000000,85%,20 años,"$34,699.55",11.30%,Variable,14.5%,"$13,879.82",Mensual
+381,Más por Menos - Terreno más construcción,$160000000,85%,20 años,"$36,963.00",11.30%,Variable,14.5%,"$14,785.20",Mensual
+382,Más por Menos - Terreno más construcción,$170000000,85%,20 años,"$39,226.48",11.30%,Variable,14.5%,"$15,690.59",Mensual
+383,Más por Menos - Terreno más construcción,$180000000,85%,20 años,"$41,489.95",11.30%,Variable,14.5%,"$16,595.98",Mensual
+384,Más por Menos - Terreno más construcción,$190000000,85%,20 años,"$43,753.45",11.30%,Variable,14.5%,"$17,501.38",Mensual
+385,Hipoteca Fuerte - Terreno más construcción,$80000000,85%,5 años,"$38,672.58",9.90%,Fija,14.8%,"$15,622.72",Mensual
+386,Hipoteca Fuerte - Terreno más construcción,$90000000,85%,5 años,"$43,397.58",9.90%,Fija,14.7%,"$17,531.93",Mensual
+387,Hipoteca Fuerte - Terreno más construcción,$100000000,85%,5 años,"$48,122.58",9.90%,Fija,14.6%,"$19,441.14",Mensual
+388,Hipoteca Fuerte - Terreno más construcción,$110000000,85%,5 años,"$52,847.58",9.90%,Fija,14.5%,"$21,350.35",Mensual
+389,Hipoteca Fuerte - Terreno más construcción,$120000000,85%,5 años,"$57,572.60",9.90%,Fija,14.4%,"$23,259.57",Mensual
+390,Hipoteca Fuerte - Terreno más construcción,$130000000,85%,5 años,"$62,297.63",9.90%,Fija,14.3%,"$25,168.79",Mensual
+391,Hipoteca Fuerte - Terreno más construcción,$140000000,85%,5 años,"$67,022.63",9.90%,Fija,14.3%,"$27,078.00",Mensual
+392,Hipoteca Fuerte - Terreno más construcción,$150000000,85%,5 años,"$71,747.63",9.90%,Fija,14.2%,"$28,987.21",Mensual
+393,Hipoteca Fuerte - Terreno más construcción,$160000000,85%,5 años,"$8,222.44",9.45%,Fija,13.3%,"$4,111.22",Mensual
+394,Hipoteca Fuerte - Terreno más construcción,$170000000,85%,5 años,"$81,197.63",9.45%,Fija,13.6%,"$32,479.05",Mensual
+395,Hipoteca Fuerte - Terreno más construcción,$180000000,85%,5 años,"$85,922.65",9.45%,Fija,13.6%,"$34,369.06",Mensual
+396,Hipoteca Fuerte - Terreno más construcción,$190000000,85%,5 años,"$90,647.68",9.45%,Fija,13.6%,"$36,259.07",Mensual
+397,Hipoteca Fuerte - Terreno más construcción,$80000000,85%,10 años,,9.45%,Fija,13.6%,"$9,935.06",Mensual
+398,Hipoteca Fuerte - Terreno más construcción,$90000000,85%,10 años,"$27,833.28",9.45%,Fija,13.4%,"$11,133.31",Mensual
+399,Hipoteca Fuerte - Terreno más construcción,$100000000,85%,10 años,"$30,828.90",9.45%,Fija,13.3%,"$12,331.56",Mensual
+400,Hipoteca Fuerte - Terreno más construcción,$110000000,85%,10 años,"$33,824.55",9.45%,Fija,13.2%,"$13,529.82",Mensual
+401,Hipoteca Fuerte - Terreno más construcción,$120000000,85%,10 años,"$36,820.20",9.45%,Fija,13.2%,"$14,728.08",Mensual
+402,Hipoteca Fuerte - Terreno más construcción,$130000000,85%,10 años,"$39,815.85",9.45%,Fija,13.1%,"$15,926.34",Mensual
+403,Hipoteca Fuerte - Terreno más construcción,$140000000,85%,10 años,"$42,811.50",9.45%,Fija,13.1%,"$17,124.60",Mensual
+404,Hipoteca Fuerte - Terreno más construcción,$150000000,85%,10 años,"$45,807.13",9.45%,Fija,13%,"$18,322.85",Mensual
+405,Hipoteca Fuerte - Terreno más construcción,$160000000,85%,10 años,"$48,802.75",9.45%,Fija,13%,"$19,521.10",Mensual
+406,Hipoteca Fuerte - Terreno más construcción,$170000000,85%,10 años,"$51,798.40",9.45%,Fija,13%,"$20,719.36",Mensual
+407,Hipoteca Fuerte - Terreno más construcción,$180000000,85%,10 años,"$54,794.05",9.45%,Fija,12.9%,"$21,917.62",Mensual
+408,Hipoteca Fuerte - Terreno más construcción,$190000000,85%,10 años,"$57,789.70",9.45%,Fija,12.9%,"$23,115.88",Mensual
+409,Hipoteca Fuerte - Terreno más construcción,$80000000,85%,15 años,,9.45%,Fija,13.1%,"$8,222.69",Mensual
+410,Hipoteca Fuerte - Terreno más construcción,$90000000,85%,15 años,"$23,017.25",9.45%,Fija,13%,"$9,206.90",Mensual
+411,Hipoteca Fuerte - Terreno más construcción,$100000000,85%,15 años,"$25,477.78",9.45%,Fija,12.9%,"$10,191.11",Mensual
+412,Hipoteca Fuerte - Terreno más construcción,$110000000,85%,15 años,,9.45%,Fija,12.9%,"$11,175.32",Mensual
+413,Hipoteca Fuerte - Terreno más construcción,$120000000,85%,15 años,"$30,398.85",9.45%,Fija,12.8%,"$12,159.54",Mensual
+414,Hipoteca Fuerte - Terreno más construcción,$130000000,85%,15 años,"$32,859.40",9.45%,Fija,12.8%,"$13,143.76",Mensual
+415,Hipoteca Fuerte - Terreno más construcción,$140000000,85%,15 años,"$35,319.90",9.45%,Fija,12.7%,"$14,127.96",Mensual
+416,Hipoteca Fuerte - Terreno más construcción,$150000000,85%,15 años,"$37,780.43",9.45%,Fija,12.7%,"$15,112.17",Mensual
+417,Hipoteca Fuerte - Terreno más construcción,$160000000,85%,15 años,"$40,240.95",9.45%,Fija,12.6%,"$16,096.38",Mensual
+418,Hipoteca Fuerte - Terreno más construcción,$170000000,85%,15 años,"$42,701.48",9.45%,Fija,12.6%,"$17,080.59",Mensual
+419,Hipoteca Fuerte - Terreno más construcción,$180000000,85%,15 años,"$8,222.44",9.45%,Fija,13.3%,"$4,111.22",Mensual
+420,Hipoteca Fuerte - Terreno más construcción,$190000000,85%,15 años,"$47,622.55",9.45%,Fija,12.6%,"$19,049.02",Mensual
+421,Hipoteca Fuerte - Terreno más construcción,$80000000,85%,20 años,"$43,066.93",9.45%,Fija,12.3%,"$17,226.77",Mensual
+422,Hipoteca Fuerte - Terreno más construcción,$90000000,85%,20 años,"$20,859.33",9.45%,Fija,12.8%,"$8,343.73",Mensual
+423,Hipoteca Fuerte - Terreno más construcción,$100000000,85%,20 años,"$23,080.08",9.45%,Fija,12.7%,"$9,232.03",Mensual
+424,Hipoteca Fuerte - Terreno más construcción,$110000000,85%,20 años,,9.45%,Fija,12.6%,"$10,120.33",Mensual
+425,Hipoteca Fuerte - Terreno más construcción,$120000000,85%,20 años,,9.45%,Fija,12.6%,"$11,008.64",Mensual
+426,Hipoteca Fuerte - Terreno más construcción,$130000000,85%,20 años,"$29,742.38",9.45%,Fija,12.5%,"$11,896.95",Mensual
+427,Hipoteca Fuerte - Terreno más construcción,$140000000,85%,20 años,,9.45%,Fija,12.5%,"$12,785.25",Mensual
+428,Hipoteca Fuerte - Terreno más construcción,$150000000,85%,20 años,"$34,183.88",9.45%,Fija,12.4%,"$13,673.55",Mensual
+429,Hipoteca Fuerte - Terreno más construcción,$160000000,85%,20 años,"$36,404.63",9.45%,Fija,12.4%,"$14,561.85",Mensual
+430,Hipoteca Fuerte - Terreno más construcción,$170000000,85%,20 años,"$38,625.38",9.45%,Fija,12.4%,"$15,450.15",Mensual
+431,Hipoteca Fuerte - Terreno más construcción,$180000000,85%,20 años,"$40,846.15",9.45%,Fija,12.4%,"$16,338.46",Mensual
+432,Hipoteca Fuerte - Terreno más construcción,$190000000,85%,20 años,,9.45%,Fija,12.3%,"$17,226.77",Mensual
+433,Más por Menos - Compraventa con terminación de obra,$40000000,90%,15 años,"$9,030.72",11.30%,Variable,15.7%,"$4,515.36",Mensual
+434,Más por Menos - Compraventa con terminación de obra,$50000000,90%,15 años,"$11,138.90",11.30%,Variable,15.4%,"$5,569.45",Mensual
+435,Más por Menos - Compraventa con terminación de obra,$60000000,90%,15 años,"$13,247.10",11.30%,Variable,15.2%,"$6,623.55",Mensual
+436,Más por Menos - Compraventa con terminación de obra,$70000000,90%,15 años,"$15,355.28",11.30%,Variable,15.1%,"$7,677.64",Mensual
+437,Más por Menos - Compraventa con terminación de obra,$80000000,90%,15 años,"$17,463.44",11.30%,Variable,15%,"$8,731.72",Mensual
+438,Más por Menos - Compraventa con terminación de obra,$90000000,90%,15 años,"$19,571.62",11.30%,Variable,14.9%,"$9,785.81",Mensual
+439,Más por Menos - Compraventa con terminación de obra,$100000000,90%,15 años,"$21,679.82",11.30%,Variable,14.8%,"$10,839.91",Mensual
+440,Más por Menos - Compraventa con terminación de obra,$110000000,90%,15 años,"$23,788.00",11.30%,Variable,14.8%,"$11,894.00",Mensual
+441,Más por Menos - Compraventa con terminación de obra,$120000000,90%,15 años,"$25,896.20",11.30%,Variable,14.7%,"$12,948.10",Mensual
+442,Más por Menos - Compraventa con terminación de obra,$130000000,90%,15 años,"$28,004.34",11.30%,Variable,14.7%,"$14,002.17",Mensual
+443,Más por Menos - Compraventa con terminación de obra,$140000000,90%,15 años,"$30,112.54",11.30%,Variable,14.6%,"$15,056.27",Mensual
+444,Más por Menos - Compraventa con terminación de obra,$150000000,90%,15 años,"$32,220.72",11.30%,Variable,14.6%,"$16,110.36",Mensual
+445,Más por Menos - Compraventa con terminación de obra,$40000000,90%,20 años,"$8,267.16",11.30%,Variable,15.4%,"$4,133.58",Mensual
+446,Más por Menos - Compraventa con terminación de obra,$50000000,90%,20 años,"$10,184.46",11.30%,Variable,15.1%,"$5,092.23",Mensual
+447,Más por Menos - Compraventa con terminación de obra,$60000000,90%,20 años,"$8,222.44",9.45%,Variable,13.3%,"$4,111.22",Mensual
+448,Más por Menos - Compraventa con terminación de obra,$70000000,90%,20 años,"$14,019.04",11.30%,Variable,14.8%,"$7,009.52",Mensual
+449,Más por Menos - Compraventa con terminación de obra,$80000000,90%,20 años,"$15,936.32",11.30%,Variable,14.8%,"$7,968.16",Mensual
+450,Más por Menos - Compraventa con terminación de obra,$90000000,90%,20 años,"$17,853.62",11.30%,Variable,14.7%,"$8,926.81",Mensual
+451,Más por Menos - Compraventa con terminación de obra,$100000000,90%,20 años,"$19,770.92",11.30%,Variable,14.6%,"$9,885.46",Mensual
+452,Más por Menos - Compraventa con terminación de obra,$110000000,90%,20 años,"$21,688.20",11.30%,Variable,14.6%,"$10,844.10",Mensual
+453,Más por Menos - Compraventa con terminación de obra,$120000000,90%,20 años,"$23,605.52",11.30%,Variable,14.5%,"$11,802.76",Mensual
+454,Más por Menos - Compraventa con terminación de obra,$130000000,90%,20 años,"$25,522.78",11.30%,Variable,14.5%,"$12,761.39",Mensual
+455,Más por Menos - Compraventa con terminación de obra,$140000000,90%,20 años,"$27,440.08",11.30%,Variable,14.5%,"$13,720.04",Mensual
+456,Más por Menos - Compraventa con terminación de obra,$150000000,90%,20 años,"$27,440.08",11.30%,Variable,14.4%,"$14,678.69",Mensual
+457,Hipoteca Fuerte - Compraventa con terminación de obra,$40000000,90%,5 años,"$16,707.44",9.90%,Fija,15.5%,"$8,435.08",Mensual
+458,Hipoteca Fuerte - Compraventa con terminación de obra,$50000000,90%,5 años,"$20,709.80",9.90%,Fija,15.1%,"$10,456.60",Mensual
+459,Hipoteca Fuerte - Compraventa con terminación de obra,$60000000,90%,5 años,"$24,712.16",9.90%,Fija,14.8%,"$12,478.13",Mensual
+460,Hipoteca Fuerte - Compraventa con terminación de obra,$70000000,90%,5 años,"$28,714.52",9.90%,Fija,14.6%,"$14,499.65",Mensual
+461,Hipoteca Fuerte - Compraventa con terminación de obra,$80000000,90%,5 años,"$32,716.88",9.90%,Fija,14.4%,"$16,521.16",Mensual
+462,Hipoteca Fuerte - Compraventa con terminación de obra,$90000000,90%,5 años,"$36,719.22",9.90%,Fija,14.3%,"$18,542.68",Mensual
+463,Hipoteca Fuerte - Compraventa con terminación de obra,$100000000,90%,5 años,"$40,721.60",9.90%,Fija,14.2%,"$20,564.21",Mensual
+464,Hipoteca Fuerte - Compraventa con terminación de obra,$110000000,90%,5 años,"$44,723.96",9.90%,Fija,14.1%,"$22,585.73",Mensual
+465,Hipoteca Fuerte - Compraventa con terminación de obra,$120000000,90%,5 años,"$48,726.32",9.90%,Fija,14.1%,"$24,607.26",Mensual
+466,Hipoteca Fuerte - Compraventa con terminación de obra,$130000000,90%,5 años,"$52,728.66",9.90%,Fija,14%,"$26,628.76",Mensual
+467,Hipoteca Fuerte - Compraventa con terminación de obra,$140000000,90%,5 años,"$56,731.04",9.90%,Fija,14%,"$28,650.29",Mensual
+468,Hipoteca Fuerte - Compraventa con terminación de obra,$150000000,90%,5 años,"$60,733.40",9.90%,Fija,13.9%,"$30,671.81",Mensual
+469,Hipoteca Fuerte - Compraventa con terminación de obra,$40000000,90%,10 años,"$10,847.94",9.90%,Fija,14.8%,"$5,515.38",Mensual
+470,Hipoteca Fuerte - Compraventa con terminación de obra,$50000000,90%,10 años,"$13,385.42",9.90%,Fija,14.4%,"$6,806.97",Mensual
+471,Hipoteca Fuerte - Compraventa con terminación de obra,$60000000,90%,10 años,"$15,922.92",9.90%,Fija,14.1%,"$8,098.57",Mensual
+472,Hipoteca Fuerte - Compraventa con terminación de obra,$70000000,90%,10 años,"$18,460.40",9.90%,Fija,14%,"$9,390.16",Mensual
+473,Hipoteca Fuerte - Compraventa con terminación de obra,$80000000,90%,10 años,"$20,997.88",9.90%,Fija,13.8%,"$10,681.75",Mensual
+474,Hipoteca Fuerte - Compraventa con terminación de obra,$90000000,90%,10 años,"$23,535.36",9.90%,Fija,13.7%,"$11,973.34",Mensual
+475,Hipoteca Fuerte - Compraventa con terminación de obra,$100000000,90%,10 años,"$26,072.84",9.90%,Fija,13.6%,"$13,264.95",Mensual
+476,Hipoteca Fuerte - Compraventa con terminación de obra,$110000000,90%,10 años,"$28,610.32",9.90%,Fija,13.5%,"$14,556.54",Mensual
+477,Hipoteca Fuerte - Compraventa con terminación de obra,$120000000,90%,10 años,"$31,147.82",9.90%,Fija,13.5%,"$15,848.14",Mensual
+478,Hipoteca Fuerte - Compraventa con terminación de obra,$130000000,90%,10 años,"$33,685.28",9.90%,Fija,13.4%,"$17,139.72",Mensual
+479,Hipoteca Fuerte - Compraventa con terminación de obra,$140000000,90%,10 años,"$36,222.78",9.90%,Fija,13.4%,"$18,431.32",Mensual
+480,Hipoteca Fuerte - Compraventa con terminación de obra,$150000000,90%,10 años,"$38,760.26",9.90%,Fija,13.4%,"$19,722.91",Mensual
+481,Hipoteca Fuerte - Compraventa con terminación de obra,$40000000,90%,15 años,"$9,034.84",9.90%,Fija,14.3%,"$4,618.32",Mensual
+482,Hipoteca Fuerte - Compraventa con terminación de obra,$50000000,90%,15 años,"$11,119.06",9.90%,Fija,14%,"$5,685.64",Mensual
+483,Hipoteca Fuerte - Compraventa con terminación de obra,$60000000,90%,15 años,"$13,203.28",9.90%,Fija,13.8%,"$6,752.98",Mensual
+484,Hipoteca Fuerte - Compraventa con terminación de obra,$70000000,90%,15 años,"$15,287.48",9.90%,Fija,13.6%,"$7,820.30",Mensual
+485,Hipoteca Fuerte - Compraventa con terminación de obra,$80000000,90%,15 años,"$17,371.70",9.90%,Fija,13.5%,"$8,887.63",Mensual
+486,Hipoteca Fuerte - Compraventa con terminación de obra,$90000000,90%,15 años,"$19,455.90",9.90%,Fija,13.4%,"$9,954.96",Mensual
+487,Hipoteca Fuerte - Compraventa con terminación de obra,$100000000,90%,15 años,"$21,540.12",9.90%,Fija,13.3%,"$11,022.29",Mensual
+488,Hipoteca Fuerte - Compraventa con terminación de obra,$110000000,90%,15 años,"$23,624.34",9.90%,Fija,13.2%,"$12,089.62",Mensual
+489,Hipoteca Fuerte - Compraventa con terminación de obra,$120000000,90%,15 años,"$25,708.56",9.90%,Fija,13.2%,"$13,156.96",Mensual
+490,Hipoteca Fuerte - Compraventa con terminación de obra,$130000000,90%,15 años,"$27,792.74",9.90%,Fija,13.1%,"$14,224.27",Mensual
+491,Hipoteca Fuerte - Compraventa con terminación de obra,$140000000,90%,15 años,"$29,876.98",9.90%,Fija,13.1%,"$15,291.61",Mensual
+492,Hipoteca Fuerte - Compraventa con terminación de obra,$150000000,90%,15 años,"$31,961.18",9.90%,Fija,13%,"$16,358.94",Mensual
+493,Hipoteca Fuerte - Compraventa con terminación de obra,$40000000,90%,20 años,"$8,222.44",9.90%,Fija,14%,"$4,220.46",Mensual
+494,Hipoteca Fuerte - Compraventa con terminación de obra,$50000000,90%,20 años,"$10,103.56",9.90%,Fija,13.7%,"$5,188.32",Mensual
+495,Hipoteca Fuerte - Compraventa con terminación de obra,$60000000,90%,20 años,"$11,984.68",9.90%,Fija,13.5%,"$6,156.20",Mensual
+496,Hipoteca Fuerte - Compraventa con terminación de obra,$70000000,90%,20 años,"$13,865.80",9.90%,Fija,13.3%,"$7,124.06",Mensual
+497,Hipoteca Fuerte - Compraventa con terminación de obra,$80000000,90%,20 años,,9.90%,Fija,13.2%,"$8,091.92",Mensual
+498,Hipoteca Fuerte - Compraventa con terminación de obra,$90000000,90%,20 años,"$17,628.00",9.90%,Fija,13.1%,"$9,059.78",Mensual
+499,Hipoteca Fuerte - Compraventa con terminación de obra,$100000000,90%,20 años,"$19,509.14",9.90%,Fija,13.1%,"$10,027.66",Mensual
+500,Hipoteca Fuerte - Compraventa con terminación de obra,$110000000,90%,20 años,"$21,390.24",9.90%,Fija,13%,"$10,995.52",Mensual
+501,Hipoteca Fuerte - Compraventa con terminación de obra,$120000000,90%,20 años,"$23,271.36",9.90%,Fija,12.9%,"$11,963.39",Mensual
+502,Hipoteca Fuerte - Compraventa con terminación de obra,$130000000,90%,20 años,,9.90%,Fija,12.9%,"$12,931.25",Mensual
+503,Hipoteca Fuerte - Compraventa con terminación de obra,$140000000,90%,20 años,"$27,033.58",9.90%,Fija,12.9%,"$13,899.12",Mensual
+504,Hipoteca Fuerte - Compraventa con terminación de obra,$150000000,90%,20 años,"$28,914.68",9.90%,Fija,12.8%,"$14,866.98",Mensual

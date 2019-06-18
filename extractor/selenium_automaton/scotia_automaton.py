@@ -22,7 +22,7 @@ class ScotiaAutomaton(selenium_automaton.SeleniumAutomaton):
         self.plazo20_xpath = '//*[@id="terms20"]'
         self.pago_mensual_xpath = '//*[@id="calcMonthlyPayment"]'
         self.ingresos_min_xpath = '//*[@id="calcMinIncome"]'
-        self.max_credito_xpath = '//*[@id="calcMinIncome"]'
+        self.max_credito_xpath = '//*[@id="calcMaxCredit"]'
         self.tasa_interes_xpath = '//*[@id="calcInterest"]'
         self.cat_xpath = '//*[@id="calcCat"]'
         self.gastos_iniciales_xpath = '//*[@id="calcExpenses"]'
@@ -37,6 +37,7 @@ class ScotiaAutomaton(selenium_automaton.SeleniumAutomaton):
         self.plazo20 = self.driver.find_element_by_xpath(self.plazo20_xpath)
         self.tasas = [self.tasa_fija, self.tasa_creciente]
         self.plazos = [self.plazo7, self.plazo10, self.plazo15, self.plazo20]
+        self.plazos_meses = [84, 120, 180, 240]
         self.cat = self.driver.find_element_by_xpath(self.cat_xpath)
         self.max_credito = self.driver.find_element_by_xpath(self.max_credito_xpath)
         self.ingresos_min = self.driver.find_element_by_xpath(self.ingresos_min_xpath)
@@ -48,32 +49,36 @@ class ScotiaAutomaton(selenium_automaton.SeleniumAutomaton):
         self.data_dictionary = []
         self.subproducto_id = 1
         for tasa in self.tasas:
-            for plazo in self.plazos:
+            for ix_plazo, plazo in enumerate(self.plazos):
                 if tasa == self.tasa_creciente and plazo == self.plazo7:
                     continue
                 else:
-                    for valor in range(4, 16):
-                        valor_vivienda_value = str(valor) + '0'*5
-                        self.valor_vivienda.send_keys(Keys.BACK_SPACE*15, valor_vivienda_value)
-                        time.sleep(1)
-                        tasa.click()
-                        plazo.click()
-                        time.sleep(1)
-                        max_credito_float = float(self.max_credito.text.replace(',', '').replace('.', '').replace('$ ', ''))
-                        valor_vivienda_float = float(valor_vivienda_value)
-                        self.data_dictionary.append({
-                            'Subproducto': self.subproducto_id,
-                            'Producto': 'Compra tu Casa',
-                            'Valor Vivienda': valor_vivienda_value,
-                            'AFORO': max_credito_float/valor_vivienda_float*100,
-                            'Plazo': plazo.text,
-                            'Ingresos Requeridos': self.ingresos_min.text,
-                            'Tasa de Interes': self.tasa_interes.text,
-                            'Tipo de Tasa': tasa.text,
-                            'CAT sin IVA': self.cat.text,
-                            'Pago': self.pago_mensual.text,
-                            'Frecuencia de Pago': 'Mensual'
-                        })
-                        self.subproducto_id += 1
-        print(self.data_dictionary[:10])
+                    for valor in range(4, 21):
+                        self.get_values(tasa, ix_plazo, plazo, valor)
+                    for valor in range(25, 105, 5):
+                        self.get_values(tasa, ix_plazo, plazo, valor)
         self.export_csv('scotia.csv')
+
+    def get_values(self, tasa, ix_plazo, plazo, valor):
+        valor_vivienda_value = str(valor) + '0'*5
+        self.valor_vivienda.send_keys(Keys.BACK_SPACE*15, valor_vivienda_value)
+        time.sleep(1)
+        tasa.click()
+        plazo.click()
+        time.sleep(1)
+        max_credito_float = float(self.max_credito.text.replace(',', '').replace('$ ', ''))
+        valor_vivienda_float = float(valor_vivienda_value)
+        self.data_dictionary.append({
+            'Subproducto': self.subproducto_id,
+            'Producto': 'Compra tu Casa',
+            'Valor Vivienda': valor_vivienda_value,
+            'AFORO': max_credito_float/valor_vivienda_float*100,
+            'Plazo': self.plazos_meses[ix_plazo],
+            'Ingresos Requeridos': self.ingresos_min.text,
+            'Tasa de Interes': self.tasa_interes.text,
+            'Tipo de Tasa': tasa.text,
+            'CAT sin IVA': self.cat.text,
+            'Pago': self.pago_mensual.text,
+            'Frecuencia de Pago': 'Mensual'
+        })
+        self.subproducto_id += 1

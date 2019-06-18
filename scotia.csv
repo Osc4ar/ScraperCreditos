@@ -1,85 +1,232 @@
 Subproducto,Producto,Valor Vivienda,AFORO,Plazo,Ingresos Requeridos,Tasa de Interes,Tipo de Tasa,CAT sin IVA,Pago,Frecuencia de Pago
-1,Compra tu Casa,400000,330.6,,"$ 13,224.00",11.20%,Pagos Oportunos,13.6%,"$ 6,612.00",Mensual
-2,Compra tu Casa,500000,330.6,,"$ 16,530.00",11.20%,Pagos Oportunos,13.6%,"$ 8,265.00",Mensual
-3,Compra tu Casa,600000,330.6,,"$ 19,836.00",11.20%,Pagos Oportunos,13.6%,"$ 9,918.00",Mensual
-4,Compra tu Casa,700000,330.6,,"$ 23,142.00",11.20%,Pagos Oportunos,13.6%,"$ 11,571.00",Mensual
-5,Compra tu Casa,800000,330.6,,"$ 26,448.00",11.20%,Pagos Oportunos,13.6%,"$ 13,224.00",Mensual
-6,Compra tu Casa,900000,330.6,,"$ 29,754.00",11.20%,Pagos Oportunos,13.6%,"$ 14,877.00",Mensual
-7,Compra tu Casa,1000000,330.6,,"$ 33,060.00",11.20%,Pagos Oportunos,13.6%,"$ 16,530.00",Mensual
-8,Compra tu Casa,1100000,330.6,,"$ 36,366.00",11.20%,Pagos Oportunos,13.6%,"$ 18,183.00",Mensual
-9,Compra tu Casa,1200000,330.6,,"$ 39,672.00",11.20%,Pagos Oportunos,13.6%,"$ 19,836.00",Mensual
-10,Compra tu Casa,1300000,330.6,,"$ 42,978.00",11.20%,Pagos Oportunos,13.6%,"$ 21,489.00",Mensual
-11,Compra tu Casa,1400000,330.6,,"$ 46,284.00",11.20%,Pagos Oportunos,13.6%,"$ 23,142.00",Mensual
-12,Compra tu Casa,1500000,330.6,,"$ 49,590.00",11.20%,Pagos Oportunos,13.6%,"$ 24,795.00",Mensual
-13,Compra tu Casa,400000,267.9,,"$ 10,716.00",11.30%,Pagos Oportunos,13.5%,"$ 5,358.00",Mensual
-14,Compra tu Casa,500000,267.9,,"$ 13,395.00",11.30%,Pagos Oportunos,13.4%,"$ 6,697.50",Mensual
-15,Compra tu Casa,600000,267.9,,"$ 16,074.00",11.30%,Pagos Oportunos,13.4%,"$ 8,037.00",Mensual
-16,Compra tu Casa,700000,267.9,,"$ 18,753.00",11.30%,Pagos Oportunos,13.4%,"$ 9,376.50",Mensual
-17,Compra tu Casa,800000,267.9,,"$ 21,432.00",11.30%,Pagos Oportunos,13.4%,"$ 10,716.00",Mensual
-18,Compra tu Casa,900000,267.9,,"$ 24,111.00",11.30%,Pagos Oportunos,13.4%,"$ 12,055.50",Mensual
-19,Compra tu Casa,1000000,267.9,,"$ 26,790.00",11.30%,Pagos Oportunos,13.4%,"$ 13,395.00",Mensual
-20,Compra tu Casa,1100000,267.9,,"$ 29,469.00",11.30%,Pagos Oportunos,13.4%,"$ 14,734.50",Mensual
-21,Compra tu Casa,1200000,267.9,,"$ 32,148.00",11.30%,Pagos Oportunos,13.4%,"$ 16,074.00",Mensual
-22,Compra tu Casa,1300000,267.9,,"$ 34,827.00",11.30%,Pagos Oportunos,13.4%,"$ 17,413.50",Mensual
-23,Compra tu Casa,1400000,267.9,,"$ 37,506.00",11.30%,Pagos Oportunos,13.4%,"$ 18,753.00",Mensual
-24,Compra tu Casa,1500000,267.9,,"$ 40,185.00",11.30%,Pagos Oportunos,13.4%,"$ 20,092.50",Mensual
-25,Compra tu Casa,400000,250.0,,"$ 10,000.00",11.50%,Pagos Oportunos,13.4%,"$ 4,484.00",Mensual
-26,Compra tu Casa,500000,224.2,,"$ 11,210.00",11.50%,Pagos Oportunos,13.4%,"$ 5,605.00",Mensual
-27,Compra tu Casa,600000,224.2,,"$ 13,452.00",11.50%,Pagos Oportunos,13.4%,"$ 6,726.00",Mensual
-28,Compra tu Casa,700000,224.2,,"$ 15,694.00",11.50%,Pagos Oportunos,13.4%,"$ 7,847.00",Mensual
-29,Compra tu Casa,800000,224.2,,"$ 17,936.00",11.50%,Pagos Oportunos,13.4%,"$ 8,968.00",Mensual
-30,Compra tu Casa,900000,224.2,,"$ 20,178.00",11.50%,Pagos Oportunos,13.4%,"$ 10,089.00",Mensual
-31,Compra tu Casa,1000000,224.2,,"$ 22,420.00",11.50%,Pagos Oportunos,13.4%,"$ 11,210.00",Mensual
-32,Compra tu Casa,1100000,224.2,,"$ 24,662.00",11.50%,Pagos Oportunos,13.4%,"$ 12,331.00",Mensual
-33,Compra tu Casa,1200000,224.2,,"$ 26,904.00",11.50%,Pagos Oportunos,13.4%,"$ 13,452.00",Mensual
-34,Compra tu Casa,1300000,224.2,,"$ 29,146.00",11.50%,Pagos Oportunos,13.4%,"$ 14,573.00",Mensual
-35,Compra tu Casa,1400000,224.2,,"$ 31,388.00",11.50%,Pagos Oportunos,13.4%,"$ 15,694.00",Mensual
-36,Compra tu Casa,1500000,224.2,,"$ 33,630.00",11.50%,Pagos Oportunos,13.4%,"$ 16,815.00",Mensual
-37,Compra tu Casa,400000,250.0,,"$ 10,000.00",11.60%,Pagos Oportunos,13.4%,"$ 4,126.80",Mensual
-38,Compra tu Casa,500000,206.34,,"$ 10,317.00",11.60%,Pagos Oportunos,13.4%,"$ 5,158.50",Mensual
-39,Compra tu Casa,600000,206.34,,"$ 12,380.40",11.60%,Pagos Oportunos,13.4%,"$ 6,190.20",Mensual
-40,Compra tu Casa,700000,206.34,,"$ 14,443.80",11.60%,Pagos Oportunos,13.4%,"$ 7,221.90",Mensual
-41,Compra tu Casa,800000,206.34,,"$ 16,507.20",11.60%,Pagos Oportunos,13.4%,"$ 8,253.60",Mensual
-42,Compra tu Casa,900000,206.34,,"$ 18,570.60",11.60%,Pagos Oportunos,13.4%,"$ 9,285.30",Mensual
-43,Compra tu Casa,1000000,206.34,,"$ 20,634.00",11.60%,Pagos Oportunos,13.4%,"$ 10,317.00",Mensual
-44,Compra tu Casa,1100000,206.34,,"$ 22,697.40",11.60%,Pagos Oportunos,13.4%,"$ 11,348.70",Mensual
-45,Compra tu Casa,1200000,206.34,,"$ 24,760.80",11.60%,Pagos Oportunos,13.4%,"$ 12,380.40",Mensual
-46,Compra tu Casa,1300000,206.34,,"$ 26,824.20",11.60%,Pagos Oportunos,13.4%,"$ 13,412.10",Mensual
-47,Compra tu Casa,1400000,206.34,,"$ 28,887.60",11.60%,Pagos Oportunos,13.4%,"$ 14,443.80",Mensual
-48,Compra tu Casa,1500000,206.34,,"$ 30,951.00",11.60%,Pagos Oportunos,13.4%,"$ 15,475.50",Mensual
-49,Compra tu Casa,400000,250.0,,"$ 10,000.00",11.25%,Valora,13.5%,"$ 4,921.00",Mensual
-50,Compra tu Casa,500000,246.05,,"$ 12,302.50",11.25%,Valora,13.5%,"$ 6,151.25",Mensual
-51,Compra tu Casa,600000,246.05,,"$ 14,763.00",11.25%,Valora,13.5%,"$ 7,381.50",Mensual
-52,Compra tu Casa,700000,246.05,,"$ 17,223.50",11.25%,Valora,13.5%,"$ 8,611.75",Mensual
-53,Compra tu Casa,800000,246.05,,"$ 19,684.00",11.25%,Valora,13.5%,"$ 9,842.00",Mensual
-54,Compra tu Casa,900000,246.05,,"$ 22,144.50",11.25%,Valora,13.5%,"$ 11,072.25",Mensual
-55,Compra tu Casa,1000000,246.05,,"$ 24,605.00",11.25%,Valora,13.5%,"$ 12,302.50",Mensual
-56,Compra tu Casa,1100000,246.05,,"$ 27,065.50",11.25%,Valora,13.5%,"$ 13,532.75",Mensual
-57,Compra tu Casa,1200000,246.05,,"$ 29,526.00",11.25%,Valora,13.5%,"$ 14,763.00",Mensual
-58,Compra tu Casa,1300000,246.05,,"$ 31,986.50",11.25%,Valora,13.5%,"$ 15,993.25",Mensual
-59,Compra tu Casa,1400000,246.05,,"$ 34,447.00",11.25%,Valora,13.5%,"$ 17,223.50",Mensual
-60,Compra tu Casa,1500000,246.05,,"$ 36,907.50",11.25%,Valora,13.5%,"$ 18,453.75",Mensual
-61,Compra tu Casa,400000,250.0,,"$ 10,000.00",11.25%,Valora,13.3%,"$ 3,990.00",Mensual
-62,Compra tu Casa,500000,200.0,,"$ 10,000.00",11.25%,Valora,13.2%,"$ 4,987.50",Mensual
-63,Compra tu Casa,600000,199.5,,"$ 11,970.00",11.25%,Valora,13.2%,"$ 5,985.00",Mensual
-64,Compra tu Casa,700000,199.5,,"$ 13,965.00",11.25%,Valora,13.2%,"$ 6,982.50",Mensual
-65,Compra tu Casa,800000,199.5,,"$ 15,960.00",11.25%,Valora,13.2%,"$ 7,980.00",Mensual
-66,Compra tu Casa,900000,199.5,,"$ 17,955.00",11.25%,Valora,13.2%,"$ 8,977.50",Mensual
-67,Compra tu Casa,1000000,199.5,,"$ 19,950.00",11.25%,Valora,13.2%,"$ 9,975.00",Mensual
-68,Compra tu Casa,1100000,199.5,,"$ 21,945.00",11.25%,Valora,13.2%,"$ 10,972.50",Mensual
-69,Compra tu Casa,1200000,199.5,,"$ 23,940.00",11.25%,Valora,13.2%,"$ 11,970.00",Mensual
-70,Compra tu Casa,1300000,199.5,,"$ 25,935.00",11.25%,Valora,13.2%,"$ 12,967.50",Mensual
-71,Compra tu Casa,1400000,199.5,,"$ 27,930.00",11.25%,Valora,13.2%,"$ 13,965.00",Mensual
-72,Compra tu Casa,1500000,199.5,,"$ 29,925.00",11.25%,Valora,13.2%,"$ 14,962.50",Mensual
-73,Compra tu Casa,400000,250.0,,"$ 10,000.00",11.25%,Valora,13.2%,"$ 3,686.00",Mensual
-74,Compra tu Casa,500000,200.0,,"$ 10,000.00",11.25%,Valora,13.1%,"$ 4,607.50",Mensual
-75,Compra tu Casa,600000,184.3,,"$ 11,058.00",11.25%,Valora,13.2%,"$ 5,529.00",Mensual
-76,Compra tu Casa,700000,184.3,,"$ 12,901.00",11.25%,Valora,13.1%,"$ 6,450.50",Mensual
-77,Compra tu Casa,800000,184.3,,"$ 14,744.00",11.25%,Valora,13.1%,"$ 7,372.00",Mensual
-78,Compra tu Casa,900000,184.3,,"$ 16,587.00",11.25%,Valora,13.1%,"$ 8,293.50",Mensual
-79,Compra tu Casa,1000000,184.3,,"$ 18,430.00",11.25%,Valora,13.1%,"$ 9,215.00",Mensual
-80,Compra tu Casa,1100000,184.3,,"$ 20,273.00",11.25%,Valora,13.1%,"$ 10,136.50",Mensual
-81,Compra tu Casa,1200000,184.3,,"$ 22,116.00",11.25%,Valora,13.1%,"$ 11,058.00",Mensual
-82,Compra tu Casa,1300000,184.3,,"$ 23,959.00",11.25%,Valora,13.1%,"$ 11,979.50",Mensual
-83,Compra tu Casa,1400000,184.3,,"$ 25,802.00",11.25%,Valora,13.1%,"$ 12,901.00",Mensual
-84,Compra tu Casa,1500000,184.3,,"$ 27,645.00",11.25%,Valora,13.1%,"$ 13,822.50",Mensual
+1,Compra tu Casa,400000,95.0,84,"$ 13,224.00",11.20%,Pagos Oportunos,13.6%,"$ 6,612.00",Mensual
+2,Compra tu Casa,500000,95.0,84,"$ 16,530.00",11.20%,Pagos Oportunos,13.6%,"$ 8,265.00",Mensual
+3,Compra tu Casa,600000,95.0,84,"$ 19,836.00",11.20%,Pagos Oportunos,13.6%,"$ 9,918.00",Mensual
+4,Compra tu Casa,700000,95.0,84,"$ 23,142.00",11.20%,Pagos Oportunos,13.6%,"$ 11,571.00",Mensual
+5,Compra tu Casa,800000,95.0,84,"$ 26,448.00",11.20%,Pagos Oportunos,13.6%,"$ 13,224.00",Mensual
+6,Compra tu Casa,900000,95.0,84,"$ 29,754.00",11.20%,Pagos Oportunos,13.6%,"$ 14,877.00",Mensual
+7,Compra tu Casa,1000000,95.0,84,"$ 33,060.00",11.20%,Pagos Oportunos,13.6%,"$ 16,530.00",Mensual
+8,Compra tu Casa,1100000,95.0,84,"$ 36,366.00",11.20%,Pagos Oportunos,13.6%,"$ 18,183.00",Mensual
+9,Compra tu Casa,1200000,95.0,84,"$ 39,672.00",11.20%,Pagos Oportunos,13.6%,"$ 19,836.00",Mensual
+10,Compra tu Casa,1300000,95.0,84,"$ 42,978.00",11.20%,Pagos Oportunos,13.6%,"$ 21,489.00",Mensual
+11,Compra tu Casa,1400000,95.0,84,"$ 46,284.00",11.20%,Pagos Oportunos,13.6%,"$ 23,142.00",Mensual
+12,Compra tu Casa,1500000,95.0,84,"$ 49,590.00",11.20%,Pagos Oportunos,13.6%,"$ 24,795.00",Mensual
+13,Compra tu Casa,1600000,95.0,84,"$ 52,896.00",11.20%,Pagos Oportunos,13.6%,"$ 26,448.00",Mensual
+14,Compra tu Casa,1700000,95.0,84,"$ 56,202.00",11.20%,Pagos Oportunos,13.6%,"$ 28,101.00",Mensual
+15,Compra tu Casa,1800000,95.0,84,"$ 59,508.00",11.20%,Pagos Oportunos,13.6%,"$ 29,754.00",Mensual
+16,Compra tu Casa,1900000,95.0,84,"$ 62,814.00",11.20%,Pagos Oportunos,13.5%,"$ 31,407.00",Mensual
+17,Compra tu Casa,2000000,95.0,84,"$ 66,120.00",11.20%,Pagos Oportunos,13.5%,"$ 33,060.00",Mensual
+18,Compra tu Casa,2500000,95.0,84,"$ 82,650.00",11.20%,Pagos Oportunos,13.6%,"$ 41,325.00",Mensual
+19,Compra tu Casa,3000000,95.0,84,"$ 99,180.00",11.20%,Pagos Oportunos,13.6%,"$ 49,590.00",Mensual
+20,Compra tu Casa,3500000,95.0,84,"$ 115,710.00",11.20%,Pagos Oportunos,13.6%,"$ 57,855.00",Mensual
+21,Compra tu Casa,4000000,95.0,84,"$ 132,240.00",11.20%,Pagos Oportunos,13.6%,"$ 66,120.00",Mensual
+22,Compra tu Casa,4500000,95.0,84,"$ 148,770.00",11.20%,Pagos Oportunos,13.6%,"$ 74,385.00",Mensual
+23,Compra tu Casa,5000000,95.0,84,"$ 165,300.00",11.20%,Pagos Oportunos,13.6%,"$ 82,650.00",Mensual
+24,Compra tu Casa,5500000,95.0,84,"$ 181,830.00",11.20%,Pagos Oportunos,13.6%,"$ 90,915.00",Mensual
+25,Compra tu Casa,6000000,95.0,84,"$ 198,360.00",11.20%,Pagos Oportunos,13.6%,"$ 99,180.00",Mensual
+26,Compra tu Casa,6500000,95.0,84,"$ 214,890.00",11.20%,Pagos Oportunos,13.6%,"$ 107,445.00",Mensual
+27,Compra tu Casa,7000000,95.0,84,"$ 231,420.00",11.20%,Pagos Oportunos,13.6%,"$ 115,710.00",Mensual
+28,Compra tu Casa,7500000,95.0,84,"$ 247,950.00",11.20%,Pagos Oportunos,13.6%,"$ 123,975.00",Mensual
+29,Compra tu Casa,8000000,95.0,84,"$ 264,480.00",11.20%,Pagos Oportunos,13.5%,"$ 132,240.00",Mensual
+30,Compra tu Casa,8500000,95.0,84,"$ 281,010.00",11.20%,Pagos Oportunos,13.6%,"$ 140,505.00",Mensual
+31,Compra tu Casa,9000000,95.0,84,"$ 297,540.00",11.20%,Pagos Oportunos,13.6%,"$ 148,770.00",Mensual
+32,Compra tu Casa,9500000,95.0,84,"$ 314,070.00",11.20%,Pagos Oportunos,13.5%,"$ 157,035.00",Mensual
+33,Compra tu Casa,10000000,95.0,84,"$ 330,600.00",11.20%,Pagos Oportunos,13.5%,"$ 165,300.00",Mensual
+34,Compra tu Casa,400000,95.0,120,"$ 10,716.00",11.30%,Pagos Oportunos,13.5%,"$ 5,358.00",Mensual
+35,Compra tu Casa,500000,95.0,120,"$ 13,395.00",11.30%,Pagos Oportunos,13.4%,"$ 6,697.50",Mensual
+36,Compra tu Casa,600000,95.0,120,"$ 16,074.00",11.30%,Pagos Oportunos,13.4%,"$ 8,037.00",Mensual
+37,Compra tu Casa,700000,95.0,120,"$ 18,753.00",11.30%,Pagos Oportunos,13.4%,"$ 9,376.50",Mensual
+38,Compra tu Casa,800000,95.0,120,"$ 21,432.00",11.30%,Pagos Oportunos,13.4%,"$ 10,716.00",Mensual
+39,Compra tu Casa,900000,95.0,120,"$ 24,111.00",11.30%,Pagos Oportunos,13.4%,"$ 12,055.50",Mensual
+40,Compra tu Casa,1000000,95.0,120,"$ 26,790.00",11.30%,Pagos Oportunos,13.4%,"$ 13,395.00",Mensual
+41,Compra tu Casa,1100000,95.0,120,"$ 29,469.00",11.30%,Pagos Oportunos,13.4%,"$ 14,734.50",Mensual
+42,Compra tu Casa,1200000,95.0,120,"$ 32,148.00",11.30%,Pagos Oportunos,13.4%,"$ 16,074.00",Mensual
+43,Compra tu Casa,1300000,95.0,120,"$ 34,827.00",11.30%,Pagos Oportunos,13.4%,"$ 17,413.50",Mensual
+44,Compra tu Casa,1400000,95.0,120,"$ 37,506.00",11.30%,Pagos Oportunos,13.4%,"$ 18,753.00",Mensual
+45,Compra tu Casa,1500000,95.0,120,"$ 40,185.00",11.30%,Pagos Oportunos,13.4%,"$ 20,092.50",Mensual
+46,Compra tu Casa,1600000,95.0,120,"$ 42,864.00",11.30%,Pagos Oportunos,13.4%,"$ 21,432.00",Mensual
+47,Compra tu Casa,1700000,95.0,120,"$ 45,543.00",11.30%,Pagos Oportunos,13.4%,"$ 22,771.50",Mensual
+48,Compra tu Casa,1800000,95.0,120,"$ 48,222.00",11.30%,Pagos Oportunos,13.4%,"$ 24,111.00",Mensual
+49,Compra tu Casa,1900000,95.0,120,"$ 50,901.00",11.30%,Pagos Oportunos,13.4%,"$ 25,450.50",Mensual
+50,Compra tu Casa,2000000,95.0,120,"$ 53,580.00",11.30%,Pagos Oportunos,13.4%,"$ 26,790.00",Mensual
+51,Compra tu Casa,2500000,95.0,120,"$ 66,975.00",11.30%,Pagos Oportunos,13.4%,"$ 33,487.50",Mensual
+52,Compra tu Casa,3000000,95.0,120,"$ 80,370.00",11.30%,Pagos Oportunos,13.4%,"$ 40,185.00",Mensual
+53,Compra tu Casa,3500000,95.0,120,"$ 93,765.00",11.30%,Pagos Oportunos,13.4%,"$ 46,882.50",Mensual
+54,Compra tu Casa,4000000,95.0,120,"$ 107,160.00",11.30%,Pagos Oportunos,13.4%,"$ 53,580.00",Mensual
+55,Compra tu Casa,4500000,95.0,120,"$ 120,555.00",11.30%,Pagos Oportunos,13.4%,"$ 60,277.50",Mensual
+56,Compra tu Casa,5000000,95.0,120,"$ 133,950.00",11.30%,Pagos Oportunos,13.4%,"$ 66,975.00",Mensual
+57,Compra tu Casa,5500000,95.0,120,"$ 147,345.00",11.30%,Pagos Oportunos,13.4%,"$ 73,672.50",Mensual
+58,Compra tu Casa,6000000,95.0,120,"$ 160,740.00",11.30%,Pagos Oportunos,13.4%,"$ 80,370.00",Mensual
+59,Compra tu Casa,6500000,95.0,120,"$ 174,135.00",11.30%,Pagos Oportunos,13.4%,"$ 87,067.50",Mensual
+60,Compra tu Casa,7000000,95.0,120,"$ 187,530.00",11.30%,Pagos Oportunos,13.4%,"$ 93,765.00",Mensual
+61,Compra tu Casa,7500000,95.0,120,"$ 200,925.00",11.30%,Pagos Oportunos,13.4%,"$ 100,462.50",Mensual
+62,Compra tu Casa,8000000,95.0,120,"$ 214,320.00",11.30%,Pagos Oportunos,13.4%,"$ 107,160.00",Mensual
+63,Compra tu Casa,8500000,95.0,120,"$ 227,715.00",11.30%,Pagos Oportunos,13.4%,"$ 113,857.50",Mensual
+64,Compra tu Casa,9000000,95.0,120,"$ 241,110.00",11.30%,Pagos Oportunos,13.4%,"$ 120,555.00",Mensual
+65,Compra tu Casa,9500000,95.0,120,"$ 254,505.00",11.30%,Pagos Oportunos,13.4%,"$ 127,252.50",Mensual
+66,Compra tu Casa,10000000,95.0,120,"$ 267,900.00",11.30%,Pagos Oportunos,13.4%,"$ 133,950.00",Mensual
+67,Compra tu Casa,400000,95.0,180,"$ 10,000.00",11.50%,Pagos Oportunos,13.4%,"$ 4,484.00",Mensual
+68,Compra tu Casa,500000,95.0,180,"$ 11,210.00",11.50%,Pagos Oportunos,13.4%,"$ 5,605.00",Mensual
+69,Compra tu Casa,600000,95.0,180,"$ 13,452.00",11.50%,Pagos Oportunos,13.4%,"$ 6,726.00",Mensual
+70,Compra tu Casa,700000,95.0,180,"$ 15,694.00",11.50%,Pagos Oportunos,13.4%,"$ 7,847.00",Mensual
+71,Compra tu Casa,800000,95.0,180,"$ 17,936.00",11.50%,Pagos Oportunos,13.4%,"$ 8,968.00",Mensual
+72,Compra tu Casa,900000,95.0,180,"$ 20,178.00",11.50%,Pagos Oportunos,13.4%,"$ 10,089.00",Mensual
+73,Compra tu Casa,1000000,95.0,180,"$ 22,420.00",11.50%,Pagos Oportunos,13.4%,"$ 11,210.00",Mensual
+74,Compra tu Casa,1100000,95.0,180,"$ 24,662.00",11.50%,Pagos Oportunos,13.4%,"$ 12,331.00",Mensual
+75,Compra tu Casa,1200000,95.0,180,"$ 26,904.00",11.50%,Pagos Oportunos,13.4%,"$ 13,452.00",Mensual
+76,Compra tu Casa,1300000,95.0,180,"$ 29,146.00",11.50%,Pagos Oportunos,13.4%,"$ 14,573.00",Mensual
+77,Compra tu Casa,1400000,95.0,180,"$ 31,388.00",11.50%,Pagos Oportunos,13.4%,"$ 15,694.00",Mensual
+78,Compra tu Casa,1500000,95.0,180,"$ 33,630.00",11.50%,Pagos Oportunos,13.4%,"$ 16,815.00",Mensual
+79,Compra tu Casa,1600000,95.0,180,"$ 35,872.00",11.50%,Pagos Oportunos,13.4%,"$ 17,936.00",Mensual
+80,Compra tu Casa,1700000,95.0,180,"$ 38,114.00",11.50%,Pagos Oportunos,13.4%,"$ 19,057.00",Mensual
+81,Compra tu Casa,1800000,95.0,180,"$ 40,356.00",11.50%,Pagos Oportunos,13.4%,"$ 20,178.00",Mensual
+82,Compra tu Casa,1900000,95.0,180,"$ 42,598.00",11.50%,Pagos Oportunos,13.4%,"$ 21,299.00",Mensual
+83,Compra tu Casa,2000000,95.0,180,"$ 44,840.00",11.50%,Pagos Oportunos,13.4%,"$ 22,420.00",Mensual
+84,Compra tu Casa,2500000,95.0,180,"$ 56,050.00",11.50%,Pagos Oportunos,13.4%,"$ 28,025.00",Mensual
+85,Compra tu Casa,3000000,95.0,180,"$ 67,260.00",11.50%,Pagos Oportunos,13.4%,"$ 33,630.00",Mensual
+86,Compra tu Casa,3500000,95.0,180,"$ 78,470.00",11.50%,Pagos Oportunos,13.4%,"$ 39,235.00",Mensual
+87,Compra tu Casa,4000000,95.0,180,"$ 89,680.00",11.50%,Pagos Oportunos,13.4%,"$ 44,840.00",Mensual
+88,Compra tu Casa,4500000,95.0,180,"$ 100,890.00",11.50%,Pagos Oportunos,13.4%,"$ 50,445.00",Mensual
+89,Compra tu Casa,5000000,95.0,180,"$ 112,100.00",11.50%,Pagos Oportunos,13.4%,"$ 56,050.00",Mensual
+90,Compra tu Casa,5500000,95.0,180,"$ 123,310.00",11.50%,Pagos Oportunos,13.4%,"$ 61,655.00",Mensual
+91,Compra tu Casa,6000000,95.0,180,"$ 134,520.00",11.50%,Pagos Oportunos,13.4%,"$ 67,260.00",Mensual
+92,Compra tu Casa,6500000,95.0,180,"$ 145,730.00",11.50%,Pagos Oportunos,13.4%,"$ 72,865.00",Mensual
+93,Compra tu Casa,7000000,95.0,180,"$ 156,940.00",11.50%,Pagos Oportunos,13.4%,"$ 78,470.00",Mensual
+94,Compra tu Casa,7500000,95.0,180,"$ 168,150.00",11.50%,Pagos Oportunos,13.4%,"$ 84,075.00",Mensual
+95,Compra tu Casa,8000000,95.0,180,"$ 179,360.00",11.50%,Pagos Oportunos,13.4%,"$ 89,680.00",Mensual
+96,Compra tu Casa,8500000,95.0,180,"$ 190,570.00",11.50%,Pagos Oportunos,13.4%,"$ 95,285.00",Mensual
+97,Compra tu Casa,9000000,95.0,180,"$ 201,780.00",11.50%,Pagos Oportunos,13.4%,"$ 100,890.00",Mensual
+98,Compra tu Casa,9500000,95.0,180,"$ 212,990.00",11.50%,Pagos Oportunos,13.4%,"$ 106,495.00",Mensual
+99,Compra tu Casa,10000000,95.0,180,"$ 224,200.00",11.50%,Pagos Oportunos,13.4%,"$ 112,100.00",Mensual
+100,Compra tu Casa,400000,95.0,240,"$ 10,000.00",11.60%,Pagos Oportunos,13.4%,"$ 4,126.80",Mensual
+101,Compra tu Casa,500000,95.0,240,"$ 10,317.00",11.60%,Pagos Oportunos,13.4%,"$ 5,158.50",Mensual
+102,Compra tu Casa,600000,95.0,240,"$ 12,380.40",11.60%,Pagos Oportunos,13.4%,"$ 6,190.20",Mensual
+103,Compra tu Casa,700000,95.0,240,"$ 14,443.80",11.60%,Pagos Oportunos,13.4%,"$ 7,221.90",Mensual
+104,Compra tu Casa,800000,95.0,240,"$ 16,507.20",11.60%,Pagos Oportunos,13.4%,"$ 8,253.60",Mensual
+105,Compra tu Casa,900000,95.0,240,"$ 18,570.60",11.60%,Pagos Oportunos,13.4%,"$ 9,285.30",Mensual
+106,Compra tu Casa,1000000,95.0,240,"$ 20,634.00",11.60%,Pagos Oportunos,13.4%,"$ 10,317.00",Mensual
+107,Compra tu Casa,1100000,95.0,240,"$ 22,697.40",11.60%,Pagos Oportunos,13.4%,"$ 11,348.70",Mensual
+108,Compra tu Casa,1200000,95.0,240,"$ 24,760.80",11.60%,Pagos Oportunos,13.4%,"$ 12,380.40",Mensual
+109,Compra tu Casa,1300000,95.0,240,"$ 26,824.20",11.60%,Pagos Oportunos,13.4%,"$ 13,412.10",Mensual
+110,Compra tu Casa,1400000,95.0,240,"$ 28,887.60",11.60%,Pagos Oportunos,13.4%,"$ 14,443.80",Mensual
+111,Compra tu Casa,1500000,95.0,240,"$ 30,951.00",11.60%,Pagos Oportunos,13.4%,"$ 15,475.50",Mensual
+112,Compra tu Casa,1600000,95.0,240,"$ 33,014.40",11.60%,Pagos Oportunos,13.4%,"$ 16,507.20",Mensual
+113,Compra tu Casa,1700000,95.0,240,"$ 35,077.80",11.60%,Pagos Oportunos,13.4%,"$ 17,538.90",Mensual
+114,Compra tu Casa,1800000,95.0,240,"$ 37,141.20",11.60%,Pagos Oportunos,13.4%,"$ 18,570.60",Mensual
+115,Compra tu Casa,1900000,95.0,240,"$ 39,204.60",11.60%,Pagos Oportunos,13.4%,"$ 19,602.30",Mensual
+116,Compra tu Casa,2000000,95.0,240,"$ 41,268.00",11.60%,Pagos Oportunos,13.4%,"$ 20,634.00",Mensual
+117,Compra tu Casa,2500000,95.0,240,"$ 51,585.00",11.60%,Pagos Oportunos,13.4%,"$ 25,792.50",Mensual
+118,Compra tu Casa,3000000,95.0,240,"$ 61,902.00",11.60%,Pagos Oportunos,13.4%,"$ 30,951.00",Mensual
+119,Compra tu Casa,3500000,95.0,240,"$ 72,219.00",11.60%,Pagos Oportunos,13.4%,"$ 36,109.50",Mensual
+120,Compra tu Casa,4000000,95.0,240,"$ 82,536.00",11.60%,Pagos Oportunos,13.4%,"$ 41,268.00",Mensual
+121,Compra tu Casa,4500000,95.0,240,"$ 92,853.00",11.60%,Pagos Oportunos,13.4%,"$ 46,426.50",Mensual
+122,Compra tu Casa,5000000,95.0,240,"$ 103,170.00",11.60%,Pagos Oportunos,13.4%,"$ 51,585.00",Mensual
+123,Compra tu Casa,5500000,95.0,240,"$ 113,487.00",11.60%,Pagos Oportunos,13.4%,"$ 56,743.50",Mensual
+124,Compra tu Casa,6000000,95.0,240,"$ 123,804.00",11.60%,Pagos Oportunos,13.4%,"$ 61,902.00",Mensual
+125,Compra tu Casa,6500000,95.0,240,"$ 134,121.00",11.60%,Pagos Oportunos,13.4%,"$ 67,060.50",Mensual
+126,Compra tu Casa,7000000,95.0,240,"$ 144,438.00",11.60%,Pagos Oportunos,13.4%,"$ 72,219.00",Mensual
+127,Compra tu Casa,7500000,95.0,240,"$ 154,755.00",11.60%,Pagos Oportunos,13.4%,"$ 77,377.50",Mensual
+128,Compra tu Casa,8000000,95.0,240,"$ 165,072.00",11.60%,Pagos Oportunos,13.4%,"$ 82,536.00",Mensual
+129,Compra tu Casa,8500000,95.0,240,"$ 175,389.00",11.60%,Pagos Oportunos,13.4%,"$ 87,694.50",Mensual
+130,Compra tu Casa,9000000,95.0,240,"$ 185,706.00",11.60%,Pagos Oportunos,13.4%,"$ 92,853.00",Mensual
+131,Compra tu Casa,9500000,95.0,240,"$ 196,023.00",11.60%,Pagos Oportunos,13.4%,"$ 98,011.50",Mensual
+132,Compra tu Casa,10000000,95.0,240,"$ 206,340.00",11.60%,Pagos Oportunos,13.4%,"$ 103,170.00",Mensual
+133,Compra tu Casa,400000,95.0,120,"$ 10,000.00",11.25%,Valora,13.5%,"$ 4,921.00",Mensual
+134,Compra tu Casa,500000,95.0,120,"$ 12,302.50",11.25%,Valora,13.5%,"$ 6,151.25",Mensual
+135,Compra tu Casa,600000,95.0,120,"$ 14,763.00",11.25%,Valora,13.5%,"$ 7,381.50",Mensual
+136,Compra tu Casa,700000,95.0,120,"$ 17,223.50",11.25%,Valora,13.5%,"$ 8,611.75",Mensual
+137,Compra tu Casa,800000,95.0,120,"$ 19,684.00",11.25%,Valora,13.5%,"$ 9,842.00",Mensual
+138,Compra tu Casa,900000,95.0,120,"$ 22,144.50",11.25%,Valora,13.5%,"$ 11,072.25",Mensual
+139,Compra tu Casa,1000000,95.0,120,"$ 24,605.00",11.25%,Valora,13.5%,"$ 12,302.50",Mensual
+140,Compra tu Casa,1100000,95.0,120,"$ 27,065.50",11.25%,Valora,13.5%,"$ 13,532.75",Mensual
+141,Compra tu Casa,1200000,95.0,120,"$ 29,526.00",11.25%,Valora,13.5%,"$ 14,763.00",Mensual
+142,Compra tu Casa,1300000,95.0,120,"$ 31,986.50",11.25%,Valora,13.5%,"$ 15,993.25",Mensual
+143,Compra tu Casa,1400000,95.0,120,"$ 34,447.00",11.25%,Valora,13.5%,"$ 17,223.50",Mensual
+144,Compra tu Casa,1500000,95.0,120,"$ 36,907.50",11.25%,Valora,13.5%,"$ 18,453.75",Mensual
+145,Compra tu Casa,1600000,95.0,120,"$ 39,368.00",11.25%,Valora,13.5%,"$ 19,684.00",Mensual
+146,Compra tu Casa,1700000,95.0,120,"$ 41,828.50",11.25%,Valora,13.5%,"$ 20,914.25",Mensual
+147,Compra tu Casa,1800000,95.0,120,"$ 44,289.00",11.25%,Valora,13.5%,"$ 22,144.50",Mensual
+148,Compra tu Casa,1900000,95.0,120,"$ 46,749.50",11.25%,Valora,13.5%,"$ 23,374.75",Mensual
+149,Compra tu Casa,2000000,95.0,120,"$ 49,210.00",11.25%,Valora,13.5%,"$ 24,605.00",Mensual
+150,Compra tu Casa,2500000,95.0,120,"$ 61,512.50",11.25%,Valora,13.5%,"$ 30,756.25",Mensual
+151,Compra tu Casa,3000000,95.0,120,"$ 73,815.00",11.25%,Valora,13.5%,"$ 36,907.50",Mensual
+152,Compra tu Casa,3500000,95.0,120,"$ 86,117.50",11.25%,Valora,13.5%,"$ 43,058.75",Mensual
+153,Compra tu Casa,4000000,95.0,120,"$ 98,420.00",11.25%,Valora,13.5%,"$ 49,210.00",Mensual
+154,Compra tu Casa,4500000,95.0,120,"$ 110,722.50",11.25%,Valora,13.5%,"$ 55,361.25",Mensual
+155,Compra tu Casa,5000000,95.0,120,"$ 123,025.00",11.25%,Valora,13.5%,"$ 61,512.50",Mensual
+156,Compra tu Casa,5500000,95.0,120,"$ 135,327.50",11.25%,Valora,13.5%,"$ 67,663.75",Mensual
+157,Compra tu Casa,6000000,95.0,120,"$ 147,630.00",11.25%,Valora,13.5%,"$ 73,815.00",Mensual
+158,Compra tu Casa,6500000,95.0,120,"$ 159,932.50",11.25%,Valora,13.5%,"$ 79,966.25",Mensual
+159,Compra tu Casa,7000000,95.0,120,"$ 172,235.00",11.25%,Valora,13.5%,"$ 86,117.50",Mensual
+160,Compra tu Casa,7500000,95.0,120,"$ 184,537.50",11.25%,Valora,13.5%,"$ 92,268.75",Mensual
+161,Compra tu Casa,8000000,95.0,120,"$ 196,840.00",11.25%,Valora,13.5%,"$ 98,420.00",Mensual
+162,Compra tu Casa,8500000,95.0,120,"$ 209,142.50",11.25%,Valora,13.5%,"$ 104,571.25",Mensual
+163,Compra tu Casa,9000000,95.0,120,"$ 221,445.00",11.25%,Valora,13.5%,"$ 110,722.50",Mensual
+164,Compra tu Casa,9500000,95.0,120,"$ 233,747.50",11.25%,Valora,13.5%,"$ 116,873.75",Mensual
+165,Compra tu Casa,10000000,95.0,120,"$ 246,050.00",11.25%,Valora,13.5%,"$ 123,025.00",Mensual
+166,Compra tu Casa,400000,95.0,180,"$ 10,000.00",11.25%,Valora,13.3%,"$ 3,990.00",Mensual
+167,Compra tu Casa,500000,95.0,180,"$ 10,000.00",11.25%,Valora,13.2%,"$ 4,987.50",Mensual
+168,Compra tu Casa,600000,95.0,180,"$ 11,970.00",11.25%,Valora,13.2%,"$ 5,985.00",Mensual
+169,Compra tu Casa,700000,95.0,180,"$ 13,965.00",11.25%,Valora,13.2%,"$ 6,982.50",Mensual
+170,Compra tu Casa,800000,95.0,180,"$ 15,960.00",11.25%,Valora,13.2%,"$ 7,980.00",Mensual
+171,Compra tu Casa,900000,95.0,180,"$ 17,955.00",11.25%,Valora,13.2%,"$ 8,977.50",Mensual
+172,Compra tu Casa,1000000,95.0,180,"$ 19,950.00",11.25%,Valora,13.2%,"$ 9,975.00",Mensual
+173,Compra tu Casa,1100000,95.0,180,"$ 21,945.00",11.25%,Valora,13.2%,"$ 10,972.50",Mensual
+174,Compra tu Casa,1200000,95.0,180,"$ 23,940.00",11.25%,Valora,13.2%,"$ 11,970.00",Mensual
+175,Compra tu Casa,1300000,95.0,180,"$ 25,935.00",11.25%,Valora,13.2%,"$ 12,967.50",Mensual
+176,Compra tu Casa,1400000,95.0,180,"$ 27,930.00",11.25%,Valora,13.2%,"$ 13,965.00",Mensual
+177,Compra tu Casa,1500000,95.0,180,"$ 29,925.00",11.25%,Valora,13.2%,"$ 14,962.50",Mensual
+178,Compra tu Casa,1600000,95.0,180,"$ 31,920.00",11.25%,Valora,13.2%,"$ 15,960.00",Mensual
+179,Compra tu Casa,1700000,95.0,180,"$ 33,915.00",11.25%,Valora,13.2%,"$ 16,957.50",Mensual
+180,Compra tu Casa,1800000,95.0,180,"$ 35,910.00",11.25%,Valora,13.2%,"$ 17,955.00",Mensual
+181,Compra tu Casa,1900000,95.0,180,"$ 37,905.00",11.25%,Valora,13.2%,"$ 18,952.50",Mensual
+182,Compra tu Casa,2000000,95.0,180,"$ 39,900.00",11.25%,Valora,13.2%,"$ 19,950.00",Mensual
+183,Compra tu Casa,2500000,95.0,180,"$ 49,875.00",11.25%,Valora,13.2%,"$ 24,937.50",Mensual
+184,Compra tu Casa,3000000,95.0,180,"$ 59,850.00",11.25%,Valora,13.2%,"$ 29,925.00",Mensual
+185,Compra tu Casa,3500000,95.0,180,"$ 69,825.00",11.25%,Valora,13.2%,"$ 34,912.50",Mensual
+186,Compra tu Casa,4000000,95.0,180,"$ 79,800.00",11.25%,Valora,13.2%,"$ 39,900.00",Mensual
+187,Compra tu Casa,4500000,95.0,180,"$ 89,775.00",11.25%,Valora,13.2%,"$ 44,887.50",Mensual
+188,Compra tu Casa,5000000,95.0,180,"$ 99,750.00",11.25%,Valora,13.2%,"$ 49,875.00",Mensual
+189,Compra tu Casa,5500000,95.0,180,"$ 109,725.00",11.25%,Valora,13.2%,"$ 54,862.50",Mensual
+190,Compra tu Casa,6000000,95.0,180,"$ 119,700.00",11.25%,Valora,13.2%,"$ 59,850.00",Mensual
+191,Compra tu Casa,6500000,95.0,180,"$ 129,675.00",11.25%,Valora,13.2%,"$ 64,837.50",Mensual
+192,Compra tu Casa,7000000,95.0,180,"$ 139,650.00",11.25%,Valora,13.2%,"$ 69,825.00",Mensual
+193,Compra tu Casa,7500000,95.0,180,"$ 149,625.00",11.25%,Valora,13.2%,"$ 74,812.50",Mensual
+194,Compra tu Casa,8000000,95.0,180,"$ 159,600.00",11.25%,Valora,13.2%,"$ 79,800.00",Mensual
+195,Compra tu Casa,8500000,95.0,180,"$ 169,575.00",11.25%,Valora,13.2%,"$ 84,787.50",Mensual
+196,Compra tu Casa,9000000,95.0,180,"$ 179,550.00",11.25%,Valora,13.2%,"$ 89,775.00",Mensual
+197,Compra tu Casa,9500000,95.0,180,"$ 189,525.00",11.25%,Valora,13.2%,"$ 94,762.50",Mensual
+198,Compra tu Casa,10000000,95.0,180,"$ 199,500.00",11.25%,Valora,13.2%,"$ 99,750.00",Mensual
+199,Compra tu Casa,400000,95.0,240,"$ 10,000.00",11.25%,Valora,13.2%,"$ 3,686.00",Mensual
+200,Compra tu Casa,500000,95.0,240,"$ 10,000.00",11.25%,Valora,13.1%,"$ 4,607.50",Mensual
+201,Compra tu Casa,600000,95.0,240,"$ 11,058.00",11.25%,Valora,13.2%,"$ 5,529.00",Mensual
+202,Compra tu Casa,700000,95.0,240,"$ 12,901.00",11.25%,Valora,13.1%,"$ 6,450.50",Mensual
+203,Compra tu Casa,800000,95.0,240,"$ 14,744.00",11.25%,Valora,13.1%,"$ 7,372.00",Mensual
+204,Compra tu Casa,900000,95.0,240,"$ 16,587.00",11.25%,Valora,13.1%,"$ 8,293.50",Mensual
+205,Compra tu Casa,1000000,95.0,240,"$ 18,430.00",11.25%,Valora,13.1%,"$ 9,215.00",Mensual
+206,Compra tu Casa,1100000,95.0,240,"$ 20,273.00",11.25%,Valora,13.1%,"$ 10,136.50",Mensual
+207,Compra tu Casa,1200000,95.0,240,"$ 22,116.00",11.25%,Valora,13.1%,"$ 11,058.00",Mensual
+208,Compra tu Casa,1300000,95.0,240,"$ 23,959.00",11.25%,Valora,13.1%,"$ 11,979.50",Mensual
+209,Compra tu Casa,1400000,95.0,240,"$ 25,802.00",11.25%,Valora,13.1%,"$ 12,901.00",Mensual
+210,Compra tu Casa,1500000,95.0,240,"$ 27,645.00",11.25%,Valora,13.1%,"$ 13,822.50",Mensual
+211,Compra tu Casa,1600000,95.0,240,"$ 29,488.00",11.25%,Valora,13.1%,"$ 14,744.00",Mensual
+212,Compra tu Casa,1700000,95.0,240,"$ 31,331.00",11.25%,Valora,13.1%,"$ 15,665.50",Mensual
+213,Compra tu Casa,1800000,95.0,240,"$ 33,174.00",11.25%,Valora,13.1%,"$ 16,587.00",Mensual
+214,Compra tu Casa,1900000,95.0,240,"$ 35,017.00",11.25%,Valora,13.1%,"$ 17,508.50",Mensual
+215,Compra tu Casa,2000000,95.0,240,"$ 36,860.00",11.25%,Valora,13.1%,"$ 18,430.00",Mensual
+216,Compra tu Casa,2500000,95.0,240,"$ 46,075.00",11.25%,Valora,13.1%,"$ 23,037.50",Mensual
+217,Compra tu Casa,3000000,95.0,240,"$ 55,290.00",11.25%,Valora,13.1%,"$ 27,645.00",Mensual
+218,Compra tu Casa,3500000,95.0,240,"$ 64,505.00",11.25%,Valora,13.1%,"$ 32,252.50",Mensual
+219,Compra tu Casa,4000000,95.0,240,"$ 73,720.00",11.25%,Valora,13.1%,"$ 36,860.00",Mensual
+220,Compra tu Casa,4500000,95.0,240,"$ 82,935.00",11.25%,Valora,13.1%,"$ 41,467.50",Mensual
+221,Compra tu Casa,5000000,95.0,240,"$ 92,150.00",11.25%,Valora,13.1%,"$ 46,075.00",Mensual
+222,Compra tu Casa,5500000,95.0,240,"$ 101,365.00",11.25%,Valora,13.1%,"$ 50,682.50",Mensual
+223,Compra tu Casa,6000000,95.0,240,"$ 110,580.00",11.25%,Valora,13.1%,"$ 55,290.00",Mensual
+224,Compra tu Casa,6500000,95.0,240,"$ 119,795.00",11.25%,Valora,13.1%,"$ 59,897.50",Mensual
+225,Compra tu Casa,7000000,95.0,240,"$ 129,010.00",11.25%,Valora,13.1%,"$ 64,505.00",Mensual
+226,Compra tu Casa,7500000,95.0,240,"$ 138,225.00",11.25%,Valora,13.1%,"$ 69,112.50",Mensual
+227,Compra tu Casa,8000000,95.0,240,"$ 147,440.00",11.25%,Valora,13.1%,"$ 73,720.00",Mensual
+228,Compra tu Casa,8500000,95.0,240,"$ 156,655.00",11.25%,Valora,13.1%,"$ 78,327.50",Mensual
+229,Compra tu Casa,9000000,95.0,240,"$ 165,870.00",11.25%,Valora,13.1%,"$ 82,935.00",Mensual
+230,Compra tu Casa,9500000,95.0,240,"$ 175,085.00",11.25%,Valora,13.1%,"$ 87,542.50",Mensual
+231,Compra tu Casa,10000000,95.0,240,"$ 184,300.00",11.25%,Valora,13.1%,"$ 92,150.00",Mensual

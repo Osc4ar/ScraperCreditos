@@ -8,11 +8,13 @@ import csv
 
 class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
     def __init__(self):
+        self.start = time.time()
         self.plazos_por_tipo_tasa = [2, 4]
         self.set_control_data()
         self.connect(60)
         self.get_data()
         self.driver.quit()
+        print(f'Terminado en {(time.time()-self.start)/60}')
 
     def set_control_data(self):
         self.dialog_count = 1
@@ -21,6 +23,7 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
         self.start_cotizar_xpath = '//*[@id="bnte-container-forms"]/form/div/div[3]/button'
         self.detalle_xpath = '//*[@id="bnte-container"]/div[2]/div/div[1]/div[3]/div[3]/div[1]/button'
         self.ingresos_min_xpath = '//*[@id="bnte-container"]/div[2]/div/div[1]/div[3]/div[2]/div/strong'
+        self.plazo_control_xpath = '//*[@id="bnte-container"]/div[1]/div/div[2]/div[2]/strong'
         self.pago_mensual_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/div[2]/div[1]/strong'
         self.cat_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/div[2]/div[3]/strong'
         self.pago_inicial_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/div[2]/div[7]/strong'
@@ -53,12 +56,6 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
                         self.update_value(valor, plazo, tipo_tasa, destino)
                         self.get_detalle()
                         self.subproducto_id += 1
-                        if self.subproducto_id % 5 == 0:
-                            self.driver.get(self.url)
-                            time.sleep(2)
-                            self.get_controls_start()
-                            self.move_to_simulador()
-
         """for i in range(20, 165, 5):
             self.update_value(i)
             self.get_detalle()"""
@@ -91,7 +88,7 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
                 self.pago_mensual = self.get_data_by_xpath(self.pago_mensual_xpath)
                 self.cat = self.get_data_by_xpath(self.cat_xpath)
                 self.tasa_interes = self.get_data_by_xpath(self.tasa_interes_xpath)
-                print(f'Pago: {self.pago_mensual.text}\tCAT: {self.cat.text}\tInteres: {self.tasa_interes.text}\tIngresos: {ingresos_min_val}')
+                #print(f'Pago: {self.pago_mensual.text}\tCAT: {self.cat.text}\tInteres: {self.tasa_interes.text}\tIngresos: {ingresos_min_val}')
                 self.data_dictionary.append({
                     'Subproducto': self.subproducto_id,
                     'Producto': self.producto,
@@ -113,14 +110,14 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
                 wait = False
             except:
                 wait = True
-                time.sleep(5)
+                time.sleep(1)
 
     def update_value(self, valor, plazo, tipo_tasa, destino):
         print(f'valor: {valor}\tplazo: {plazo}\ttipo_tasa: {tipo_tasa}\tdestino: {destino}')
         time.sleep(1)
         self.editar = self.get_button_by_xpath(self.editar_xpath)
         self.editar.click()
-        time.sleep(3)
+        time.sleep(2)
         self.contenedor_tipo_tasas_xpath = f'//*[@id="ngdialog{self.dialog_count}"]/div[2]/div[2]/form/div[2]/div/div[3]'
         self.contenedor_tipo_tasas = self.driver.find_element_by_xpath(self.contenedor_tipo_tasas_xpath)
         self.tipo_tasas = self.contenedor_tipo_tasas.find_elements_by_tag_name('label')
@@ -151,7 +148,9 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
         self.actualizar = self.driver.find_element_by_xpath(self.actualizar_xpath)
         self.actualizar.click()
         self.dialog_count += 1
-        time.sleep(11)
+        time.sleep(10)
+        if not self.page_is_working():
+            self.reload_page()
 
     def get_button_by_xpath(self, xpath):
         return self.get_element_with_wait(xpath, EC.element_to_be_clickable)
@@ -161,3 +160,14 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
 
     def get_element_with_wait(self, xpath, condition):
         return WebDriverWait(self.driver, 60).until(condition((By.XPATH, xpath)))
+
+    def page_is_working(self):
+        self.plazo_control = self.driver.find_element_by_xpath(self.plazo_control_xpath)
+        print(self.plazo_control.text)
+        return self.plazo_control.text != 'NaN'
+
+    def reload_page(self):
+        self.driver.get(self.url)
+        time.sleep(2)
+        self.get_controls_start()
+        self.move_to_simulador()
