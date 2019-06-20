@@ -92,7 +92,7 @@ class InbursaAutomaton(selenium_automaton.SeleniumAutomaton):
             ing_min_req = self.ingresos_min.get_attribute("value")
             plazo_value = self.select_plazo.options[plazoID].text
             self.driver.execute_script('cotiza();')
-            time.sleep(3)
+            time.sleep(6)
             #self.pago_mensual = self.driver.find_element_by_xpath(self.pago_mensual_xpath)
             #valor_pago_mensual = self.pago_mensual.text
             cat = self.cat.get_attribute('value')

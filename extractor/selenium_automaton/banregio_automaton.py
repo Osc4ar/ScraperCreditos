@@ -45,9 +45,7 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
         self.export_csv('banregio.csv')
 
     def get_controls(self):
-        self.pagos_crecientes = self.driver.find_element_by_xpath(self.pagos_crecientes_xpath)
-        self.pagos_fijos = self.driver.find_element_by_xpath(self.pagos_fijos_xpath)
-        self.tipo_pagos = [self.pagos_crecientes, self.pagos_fijos]
+        self.get_tipos_pagos()
         self.valor = self.driver.find_element_by_xpath(self.valor_xpath)
         self.ingresos = self.driver.find_element_by_xpath(self.ingresos_xpath)
         self.submit = self.driver.find_element_by_xpath(self.submit_xpath)
@@ -56,25 +54,25 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
         self.select_financiamiento = Select(self.driver.find_element_by_xpath(self.select_financiamiento_xpath))
         self.select_estado = Select(self.driver.find_element_by_xpath(self.select_estado_xpath))
 
+    def get_tipos_pagos(self):
+        self.pagos_crecientes = self.driver.find_element_by_xpath(self.pagos_crecientes_xpath)
+        self.pagos_fijos = self.driver.find_element_by_xpath(self.pagos_fijos_xpath)
+        self.tipo_pagos = [self.pagos_crecientes, self.pagos_fijos]
+
     def send_values(self, value):
         for plazo in [4, 9, 19]:
-            time.sleep(1)
-            self.get_controls()
-            self.pagos_fijos.click()
-            self.select_seguro.options[0].click()
-            self.select_plazos.options[plazo].click()
-            self.valor.clear()
-            self.valor.send_keys(str(value) + '0'*5)
-            self.select_financiamiento.options[12].click()
-            self.select_estado.options[9].click()
-            self.ingresos.clear()
-            self.ingresos.send_keys('1'+'0'*5)
-            self.submit.click()
-            self.extract_data()
+            self.perform_actions(value, plazo, False)
+        self.perform_actions(value, 1, True)
+
+    def perform_actions(self, value, plazo, pago_creciente):
+        time.sleep(1)
         self.get_controls()
-        self.pagos_crecientes.click()
+        if not pago_creciente:
+            self.pagos_fijos.click()
+        else:
+            self.pagos_crecientes.click()
         self.select_seguro.options[0].click()
-        self.select_plazos.options[1].click()
+        self.select_plazos.options[plazo].click()
         self.valor.clear()
         self.valor.send_keys(str(value) + '0'*5)
         self.select_financiamiento.options[12].click()
@@ -85,7 +83,7 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
         self.extract_data()
 
     def extract_data(self):
-        time.sleep(4)
+        time.sleep(5)
         self.open_detalle()
         self.get_data_elements()
         self.append_data()
@@ -94,7 +92,7 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
     def open_detalle(self):
         self.ver_detalle = self.driver.find_element_by_xpath(self.ver_detalle_xpath)
         self.ver_detalle.click()
-        time.sleep(1)
+        time.sleep(1.5)
 
     def get_data_elements(self):
         self.tasa_anual = self.driver.find_element_by_xpath(self.tasa_anual_xpath)
@@ -126,4 +124,4 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
     def close_detalle(self):
         self.cerrar_detalle = self.driver.find_element_by_xpath(self.cerrar_detalle_xpath)
         self.cerrar_detalle.click()
-        time.sleep(1)
+        time.sleep(1.5)
