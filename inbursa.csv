@@ -1,0 +1,25 @@
+Subproducto,Producto,Valor Vivienda,AFORO,Plazo,Ingresos Requeridos,Tasa de Interes,Tipo de Tasa,CAT sin IVA,Pago,Frecuencia de Pago
+1,Inburcasa ,$500000.00,%,10,"14,103.18",12.00,Fija,13.2,NA,Mensual
+2,Inburcasa ,$750000.00,%,10,"27,383.34",12.00,Fija,0.00,NA,Mensual
+3,Inburcasa ,$1000000.00,%,10,"36,504.95",12.00,Fija,0.00,NA,Mensual
+4,Inburcasa ,$1500000.00,%,10,"47,817.29",12.00,Fija,13.2,NA,Mensual
+5,Inburcasa ,$2000000.00,%,10,"73,730.72",12.00,Fija,0.00,NA,Mensual
+6,Inburcasa ,$3000000.00,%,10,"95,616.11",12.00,Fija,13.2,NA,Mensual
+7,Inburcasa ,$4000000.00,%,10,"127,481.98",12.00,Fija,0.00,NA,Mensual
+8,Inburcasa ,$5000000.00,%,10,"159,347.85",12.00,Fija,0.00,NA,Mensual
+9,Inburcasa ,$500000.00,%,15,"15,500.58",12.00,Fija,0.00,NA,Mensual
+10,Inburcasa ,$750000.00,%,15,"17,978.23",12.00,Fija,13.1,NA,Mensual
+11,Inburcasa ,$1000000.00,%,15,"23,965.77",12.00,Fija,13.1,NA,Mensual
+12,Inburcasa ,$1500000.00,%,15,"40,620.72",12.00,Fija,13.1,NA,Mensual
+13,Inburcasa ,$2000000.00,%,15,"54,155.76",12.00,Fija,13.1,NA,Mensual
+14,Inburcasa ,$3000000.00,%,15,"93,861.48",12.00,Fija,0.00,NA,Mensual
+15,Inburcasa ,$4000000.00,%,15,"108,295.92",12.00,Fija,0.00,NA,Mensual
+16,Inburcasa ,$5000000.00,%,15,"135,366.00",12.00,Fija,0.00,NA,Mensual
+17,Inburcasa ,$500000.00,%,20,"11,109.87",12.00,Fija,13.1,NA,Mensual
+18,Inburcasa ,$750000.00,%,20,"16,657.63",12.00,Fija,13.1,NA,Mensual
+19,Inburcasa ,$1000000.00,%,20,"29,375.33",12.00,Fija,0.00,NA,Mensual
+20,Inburcasa ,$1500000.00,%,20,"43,420.65",12.00,Fija,0.00,NA,Mensual
+21,Inburcasa ,$2000000.00,%,20,"50,138.13",12.00,Fija,13.1,NA,Mensual
+22,Inburcasa ,$3000000.00,%,20,"75,200.01",12.00,Fija,13.1,NA,Mensual
+23,Inburcasa ,$4000000.00,%,20,"115,764.47",12.00,Fija,0.00,NA,Mensual
+24,Inburcasa ,$5000000.00,%,20,"125,323.78",12.00,Fija,0.00,NA,Mensual

@@ -66,13 +66,14 @@ class InbursaAutomaton(selenium_automaton.SeleniumAutomaton):
         time.sleep(1)
 
     def get_productos(self):
-        #for _ in range(len(self.destinos.options)):
         self.data_dictionary = []
-        for index, plazoID in enumerate(range(9, 20, 5)):
-            self.get_subproductos(plazoID, index)
-        #self.export_csv('inbursa.csv')
+        self.index = 1
+        #for _ in range(len(self.destinos.options)):
+        for plazoID in range(9, 20, 5):
+            self.get_subproductos(plazoID)
+        self.export_csv('inbursa.csv')
 
-    def get_subproductos(self, plazoID, index):
+    def get_subproductos(self, plazoID):
         for i in ['50', '75', '100', '150', '200', '300', '400', '500']:
             self.connect(10)
             self.get_userdata_controls()
@@ -93,25 +94,26 @@ class InbursaAutomaton(selenium_automaton.SeleniumAutomaton):
             plazo_value = self.select_plazo.options[plazoID].text
             self.driver.execute_script('cotiza();')
             time.sleep(3)
-            #self.pago_mensual = self.driver.find_element_by_xpath(self.pago_mensual_xpath)
+            #self.pago_mensual = self.driver.find_element_by_xpath (self.pago_mensual_xpath)
             #valor_pago_mensual = self.pago_mensual.text
             cat = self.cat.get_attribute('value')
             print(f'Monto: {i+"0"*4}\tPlazo: {plazo_value}\tInteres: {int_value}\tIngresos minimos: {ing_min_req}\tEnganche: {new_enganche}\tCAT: {cat}')
             #Re-starting
             self.driver.quit()
-            """self.data_dictionary.append({
-                'Subproducto': index,
+            self.data_dictionary.append({
+                'Subproducto': self.index,
                 'Producto': 'Inburcasa ',
                 'Valor Vivienda': '$'+ i + '0'*4 +'.00',
-                'AFORO': str(aforo)+'%',
+                'AFORO': '%',
                 'Plazo': plazo_value,
                 'Ingresos Requeridos': ing_min_req,
                 'Tasa de Interes': int_value,
                 'Tipo de Tasa': 'Fija',
                 'CAT sin IVA': cat,
-                'Pago': valor_pago_mensual,
+                'Pago': 'NA',
                 'Frecuencia de Pago': 'Mensual'
-            })"""
+            })
+            self.index += 1
 
     def export_csv(self, file_name):
         with open(file_name, mode='w', newline='') as csv_file:
