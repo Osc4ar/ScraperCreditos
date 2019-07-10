@@ -19,6 +19,21 @@ class HSBCAutomaton:
   PagoCoord            = (658, 540)
   CatCoord             = (657, 555)
   IngresosCoord        = (660, 567)
+  TasasCellCoord       = (351, 489)
+  TasasSelectorCoord   = (438, 489)
+
+  plazosDict = { 0: 60 }
+  plazosDict.update(dict.fromkeys([1,  5], 120))
+  plazosDict.update(dict.fromkeys([2, 10], 180))
+  plazosDict.update(dict.fromkeys([3, 15], 240))
+
+  productosList = [
+    'Crédito Hipotecario HSBC Pago Fijo',
+    'Pago de Hipoteca HSBC Pago Fijo',
+    'Liquidez HSBC',
+    'Crédito Hipotecario HSBC PAGO FIJO para clientes PREMIER',
+    'Pago de Hipoteca más Liquidez HSBC',
+  ]
 
   def __init__(self):
     self.keyboard = KeyboardController()
@@ -49,9 +64,11 @@ class HSBCAutomaton:
     self.type_command(Key.ctrl, 'c')
 
   def get_clibboard(self):
+    time.sleep(0.2)
     win32clipboard.OpenClipboard()
     data = win32clipboard.GetClipboardData()
     win32clipboard.CloseClipboard()
+    time.sleep(0.2)
     return data
 
   def get_data_from_cell(self, position):
@@ -69,23 +86,44 @@ class HSBCAutomaton:
     self.move_mouse_and_click(self.TaskbarCoord)
     index = 1
     for destino in range(5): #Iterando destinos
-      for plazo in self.get_plazos_of_destino(destino):
-        self.select_plazo(plazo)
-        print(f'Destino: {destino}\tPlazo: {plazo}')
-        for valor in range(4, 5): #11
-          self.type_valor_vivienda(str(valor)+'0'*5)
-          self.get_info_from_file(index, valor, plazo, destino)
-          index += 1
-        for valor in self.get_max_value_of_destino(destino):
-          self.type_valor_vivienda(str(valor)+'0'*5)
-          self.get_info_from_file(index, valor, plazo, destino)
-          index += 1
+      if destino == 0:
+        for tasa in range(4):
+          for plazo in self.get_plazos_of_destino(destino):
+            self.select_plazo(plazo)
+            print(f'Destino: {destino}\tPlazo: {plazo}')
+            for valor in range(4, 5): #11
+              self.type_valor_vivienda(str(valor)+'0'*5)
+              self.get_info_from_file(index, valor, plazo, destino)
+              index += 1
+            for valor in self.get_max_value_of_destino(destino):
+              self.type_valor_vivienda(str(valor)+'0'*5)
+              self.get_info_from_file(index, valor, plazo, destino)
+              index += 1
+          self.change_tasa()
+      else:
+        for plazo in self.get_plazos_of_destino(destino):
+          self.select_plazo(plazo)
+          print(f'Destino: {destino}\tPlazo: {plazo}')
+          for valor in range(4, 5): #11
+            self.type_valor_vivienda(str(valor)+'0'*5)
+            self.get_info_from_file(index, valor, plazo, destino)
+            index += 1
+          for valor in self.get_max_value_of_destino(destino):
+            self.type_valor_vivienda(str(valor)+'0'*5)
+            self.get_info_from_file(index, valor, plazo, destino)
+            index += 1
       self.change_destino()
     self.export_csv('hsbc.csv')
 
   def change_destino(self):
     self.move_mouse_and_click(self.DestinoCellCoord)
     self.move_mouse_and_click(self.DestinoSelectorCoord)
+    self.type_key(Key.down)
+    self.type_key(Key.enter)
+
+  def change_tasa(self):
+    self.move_mouse_and_click(self.TasasCellCoord)
+    self.move_mouse_and_click(self.TasasSelectorCoord)
     self.type_key(Key.down)
     self.type_key(Key.enter)
 
@@ -99,10 +137,10 @@ class HSBCAutomaton:
   def get_info_from_file(self, index, valor, plazo, destino):
     self.data_dictionary.append({
       'Subproducto': index,
-      'Producto': destino,
+      'Producto': self.productosList[destino],
       'Valor Vivienda': '$'+ str(valor) + '0'*5 +'.00',
-      'AFORO': self.get_data_from_cell(self.AforoCoord),
-      'Plazo': plazo,
+      'AFORO': self.get_data_from_cell(self.AforoCoord) + '%',
+      'Plazo': self.plazosDict.get(plazo),
       'Ingresos Requeridos': self.get_data_from_cell(self.IngresosCoord),
       'Tasa de Interes': self.get_data_from_cell(self.TasaCoord),
       'Tipo de Tasa': 'Fija',
