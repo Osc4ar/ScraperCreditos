@@ -91,7 +91,7 @@ class HSBCAutomaton:
           for plazo in self.get_plazos_of_destino(destino):
             self.select_plazo(plazo)
             print(f'Destino: {destino}\tPlazo: {plazo}')
-            for valor in range(4, 5): #11
+            for valor in range(4, 11): #11
               self.type_valor_vivienda(str(valor)+'0'*5)
               self.get_info_from_file(index, valor, plazo, destino)
               index += 1
