@@ -29,15 +29,43 @@ def open_browser():
     browser.get("https://e-credit.santander.com.mx/hipsantanderhib/")
     return browser
 
+def get_info_from_xpath(source, xpath):
+    element = source.find_element_by_xpath(xpath)
+    return element.text.split(":")[1]
 
-def crearImage(png, filename, location, size):
-    im = Image.open(BytesIO(png))  # uses PIL library to open image in memory
-    left = location['x']
-    top = location['y']
-    right = location['x'] + size['width']
-    bottom = location['y'] + size['height']
-    im = im.crop((left, top, right, bottom))  # defines crop points
-    im.save("Imagenes\\"+filename, 'PNG', optimize=True, quality=100)
+def get_subproducto_info(accion):
+    ptasa = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Tasa')]]")
+    pfecha = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Fecha')]]")
+    pcred = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Crédito')]]")
+    ppago = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Pago')]]")
+    pesquema = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Esquema')]]")
+    pplazo = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Plazo')]]")
+    # Enganche
+    if "Cambiar tu hipoteca a Santander" in accion.text:
+        enganche = "NULL"
+    else:
+        enganche = get_info_from_xpath(
+            tabla, "//td[b[contains(text(),'Enganche')]]")
+    # Enganche
+    gastos = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Gastos Notariales')]]")
+    gastosIni = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Gastos Iniciales')]]")
+    cat = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'CAT')]]")
+    comision = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Comisión')]]")
+    avaluo = get_info_from_xpath(
+        tabla, "//td[b[contains(text(),'Avalúo')]]")
+    if pfecha:
+        writer.writerow({"Fecha": pfecha, "Producto": pcred, "Esquema": pesquema, "Plazo": pplazo, "Tasa": ptasa, "Aforo": aforo.text, "Destino": accion.text,
+                         "Gastos notariales": gastos, "Gastos Iniciales": gastosIni, "Enganche": enganche, "CAT": cat, "Comision": comision, "Avaluo": avaluo, "Pago": ppago})
 
 
 writer = open_csv()
@@ -69,8 +97,6 @@ submit = browser.find_element_by_name("opciones")
 
 cofi.select_by_index(1)
 
-j = 0
-
 for accion in acciones.options:
     with open('Calculadora.csv', 'a', newline='') as myfile:
         # if "Comprar tu Casa" in accion.text:
@@ -99,52 +125,9 @@ for accion in acciones.options:
                     "//a[contains(text(),'Ver')]")
                 print("Comprar terreno")
                 tabla.click()
-
-                ptasa = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Tasa')]]")
-                ptasa = ptasa.text.split(":")[1]
-                pfecha = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Fecha')]]")
-                pfecha = pfecha.text.split(":")[1]
-                pcred = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Crédito')]]")
-                pcred = pcred.text.split(":")[1]
-                ppago = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Pago')]]")
-                ppago = ppago.text.split(":")[1]
-                pesquema = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Esquema')]]")
-                pesquema = pesquema.text.split(":")[1]
-                pplazo = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Plazo')]]")
-                pplazo = pplazo.text.split(":")[1]
-                enganche = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Enganche')]]")
-                enganche = enganche.text.split(":")[1]
-                gastos = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Gastos Notariales')]]")
-                gastos = gastos.text.split(":")[1]
-                gastosIni = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Gastos Iniciales')]]")
-                gastosIni = gastosIni.text.split(":")[1]
-
-                cat = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'CAT')]]")
-                cat = cat.text.split(":")[1]
-                comision = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Comisión')]]")
-                comision = comision.text.split(":")[1]
-                avaluo = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Avalúo')]]")
-                avaluo = avaluo.text.split(":")[1]
-
-                if pfecha:
-                    writer.writerow({"Fecha": pfecha, "Producto": pcred, "Esquema": pesquema, "Plazo": pplazo, "Tasa": ptasa, "Aforo": "Null", "Destino": accion.text,
-                                     "Gastos notariales": gastos, "Gastos Iniciales": gastosIni, "Enganche": enganche, "CAT": cat, "Comision": comision, "Avaluo": avaluo, "Pago": ppago})
-                j = j+1
+                get_subproducto_info(accion)
 
                 try:
-                    # crearImage(png,file,location,size)
                     aux = WebDriverWait(browser, 10).until(
                         EC.presence_of_element_located((By.ID, "MB_close"))
                     )
@@ -166,60 +149,10 @@ for accion in acciones.options:
                 print("Adquisicion de consultorios")
                 tabla.click()
 
-                #file = str(j)
-                #file =  file+".png"
-                #png = browser.get_screenshot_as_png()
-                #location = browser.find_element_by_name("mitablaparaimprimir")
-                #size = location.size
-                #location = location.location
-                # crearImage(png,file,location,size)
                 time.sleep(1)
-                ptasa = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Tasa')]]")
-                ptasa = ptasa.text.split(":")[1]
-                pfecha = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Fecha')]]")
-                pfecha = pfecha.text.split(":")[1]
-                pcred = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Crédito')]]")
-                pcred = pcred.text.split(":")[1]
-                ppago = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Pago')]]")
-                ppago = ppago.text.split(":")[1]
-                pesquema = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Esquema')]]")
-                pesquema = pesquema.text.split(":")[1]
-                pplazo = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Plazo')]]")
-                pplazo = pplazo.text.split(":")[1]
-                enganche = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Enganche')]]")
-                enganche = enganche.text.split(":")[1]
-
-                gastos = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Gastos Notariales')]]")
-                gastos = gastos.text.split(":")[1]
-                gastosIni = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Gastos Iniciales')]]")
-                gastosIni = gastosIni.text.split(":")[1]
-
-                cat = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'CAT')]]")
-                cat = cat.text.split(":")[1]
-                comision = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Comisión')]]")
-                comision = comision.text.split(":")[1]
-                avaluo = tabla.find_element_by_xpath(
-                    "//td[b[contains(text(),'Avalúo')]]")
-                avaluo = avaluo.text.split(":")[1]
-
-                if pfecha:
-                    writer.writerow({"Fecha": pfecha, "Producto": pcred, "Esquema": pesquema, "Plazo": pplazo, "Tasa": ptasa, "Aforo": "Null", "Destino": accion.text,
-                                     "Gastos notariales": gastos, "Gastos Iniciales": gastosIni, "Enganche": enganche, "CAT": cat, "Comision": comision, "Avaluo": avaluo, "Pago": ppago})
-                j = j+1
+                get_subproducto_info(accion)
 
                 try:
-                    # crearImage(png,file,location,size)
                     aux = WebDriverWait(browser, 10).until(
                         EC.presence_of_element_located((By.ID, "MB_close"))
                     )
@@ -228,7 +161,6 @@ for accion in acciones.options:
                     time.sleep(1)
             for plazo in plazos.options:
                 if "Seleccione los años" not in plazo.text and plazo.is_displayed():
-
                     plazo.click()
                     if aforos.options[0].is_displayed():
                         for aforo in aforos.options:
@@ -258,63 +190,9 @@ for accion in acciones.options:
                                     finally:
                                         time.sleep(1)
 
-                                    #file = str(j)
-                                    #file =  file+".png"
-                                    #png = browser.get_screenshot_as_png()
-                                    #location = browser.find_element_by_name("mitablaparaimprimir")
-                                    #size = location.size
-                                    #location = location.location
-                                    # crearImage(png,file,location,size)
-
-                                    ptasa = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Tasa')]]")
-                                    ptasa = ptasa.text.split(":")[1]
-                                    pfecha = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Fecha')]]")
-                                    pfecha = pfecha.text.split(":")[1]
-                                    pcred = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Crédito')]]")
-                                    pcred = pcred.text.split(":")[1]
-                                    ppago = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Pago')]]")
-                                    ppago = ppago.text.split(":")[1]
-                                    pesquema = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Esquema')]]")
-                                    pesquema = pesquema.text.split(":")[1]
-                                    pplazo = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Plazo')]]")
-                                    pplazo = pplazo.text.split(":")[1]
-                                    if "Cambiar tu hipoteca a Santander" in accion.text:
-                                        enganche = "NULL"
-                                    else:
-                                        enganche = tabla.find_element_by_xpath(
-                                            "//td[b[contains(text(),'Enganche')]]")
-                                        enganche = enganche.text.split(":")[1]
-
-                                    gastos = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Gastos Notariales')]]")
-                                    gastos = gastos.text.split(":")[1]
-                                    gastosIni = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Gastos Iniciales')]]")
-                                    gastosIni = gastosIni.text.split(":")[1]
-
-                                    cat = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'CAT')]]")
-                                    cat = cat.text.split(":")[1]
-                                    comision = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Comisión')]]")
-                                    comision = comision.text.split(":")[1]
-                                    avaluo = tabla.find_element_by_xpath(
-                                        "//td[b[contains(text(),'Avalúo')]]")
-                                    avaluo = avaluo.text.split(":")[1]
-
-                                    if pfecha:
-                                        writer.writerow({"Fecha": pfecha, "Producto": pcred, "Esquema": pesquema, "Plazo": pplazo, "Tasa": ptasa, "Aforo": aforo.text, "Destino": accion.text,
-                                                         "Gastos notariales": gastos, "Gastos Iniciales": gastosIni, "Enganche": enganche, "CAT": cat, "Comision": comision, "Avaluo": avaluo, "Pago": ppago})
-                                    j = j+1
+                                    get_subproducto_info(accion)
 
                                     try:
-                                        # crearImage(png,file,location,size)
                                         aux = WebDriverWait(browser, 10).until(
                                             EC.presence_of_element_located(
                                                 (By.ID, "MB_close"))
@@ -345,58 +223,7 @@ for accion in acciones.options:
 
                             finally:
                                 time.sleep(2)
-                         #file = str(j)
-                            #file =  file+".png"
-                            #png = browser.get_screenshot_as_png()
-                            #location = browser.find_element_by_name("mitablaparaimprimir")
-                            #size = location.size
-                            #location = location.location
-                            # crearImage(png,file,location,size)
-                            ptasa = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Tasa')]]")
-                            ptasa = ptasa.text.split(":")[1]
-                            pfecha = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Fecha')]]")
-                            pfecha = pfecha.text.split(":")[1]
-                            pcred = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Crédito')]]")
-                            pcred = pcred.text.split(":")[1]
-                            ppago = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Pago')]]")
-                            ppago = ppago.text.split(":")[1]
-                            pesquema = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Esquema')]]")
-                            pesquema = pesquema.text.split(":")[1]
-                            pplazo = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Plazo')]]")
-                            pplazo = pplazo.text.split(":")[1]
-                            if "Cambiar tu hipoteca a Santander" in accion.text:
-                                enganche = "NULL"
-                            else:
-                                enganche = tabla.find_element_by_xpath(
-                                    "//td[b[contains(text(),'Enganche')]]")
-                                enganche = enganche.text.split(":")[1]
-                            gastos = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Gastos Notariales')]]")
-                            gastos = gastos.text.split(":")[1]
-                            gastosIni = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Gastos Iniciales')]]")
-                            gastosIni = gastosIni.text.split(":")[1]
-
-                            cat = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'CAT')]]")
-                            cat = cat.text.split(":")[1]
-                            comision = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Comisión')]]")
-                            comision = comision.text.split(":")[1]
-                            avaluo = tabla.find_element_by_xpath(
-                                "//td[b[contains(text(),'Avalúo')]]")
-                            avaluo = avaluo.text.split(":")[1]
-
-                            if pfecha:
-                                writer.writerow({"Fecha": pfecha, "Producto": pcred, "Esquema": pesquema, "Plazo": pplazo, "Tasa": ptasa, "Aforo": "Null", "Destino": accion.text,
-                                                 "Gastos notariales": gastos, "Gastos Iniciales": gastosIni, "Enganche": enganche, "CAT": cat, "Comision": comision, "Avaluo": avaluo, "Pago": ppago})
-                            j = j+1
+                            get_subproducto_info(accion)
                             try:
                                 aux = WebDriverWait(browser, 10).until(
                                     EC.presence_of_element_located(
@@ -423,51 +250,7 @@ for accion in acciones.options:
 
                         finally:
                             time.sleep(2)
-                        ptasa = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Tasa')]]")
-                        ptasa = ptasa.text.split(":")[1]
-                        pfecha = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Fecha')]]")
-                        pfecha = pfecha.text.split(":")[1]
-                        pcred = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Crédito')]]")
-                        pcred = pcred.text.split(":")[1]
-                        ppago = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Pago')]]")
-                        ppago = ppago.text.split(":")[1]
-                        pesquema = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Esquema')]]")
-                        pesquema = pesquema.text.split(":")[1]
-                        pplazo = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Plazo')]]")
-                        pplazo = pplazo.text.split(":")[1]
-
-                        enganche = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Enganche')]]")
-                        enganche = enganche.text.split(":")[1]
-
-                        gastos = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Gastos Notariales')]]")
-                        gastos = gastos.text.split(":")[1]
-                        gastosIni = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Gastos Iniciales')]]")
-                        gastosIni = gastosIni.text.split(":")[1]
-
-                        cat = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'CAT')]]")
-                        cat = cat.text.split(":")[1]
-                        comision = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Comisión')]]")
-                        comision = comision.text.split(":")[1]
-                        avaluo = tabla.find_element_by_xpath(
-                            "//td[b[contains(text(),'Avalúo')]]")
-                        avaluo = avaluo.text.split(":")[1]
-
-                        if pfecha:
-                            writer.writerow({"Fecha": pfecha, "Producto": pcred, "Esquema": pesquema, "Plazo": pplazo, "Tasa": ptasa, "Aforo": "Null", "Destino": accion.text,
-                                             "Gastos notariales": gastos, "Gastos Iniciales": gastosIni, "Enganche": enganche, "CAT": cat, "Comision": comision, "Avaluo": avaluo, "Pago": ppago})
-                        j = j+1
-
+                        get_subproducto_info(accion)
                         try:
                             aux = WebDriverWait(browser, 10).until(
                                 EC.presence_of_element_located(
