@@ -77,8 +77,13 @@ class ScotiaAutomaton(selenium_automaton.SeleniumAutomaton):
             'Ingresos Requeridos': self.ingresos_min.text,
             'Tasa de Interes': self.tasa_interes.text,
             'Tipo de Tasa': tasa.text,
-            'CAT sin IVA': self.cat.text,
-            'Pago': self.pago_mensual.text,
-            'Frecuencia de Pago': 'Mensual'
+            'CAT': self.cat.text,
+            'CAT Incluye IVA': 'No',
+            'Monto Pago': self.pago_mensual.text,
+            'Frecuencia de Pago': 'Mensual', #Esta incluido en el producto, no va en subproducto
+            'Avaluo': '',
+            'Comisión por Apertura': '',
+            'Gastos Notariales': '',
+            'Desembolso Inicial': '',
         })
         self.subproducto_id += 1

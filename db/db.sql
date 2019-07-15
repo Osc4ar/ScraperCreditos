@@ -40,6 +40,10 @@ CREATE TABLE IF NOT EXISTS "Subproductos"(
         cat real DEFAULT 0.0,
         cat_incluye_iva int DEFAULT 0,
         monto_pago real DEFAULT 0.0,
+        avaluo real DEFAULT 0.0,
+        comision_por_apertura real DEFAULT 0.0,
+        gastos_notariales real DEFAULT 0.0,
+        desembolso_inicial real DEFAULT 0.0,
         FOREIGN KEY(prod_id) REFERENCES Productos(prod_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
