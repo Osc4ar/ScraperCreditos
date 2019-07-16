@@ -5,6 +5,7 @@ from pynput.mouse import Controller as MouseController
 import win32clipboard
 import time
 import csv
+import db_manager
 
 class HSBCAutomaton:
   TaskbarCoord         = ( 62,  14)
@@ -21,6 +22,10 @@ class HSBCAutomaton:
   IngresosCoord        = (660, 567)
   TasasCellCoord       = (351, 489)
   TasasSelectorCoord   = (438, 489)
+  AvaluoCoord          = (662, 423)
+  ComisionCoord        = (688, 438)
+  NotarialesCoord      = (697, 461)
+  DesembolsoCoord      = (663, 475)
 
   plazosDict = { 0: 60 }
   plazosDict.update(dict.fromkeys([1,  5], 120))
@@ -28,17 +33,17 @@ class HSBCAutomaton:
   plazosDict.update(dict.fromkeys([3, 15], 240))
 
   productosList = [
-    'Crédito Hipotecario HSBC Pago Fijo',
-    'Pago de Hipoteca HSBC Pago Fijo',
-    'Liquidez HSBC',
-    'Crédito Hipotecario HSBC PAGO FIJO para clientes PREMIER',
-    'Pago de Hipoteca más Liquidez HSBC',
+    19, #Crédito Hipotecario HSBC Pago Fijo
+    21, #Pago de Hipoteca HSBC Pago Fijo
+    23, #Liquidez HSBC
+    20, #Crédito Hipotecario HSBC PAGO FIJO para clientes PREMIER
+    22, #Pago de Hipoteca más Liquidez HSBC
   ]
 
   def __init__(self):
     self.keyboard = KeyboardController()
     self.mouse = MouseController()
-    self.data_dictionary = []
+    self.data = []
 
   def move_mouse_and_click(self, position):
     self.mouse.position = position
@@ -113,7 +118,7 @@ class HSBCAutomaton:
             self.get_info_from_file(index, valor, plazo, destino)
             index += 1
       self.change_destino()
-    self.export_csv('hsbc.csv')
+    self.save_data_to_db()
 
   def change_destino(self):
     self.move_mouse_and_click(self.DestinoCellCoord)
@@ -135,19 +140,22 @@ class HSBCAutomaton:
     self.type_key(Key.enter)
 
   def get_info_from_file(self, index, valor, plazo, destino):
-    self.data_dictionary.append({
-      'Subproducto': index,
-      'Producto': self.productosList[destino],
-      'Valor Vivienda': '$'+ str(valor) + '0'*5 +'.00',
-      'AFORO': self.get_data_from_cell(self.AforoCoord) + '%',
-      'Plazo': self.plazosDict.get(plazo),
-      'Ingresos Requeridos': self.get_data_from_cell(self.IngresosCoord),
-      'Tasa de Interes': self.get_data_from_cell(self.TasaCoord),
-      'Tipo de Tasa': 'Fija',
-      'CAT sin IVA': self.get_data_from_cell(self.CatCoord),
-      'Pago': self.get_data_from_cell(self.PagoCoord),
-      'Frecuencia de Pago': 'Mensual'
-    })
+    self.data.append((
+      self.productosList[destino],
+      str(valor) + '0'*5,
+      self.get_data_from_cell(self.AforoCoord),
+      self.plazosDict.get(plazo),
+      self.clean_float_number(self.get_data_from_cell(self.IngresosCoord)),
+      self.clean_float_number(self.get_data_from_cell(self.TasaCoord)),
+      0,
+      self.clean_float_number(self.get_data_from_cell(self.CatCoord)),
+      0,
+      self.clean_float_number(self.get_data_from_cell(self.PagoCoord)),
+      self.clean_float_number(self.get_data_from_cell(self.AvaluoCoord)),
+      self.clean_float_number(self.get_data_from_cell(self.ComisionCoord)),
+      self.clean_float_number(self.get_data_from_cell(self.NotarialesCoord)),
+      self.clean_float_number(self.get_data_from_cell(self.DesembolsoCoord)),
+    ))
 
   def get_plazos_of_destino(self, destino):
     if destino == 2:
@@ -161,13 +169,14 @@ class HSBCAutomaton:
       return range(15, 55, 5)
     return range(15, 105, 5)
 
-  def export_csv(self, file_name):
-    with open(file_name, mode='w', newline='') as csv_file:
-        fieldnames = ['Subproducto', 'Producto', 'Valor Vivienda', 'AFORO', 'Plazo', 'Ingresos Requeridos', 'Tasa de Interes', 'Tipo de Tasa', 'CAT sin IVA', 'Pago', 'Frecuencia de Pago']
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-        writer.writeheader()
-        for row in self.data_dictionary:
-            writer.writerow(row)
+  def clean_float_number(self, number):
+    return number.replace('$', '').replace(',', '').replace('%', '')
+
+  def save_data_to_db(self):
+    manager = db_manager.DBManager()
+    for row in self.data:
+        manager.insert_subproducto(row)
+    manager.close_connection()
 
 if __name__ == "__main__":
   automaton = HSBCAutomaton()
