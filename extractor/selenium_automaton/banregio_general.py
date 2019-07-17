@@ -13,7 +13,6 @@ class BanregioGeneral(banregio.BanregioAutomaton):
     def set_control_data(self):
         super().set_control_data()
         if self.is_second_type:
-            print('Termi')
             self.submit_xpath = '/html/body/section[2]/div[2]/div[2]/div/div[1]/div/div/form/div[6]/div[2]/input'
         self.url = self.new_url
 

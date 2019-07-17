@@ -31,17 +31,18 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
         self.ingresos_min_xpath = '//*[@id="divingresosminimos"]'
         self.plazo_xpath = '//*[@id="divplazo"]'
         self.factor_pago_xpath = '//*[@id="divfactortotal"]'
+        self.avaluo_xpath = '//*[@id="divavaluo"]'
+        self.comision_xpath = '//*[@id="divapertura"]'
+        self.gastos_notariales_xpath = '//*[@id="divnotariales"]'
+        self.desembolso_inicial_xpath = '//*[@id="divinicial"]'
         self.cerrar_detalle_xpath = '/html/body/div/div[1]/div[1]/a'
 
     def get_data(self):
         self.data_dictionary = []
-        self.subproducto_id = 1
         for value in range(5, 21):
             self.send_values(value)
-            self.subproducto_id += 1
         for value in range(25, 105, 5):
             self.send_values(value)
-            self.subproducto_id += 1
         self.export_csv('banregio.csv')
 
     def get_controls(self):
@@ -100,6 +101,10 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
         self.valor_inmueble = self.driver.find_element_by_xpath(self.valor_inmueble_xpath)
         self.monto_credito = self.driver.find_element_by_xpath(self.monto_credito_xpath)
         self.ingresos_min = self.driver.find_element_by_xpath(self.ingresos_min_xpath)
+        self.avaluo = self.driver.find_element_by_xpath(self.avaluo_xpath)
+        self.comision = self.driver.find_element_by_xpath(self.comision_xpath)
+        self.gastos_notariales = self.driver.find_element_by_xpath(self.gastos_notariales_xpath)
+        self.desembolso_inicial = self.driver.find_element_by_xpath(self.desembolso_inicial_xpath)
         self.plazo = self.driver.find_element_by_xpath(self.plazo_xpath)
         self.factor_pago = self.driver.find_element_by_xpath(self.factor_pago_xpath)
         self.cerrar_detalle = self.driver.find_element_by_xpath(self.cerrar_detalle_xpath)
@@ -108,18 +113,33 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
         f_monto = float(self.monto_credito.text.replace(',', '').replace('$', ''))
         f_valor = float(self.valor_inmueble.text.replace(',', '').replace('$', ''))
         self.data_dictionary.append({
-            'Subproducto': self.subproducto_id,
-            'Producto': 'Adquisición de Vivienda',
+            'Producto': self.get_producto_id_from_url(),
             'Valor Vivienda': self.valor_inmueble.text,
             'AFORO': f_monto/f_valor*100,
             'Plazo': self.plazo.text,
             'Ingresos Requeridos': self.ingresos_min.text,
             'Tasa de Interes': self.tasa_anual.text,
-            'Tipo de Tasa': 'Creciente',
-            'CAT sin IVA': self.factor_pago.text,
+            'Tipo de Tasa': 0,
+            'CAT': self.factor_pago.text,
+            'Incluye IVA': 0,
             'Pago': self.pago_mensual.text,
-            'Frecuencia de Pago': 'Mensual'
+            'Avaluo': self.clean_float_number(self.avaluo.text),
+            'Comision': self.clean_float_number(self.comision.text),
+            'Gastos Notariales': self.clean_float_number(self.gastos_notariales.text),
+            'Desembolso Inicial': self.clean_float_number(self.desembolso_inicial.text)
         })
+
+    def get_producto_id_from_url(self):
+        if 'nueva' in self.url:
+            return 14
+        if 'terreno' in self.url:
+            return 15
+        if 'term' in self.url:
+            return 16
+        if 'mejora' in self.url:
+            return 17
+        if 'remo' in self.url:
+            return 18
 
     def close_detalle(self):
         self.cerrar_detalle = self.driver.find_element_by_xpath(self.cerrar_detalle_xpath)

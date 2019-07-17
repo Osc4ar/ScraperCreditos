@@ -9,11 +9,8 @@ class DBManager:
         self.conn.close()
 
     def create_connection_cursor(self):
-        try:
-            self.conn = sqlite3.connect('./db/Credito.db')
-            self.c = self.conn.cursor()
-        except Exception as e:
-            print(e)
+        self.conn = sqlite3.connect('./db/Credito.db')
+        self.c = self.conn.cursor()
 
     def insert_subproducto(self, subproducto):
         insert_producto_query = ''' INSERT INTO Subproductos(prod_id, valor_vivienda,
