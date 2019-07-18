@@ -51,3 +51,83 @@ insert into Productos(dest_id, id_inst, prod_nom, tiene_prog, fiscal_id, cred_mi
 ('D04', '040072', 'HIPOTECA FUERTE - TERRENO MÁS CONSTRUCCIÓN', 'NO', 1, 800000, 10000000, 12.3),
 ('D03', '040072', 'HIPOTECA MÁS POR MENOS - COMPRAVENTA CON TERMINACIÓN DE OBRA', 'NO', 1, 350000, 10000000, 14.4),
 ('D03', '040072', 'HIPOTECA FUERTE - COMPRAVENTA CON TERMINACIÓN DE OBRA', 'NO', 1, 350000, 10000000, 12.3);
+
+CREATE VIEW ResumenSubproductos AS
+SELECT S.subprod_id AS 'Subproducto',
+    P.prod_nom AS 'Producto',
+    M.mda_moneda AS 'Moneda',
+    S.valor_vivienda AS 'Valor Vivienda',
+    S.aforo AS 'Aforo',
+    S.plazo AS 'Plazo',
+    S.ingresos_requeridos AS 'Ingresos Requeridos',
+    S.tasa_interes AS 'Tasa de Interés',
+    T.tipo_tasa_des AS 'Tipo de Tasa',
+    S.cat AS 'CAT',
+    S.cat_incluye_iva AS 'CAT Incluye IVA',
+    S.monto_pago AS 'Pago',
+    F.frec_des AS 'Frecuencia de Pago',
+    S.avaluo AS 'Avaluo',
+    S.comision_por_apertura AS 'Comisión por Apertura',
+    S.gastos_notariales AS 'Gastos Notariales',
+    S.desembolso_inicial AS 'Desembolso Inicial'
+FROM Subproductos AS S,
+    Productos AS P,
+    Destinos AS D,
+    Instituciones AS I,
+    TipoTasas AS T,
+    Monedas AS M,
+    RegimenFiscal AS R,
+    FrecuenciaPago AS F;
+
+CREATE VIEW ResumenSubproductos AS
+SELECT S.subprod_id AS 'Subproducto',
+    Instituciones.nom_inst AS 'Institución',
+    Productos.prod_nom AS 'Producto',
+    Monedas.mda_moneda AS 'Moneda',
+    S.valor_vivienda AS 'Valor Vivienda',
+    S.aforo AS 'Aforo',
+    S.plazo AS 'Plazo',
+    S.ingresos_requeridos AS 'Ingresos Requeridos',
+    S.tasa_interes AS 'Tasa de Interés',
+    TipoTasas.tipo_tasa_des AS 'Tipo de Tasa',
+    S.cat AS 'CAT',
+    S.cat_incluye_iva AS 'CAT Incluye IVA',
+    S.monto_pago AS 'Pago',
+    FrecuenciaPago.frec_des AS 'Frecuencia de Pago',
+    S.avaluo AS 'Avaluo',
+    S.comision_por_apertura AS 'Comisión por Apertura',
+    S.gastos_notariales AS 'Gastos Notariales',
+    S.desembolso_inicial AS 'Desembolso Inicial'
+FROM Subproductos as S
+NATURAL JOIN Productos
+NATURAL JOIN TipoTasas
+NATURAL JOIN Monedas
+NATURAL JOIN Destinos
+NATURAL JOIN Instituciones
+NATURAL JOIN FrecuenciaPago;
+
+SELECT S.subprod_id AS 'Subproducto',
+    P.prod_nom AS 'Producto',
+    M.mda_moneda AS 'Moneda',
+    S.valor_vivienda AS 'Valor Vivienda',
+    S.aforo AS 'Aforo',
+    S.plazo AS 'Plazo',
+    S.ingresos_requeridos AS 'Ingresos Requeridos',
+    S.tasa_interes AS 'Tasa de Interés',
+    T.tipo_tasa_des AS 'Tipo de Tasa',
+    S.cat AS 'CAT',
+    S.cat_incluye_iva AS 'CAT Incluye IVA',
+    S.monto_pago AS 'Pago',
+    F.frec_des AS 'Frecuencia de Pago',
+    S.avaluo AS 'Avaluo',
+    S.comision_por_apertura AS 'Comisión por Apertura',
+    S.gastos_notariales AS 'Gastos Notariales',
+    S.desembolso_inicial AS 'Desembolso Inicial'
+FROM Subproductos AS S,
+    Productos AS P,
+    Destinos AS D,
+    Instituciones AS I,
+    TipoTasas AS T,
+    Monedas AS M,
+    RegimenFiscal AS R,
+    FrecuenciaPago AS F;

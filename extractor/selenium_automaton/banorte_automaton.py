@@ -13,6 +13,7 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
         self.plazos_por_tipo_tasa = [2, 4]
         self.set_control_data()
         self.connect(60)
+        self.driver.maximize_window()
         self.get_data()
         self.driver.quit()
         print(f'Terminado en {(time.time()-self.start)/60}')
@@ -53,17 +54,21 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
                 rango_plazo = 2 if tipo_tasa == 0 else 4 #2, 4
                 for plazo in range(rango_plazo):
                     rango_valor = range(4, 16) #range(4, 16)
-                    if destino == 3 or destino == 4:
+                    if destino == 0:
+                        rango_valor = range(4, 5)
+                    elif destino == 3 or destino == 4:
                         rango_valor = range(5, 16) #range(5, 17)
                     elif destino == 5:
                         rango_valor = range(8, 16) #range(8, 20)
                     for valor in rango_valor:
                         self.update_value(valor, plazo, tipo_tasa, destino)
                         self.get_detalle()
-                    for valor in range(20, 105, 5):
-                        self.update_value(valor, plazo, tipo_tasa, destino)
-                        self.get_detalle()
-            self.save_data_to_db()
+                    if destino != 0:
+                        for valor in range(20, 105, 5):
+                            self.update_value(valor, plazo, tipo_tasa, destino)
+                            self.get_detalle()
+            if destino != 0:
+                self.save_data_to_db()
             self.data = []
         #self.export_csv('banorte.csv')
 
@@ -81,7 +86,8 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
 
     def get_detalle(self):
         wait = True
-        while wait:
+        tries = 0
+        while wait and tries < 10:
             try:
                 self.ingresos_min = self.get_data_by_xpath(self.ingresos_min_xpath)
                 ingresos_min_val = self.ingresos_min.text
@@ -121,12 +127,12 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
                 })'''
                 self.data.append((
                     self.producto,
-                    self.valor_vivienda_value[:-2],
+                    self.clean_float_number(self.valor_vivienda_value[:-2]),
                     self.aforo_value[:-1],
                     self.get_plazo_in_months(self.plazo_value),
                     self.clean_float_number(ingresos_min_val),
                     self.clean_float_number(self.tasa_interes.text.replace('*', '')),
-                    int(self.tipo_tasa == 'Variable'),
+                    int(self.tipo_tasa == 'Variable')+1,
                     self.clean_float_number(self.cat.text),
                     0,
                     self.clean_float_number(self.pago_mensual.text.split('\n')[0]),
@@ -141,8 +147,10 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
                 self.dialog_count += 1
                 time.sleep(1)
                 wait = False
-            except:
+            except Exception as e:
                 wait = True
+                tries += 1
+                print(e)
                 time.sleep(1)
 
     def get_plazo_in_months(self, plazo):
@@ -223,5 +231,6 @@ class BanorteAutomaton(selenium_automaton.SeleniumAutomaton):
     def reload_page(self):
         self.driver.get(self.url)
         time.sleep(2)
+        self.driver.maximize_window()
         self.get_controls_start()
         self.move_to_simulador()

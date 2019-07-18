@@ -18,6 +18,7 @@ class BanregioGeneral(banregio.BanregioAutomaton):
 
     def get_data(self):
         self.data_dictionary = []
+        self.data = []
         self.subproducto_id = 1
         for value in range(self.min, 21):
             self.send_values(value)

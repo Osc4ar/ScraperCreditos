@@ -38,12 +38,14 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
         self.cerrar_detalle_xpath = '/html/body/div/div[1]/div[1]/a'
 
     def get_data(self):
-        self.data_dictionary = []
+        #self.data_dictionary = []
+        self.data = []
         for value in range(5, 21):
             self.send_values(value)
         for value in range(25, 105, 5):
             self.send_values(value)
-        self.export_csv('banregio.csv')
+        #self.export_csv('banregio.csv')
+        self.save_data_to_db()
 
     def get_controls(self):
         self.get_tipos_pagos()
@@ -112,22 +114,38 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
     def append_data(self):
         f_monto = float(self.monto_credito.text.replace(',', '').replace('$', ''))
         f_valor = float(self.valor_inmueble.text.replace(',', '').replace('$', ''))
-        self.data_dictionary.append({
+        '''self.data_dictionary.append({
             'Producto': self.get_producto_id_from_url(),
-            'Valor Vivienda': self.valor_inmueble.text,
+            'Valor Vivienda': self.clean_float_number(self.valor_inmueble.text),
             'AFORO': f_monto/f_valor*100,
-            'Plazo': self.plazo.text,
-            'Ingresos Requeridos': self.ingresos_min.text,
-            'Tasa de Interes': self.tasa_anual.text,
+            'Plazo': self.get_plazo_in_months(self.plazo.text),
+            'Ingresos Requeridos': self.clean_float_number(self.ingresos_min.text),
+            'Tasa de Interes': self.clean_float_number(self.tasa_anual.text),
             'Tipo de Tasa': 0,
             'CAT': self.factor_pago.text,
             'Incluye IVA': 0,
-            'Pago': self.pago_mensual.text,
+            'Pago': self.clean_float_number(self.pago_mensual.text),
             'Avaluo': self.clean_float_number(self.avaluo.text),
             'Comision': self.clean_float_number(self.comision.text),
             'Gastos Notariales': self.clean_float_number(self.gastos_notariales.text),
             'Desembolso Inicial': self.clean_float_number(self.desembolso_inicial.text)
-        })
+        })'''
+        self.data.append((
+            self.get_producto_id_from_url(),
+            self.clean_float_number(self.valor_inmueble.text),
+            f_monto/f_valor*100,
+            self.get_plazo_in_months(self.plazo.text),
+            self.clean_float_number(self.ingresos_min.text),
+            self.clean_float_number(self.tasa_anual.text),
+            0,
+            self.factor_pago.text,
+            0,
+            self.clean_float_number(self.pago_mensual.text),
+            self.clean_float_number(self.avaluo.text),
+            self.clean_float_number(self.comision.text),
+            self.clean_float_number(self.gastos_notariales.text),
+            self.clean_float_number(self.desembolso_inicial.text)
+        ))
 
     def get_producto_id_from_url(self):
         if 'nueva' in self.url:
@@ -140,6 +158,16 @@ class BanregioAutomaton(selenium_automaton.SeleniumAutomaton):
             return 17
         if 'remo' in self.url:
             return 18
+
+    def get_plazo_in_months(self, text_plazo):
+        if '20' in text_plazo:
+            return 240
+        if '15' in text_plazo:
+            return 180
+        if '10' in text_plazo:
+            return 120
+        if '5' in text_plazo:
+            return 60
 
     def close_detalle(self):
         self.cerrar_detalle = self.driver.find_element_by_xpath(self.cerrar_detalle_xpath)
