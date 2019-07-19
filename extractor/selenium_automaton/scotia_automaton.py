@@ -5,6 +5,9 @@ import time
 import csv
 
 class ScotiaAutomaton(selenium_automaton.SeleniumAutomaton):
+
+    id_productos = (13, ) #CREDIRESIDENCIAL
+
     def __init__(self):
         self.set_control_data()
         self.connect(60)
@@ -25,7 +28,10 @@ class ScotiaAutomaton(selenium_automaton.SeleniumAutomaton):
         self.max_credito_xpath = '//*[@id="calcMaxCredit"]'
         self.tasa_interes_xpath = '//*[@id="calcInterest"]'
         self.cat_xpath = '//*[@id="calcCat"]'
-        self.gastos_iniciales_xpath = '//*[@id="calcExpenses"]'
+        self.avaluo_xpath = '//*[@id="calcValueHouse"]'
+        self.comision_por_apertura_xpath = '//*[@id="calcCommission"]'
+        self.gastos_notariales_xpath = '//*[@id="calcNotary"]'
+        self.desembolso_inicial_xpath = '//*[@id="calcExpenses"]'
 
     def get_controls(self):
         self.valor_vivienda = self.driver.find_element_by_xpath(self.valor_vivienda_xpath)
@@ -43,11 +49,14 @@ class ScotiaAutomaton(selenium_automaton.SeleniumAutomaton):
         self.ingresos_min = self.driver.find_element_by_xpath(self.ingresos_min_xpath)
         self.tasa_interes = self.driver.find_element_by_xpath(self.tasa_interes_xpath)
         self.pago_mensual = self.driver.find_element_by_xpath(self.pago_mensual_xpath)
+        self.avaluo = self.driver.find_element_by_xpath(self.avaluo_xpath)
+        self.comision_por_apertura = self.driver.find_element_by_xpath(self.comision_por_apertura_xpath)
+        self.gastos_notariales = self.driver.find_element_by_xpath(self.gastos_notariales_xpath)
+        self.desembolso_inicial = self.driver.find_element_by_xpath(self.desembolso_inicial_xpath)
 
     def get_data(self):
         self.get_controls()
-        self.data_dictionary = []
-        self.subproducto_id = 1
+        self.data = []
         for tasa in self.tasas:
             for ix_plazo, plazo in enumerate(self.plazos):
                 if tasa == self.tasa_creciente and plazo == self.plazo7:
@@ -57,7 +66,7 @@ class ScotiaAutomaton(selenium_automaton.SeleniumAutomaton):
                         self.get_values(tasa, ix_plazo, plazo, valor)
                     for valor in range(25, 105, 5):
                         self.get_values(tasa, ix_plazo, plazo, valor)
-        self.export_csv('scotia.csv')
+        self.save_data_to_db()
 
     def get_values(self, tasa, ix_plazo, plazo, valor):
         valor_vivienda_value = str(valor) + '0'*5
@@ -68,17 +77,20 @@ class ScotiaAutomaton(selenium_automaton.SeleniumAutomaton):
         time.sleep(1)
         max_credito_float = float(self.max_credito.text.replace(',', '').replace('$ ', ''))
         valor_vivienda_float = float(valor_vivienda_value)
-        self.data_dictionary.append({
-            'Subproducto': self.subproducto_id,
-            'Producto': 'Compra tu Casa',
-            'Valor Vivienda': valor_vivienda_value,
-            'AFORO': max_credito_float/valor_vivienda_float*100,
-            'Plazo': self.plazos_meses[ix_plazo],
-            'Ingresos Requeridos': self.ingresos_min.text,
-            'Tasa de Interes': self.tasa_interes.text,
-            'Tipo de Tasa': tasa.text,
-            'CAT sin IVA': self.cat.text,
-            'Pago': self.pago_mensual.text,
-            'Frecuencia de Pago': 'Mensual'
-        })
-        self.subproducto_id += 1
+        aforo = max_credito_float/valor_vivienda_float*100
+        self.data.append((
+            self.id_productos[0],
+            valor_vivienda_value,
+            aforo,
+            self.plazos_meses[ix_plazo],
+            self.clean_float_number(self.ingresos_min.text),
+            self.clean_float_number(self.tasa_interes.text),
+            int(tasa.text == 'Valora'),
+            self.clean_float_number(self.cat.text),
+            0,
+            self.clean_float_number(self.pago_mensual.text),
+            self.clean_float_number(self.avaluo.text),
+            self.clean_float_number(self.comision_por_apertura.text),
+            self.clean_float_number(self.gastos_notariales.text),
+            self.clean_float_number(self.desembolso_inicial.text),
+        ))

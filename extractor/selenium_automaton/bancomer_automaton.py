@@ -42,6 +42,9 @@ class BancomerAutomaton(selenium_automaton.SeleniumAutomaton):
         self.prestamo_xpath = '//*[@id="productos"]/div/div[2]/dl/dd[1]'
         self.tipo_tasa_xpath = '//*[@id="productos"]/div/div[2]/dl/dd[5]'
         self.pago_inicial_xpath = '//*[@id="productos"]/div/div[2]/dl/dd[4]'
+        self.amortizacion_xpath = '//*[@id="productos"]/div/div[3]/button[1]'
+        self.datos_credito_button_xpath = '//*[@id="datosCredito"]'
+        self.gastos_notariales_xpath = '//*[@id="datos-GastosNotariales"]'
 
     def get_controls(self):
         self.switch_iframe()
@@ -69,6 +72,9 @@ class BancomerAutomaton(selenium_automaton.SeleniumAutomaton):
         self.prestamo_element = self.driver.find_element_by_xpath(self.prestamo_xpath)
         self.tipo_tasa_element = self.driver.find_element_by_xpath(self.tipo_tasa_xpath)
         self.pago_inicial_element = self.driver.find_element_by_xpath(self.pago_inicial_xpath)
+        self.amortizacion_element = self.driver.find_element_by_xpath(self.amortizacion_xpath)
+        self.datos_credito_button = self.driver.find_element_by_xpath(self.datos_credito_button_xpath)
+        self.gastos_notariales_element = self.driver.find_element_by_xpath(self.gastos_notariales_xpath)
 
     def get_data(self):
         self.get_controls()
@@ -127,6 +133,11 @@ class BancomerAutomaton(selenium_automaton.SeleniumAutomaton):
                 'Pago': self.pago_element.text,
                 'Frecuencia de Pago': 'Mensual'
             })
+            self.driver.execute_script('arguments[0].click();', self.amortizacion_element)
+            time.sleep(1)
+            self.driver.execute_script('arguments[0].click();', self.datos_credito_button)
+            time.sleep(0.5)
+            print(f'Gastos Notariales: {self.gastos_notariales_element.text}')
             #print(f'Subproducto: {self.subproducto_id}\tProducto: {self.encabezado_element.text}\tValor: ${valor}.00\tPrestamo: {self.prestamo_element.text}\tCAT: {self.cat_element.text}\tIngresos: {self.ingresos_element.text}\tPago: {self.pago_element.text}\tTasa: {self.tasa_element.text}\tTipo Tasa: {self.tipo_tasa_element.text}')
 
     def export_csv(self, file_name):
