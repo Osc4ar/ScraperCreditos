@@ -83,6 +83,7 @@ CREATE VIEW ResumenSubproductos AS
 SELECT S.subprod_id AS 'Subproducto',
     Instituciones.nom_inst AS 'Institución',
     Productos.prod_nom AS 'Producto',
+    Destinos.dest_nom AS 'Destino',
     Monedas.mda_moneda AS 'Moneda',
     S.valor_vivienda AS 'Valor Vivienda',
     S.aforo AS 'Aforo',

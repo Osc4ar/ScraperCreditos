@@ -10,7 +10,7 @@ class DBManager:
 
     def create_connection_cursor(self):
         try:
-            self.conn = sqlite3.connect('./db/Credito.db')
+            self.conn = sqlite3.connect('./db/credito.db')
             self.c = self.conn.cursor()
         except Exception as e:
             print(e)
